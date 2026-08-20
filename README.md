@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KhauSafe
 
-## Getting Started
+Find hygiene-rated street food vendors nearby — built on India's FSSAI Clean Street Food
+Hub certification data where it exists, plus a community-observed layer for everywhere else.
 
-First, run the development server:
+## Data reality (read this first)
+
+There is no confirmed live FSSAI ratings API. Coverage of official certification is limited to
+named "Clean Street Food Hub" clusters (e.g. Girgaon Chowpatty, Juhu Chowpatty). Vendor data in
+this repo is **manually curated** from public reporting, not pulled from any FSSAI system — see
+the `source` field on every entry in [`src/data/vendors.json`](src/data/vendors.json).
+
+The data layer (`src/lib/vendors.ts`) is written so the local-JSON source can be swapped for a
+real Supabase table (or a real FSSAI feed, if one is ever confirmed) without touching call sites.
+
+## Status
+
+- **Phase 1 — map + seeded vendors**: done. Runs entirely on local JSON, no backend required.
+- **Phase 2 — community observations**: UI and schema built (`supabase/migrations/0001_init.sql`,
+  `ObservationForm`, `/api/observations`). Needs a live Supabase project to actually submit/read —
+  degrades to a "not connected yet" message until then.
+- **Phase 3 — search/filter + accounts**: filter bar (area/category/certification) and vendor
+  detail page work now on local data. Auth (`/login`, magic link) is built but needs Supabase.
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). The map and vendor list work immediately —
+no environment variables required.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Connecting Supabase (when ready)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Create a Supabase project.
+2. Run `supabase/migrations/0001_init.sql` in the SQL editor.
+3. Copy `.env.local.example` to `.env.local` and fill in `NEXT_PUBLIC_SUPABASE_URL` and
+   `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
+4. Restart the dev server. Auth and observation submission activate automatically.
 
-## Learn More
+## Stack
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js (App Router) · Tailwind CSS · Leaflet + OpenStreetMap tiles (no API key needed) ·
+Supabase (Postgres + Auth, optional until connected)

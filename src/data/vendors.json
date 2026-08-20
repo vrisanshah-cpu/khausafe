@@ -1,0 +1,52 @@
+[
+  {
+    "id": "badshah-pani-puri",
+    "name": "Badshah Pani Puri",
+    "lat": 18.9552,
+    "lng": 72.8107,
+    "area": "Girgaon Chowpatty",
+    "category": "chaat",
+    "certification_status": "clean_street_food_hub",
+    "source": "Manually curated from public reporting (LBB, Travenix) on well-known Girgaon Chowpatty stalls, Aug 2026. Certification reflects the area-level FSSAI Clean Street Food Hub designation (~30 stalls certified at Girgaon Chowpatty, Mar 2019) per FSSAI news release — not independently verified per-vendor. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
+  },
+  {
+    "id": "guptas-pav-bhaji",
+    "name": "Gupta's Pav Bhaji",
+    "lat": 18.9548,
+    "lng": 72.811,
+    "area": "Girgaon Chowpatty",
+    "category": "snacks",
+    "certification_status": "clean_street_food_hub",
+    "source": "Manually curated from public reporting (LBB) on well-known Girgaon Chowpatty stalls, Aug 2026. Certification reflects the area-level FSSAI Clean Street Food Hub designation (~30 stalls certified at Girgaon Chowpatty, Mar 2019) per FSSAI news release — not independently verified per-vendor. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
+  },
+  {
+    "id": "sagar-pav-bhaji-stall",
+    "name": "Sagar Pav Bhaji Stall",
+    "lat": 18.9545,
+    "lng": 72.8112,
+    "area": "Girgaon Chowpatty",
+    "category": "snacks",
+    "certification_status": "clean_street_food_hub",
+    "source": "Manually curated from public reporting (Crazy Masala Food) on well-known Girgaon Chowpatty stalls, Aug 2026. Certification reflects the area-level FSSAI Clean Street Food Hub designation (~30 stalls certified at Girgaon Chowpatty, Mar 2019) per FSSAI news release — not independently verified per-vendor. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
+  },
+  {
+    "id": "jai-jwaan-stall",
+    "name": "Jai Jwaan Stall",
+    "lat": 18.9542,
+    "lng": 72.8114,
+    "area": "Girgaon Chowpatty",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Crazy Masala Food) on well-known Girgaon Chowpatty stalls, Aug 2026. No confirmed individual certification record found yet — flagged for follow-up once a real FSSAI data source is confirmed. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
+  },
+  {
+    "id": "kapoor-punjabi-kulfi",
+    "name": "Kapoor Punjabi Kulfi",
+    "lat": 18.955,
+    "lng": 72.8104,
+    "area": "Girgaon Chowpatty",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public directory listing (Magicpin), Aug 2026. No confirmed individual certification record found yet — flagged for follow-up once a real FSSAI data source is confirmed. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
+  }
+]
