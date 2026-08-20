@@ -48,5 +48,65 @@
     "category": "sweets",
     "certification_status": "unknown",
     "source": "Manually curated from public directory listing (Magicpin), Aug 2026. No confirmed individual certification record found yet — flagged for follow-up once a real FSSAI data source is confirmed. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
+  },
+  {
+    "id": "ghanta-paanwala",
+    "name": "Ghanta Paanwala",
+    "lat": 19.2298,
+    "lng": 72.8563,
+    "area": "Khau Galli, Borivali West",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public travel/food write-ups (Tripoto, FabHotels) naming this as a landmark stall on Borivali's Khau Galli (S V Road, opposite Prabodhankar Thackeray Natyagruha), Aug 2026. No FSSAI or Clean Street Food Hub certification record found for this hub — Khau Galli, Pune (a different city) is reported as 'in the pipeline' for CSFH certification, not this one. Coordinates are an approximate manual placement on S V Road, pending on-site GPS verification."
+  },
+  {
+    "id": "lucky-sandwich-pizza-corner",
+    "name": "Lucky Sandwich & Pizza Corner",
+    "lat": 19.2297,
+    "lng": 72.8565,
+    "area": "Khau Galli, Borivali West",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public travel/food write-ups (Tripoto, FabHotels) on Borivali's Khau Galli, Aug 2026. No confirmed certification record found yet. Coordinates are an approximate manual placement on S V Road, pending on-site GPS verification."
+  },
+  {
+    "id": "sai-samarth-dosa-center",
+    "name": "Sai Samarth Dosa Center",
+    "lat": 19.2299,
+    "lng": 72.8566,
+    "area": "Khau Galli, Borivali West",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public travel/food write-ups (Tripoto, FabHotels) on Borivali's Khau Galli, Aug 2026. No confirmed certification record found yet. Coordinates are an approximate manual placement on S V Road, pending on-site GPS verification."
+  },
+  {
+    "id": "hari-om-juice-milkshake-centre",
+    "name": "Hari Om Juice & Milk Shake Centre",
+    "lat": 19.2296,
+    "lng": 72.8562,
+    "area": "Khau Galli, Borivali West",
+    "category": "juice",
+    "certification_status": "unknown",
+    "source": "Manually curated from public travel/food write-ups (Tripoto, FabHotels) on Borivali's Khau Galli, Aug 2026. No confirmed certification record found yet. Coordinates are an approximate manual placement on S V Road, pending on-site GPS verification."
+  },
+  {
+    "id": "shreejis-fusion-kitchen",
+    "name": "Shreeji's The Fusion Kitchen",
+    "lat": 19.23,
+    "lng": 72.8568,
+    "area": "Khau Galli, Borivali West",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public travel/food write-ups (mumbai77, Tripoto) describing this stall's fusion chaat items (Ice Kurkure Pani Puri, Pizza Punch) on Borivali's Khau Galli, Aug 2026. No confirmed certification record found yet. Coordinates are an approximate manual placement on S V Road, pending on-site GPS verification."
+  },
+  {
+    "id": "bipin-big-sandwich",
+    "name": "Bipin Big Sandwich",
+    "lat": 19.2295,
+    "lng": 72.8569,
+    "area": "Khau Galli, Borivali West",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public travel/food write-ups (Tripoto) on Borivali's Khau Galli, Aug 2026. No confirmed certification record found yet. Coordinates are an approximate manual placement on S V Road, pending on-site GPS verification."
   }
 ]

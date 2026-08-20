@@ -22,6 +22,26 @@ export interface Vendor {
   certification_status: CertificationStatus;
   /** Where this data point came from — sourcing is mixed for a while, so track it per vendor. */
   source: string;
+  /** Paid placement, set by an admin only — never inferred or auto-assigned. */
+  is_sponsored?: boolean;
+  /** Verified direct listing URL. If unset, the UI falls back to a labeled Zomato search link. */
+  zomato_url?: string | null;
+}
+
+export interface Review {
+  id: string;
+  vendor_id: string;
+  user_id: string;
+  rating: number;
+  comment: string;
+  status: "visible" | "hidden";
+  report_count: number;
+  created_at: string;
+}
+
+export interface ReviewSummary {
+  count: number;
+  average: number | null;
 }
 
 export interface ChecklistResponses {

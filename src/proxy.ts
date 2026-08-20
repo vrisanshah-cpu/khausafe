@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { isSupabaseConfigured, supabaseAnonKey, supabaseUrl } from "@/lib/supabase/env";
+import { isAdminEmail } from "@/lib/admin";
 
 export async function proxy(request: NextRequest) {
   const response = NextResponse.next({ request });
@@ -22,7 +23,15 @@ export async function proxy(request: NextRequest) {
   });
 
   // Refresh the auth session so server components always see a valid cookie.
-  await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  // Belt-and-suspenders: the admin API routes re-check this themselves, but
+  // bouncing early here avoids ever rendering the admin page for non-admins.
+  if (request.nextUrl.pathname.startsWith("/admin") && !isAdminEmail(user?.email)) {
+    return NextResponse.redirect(new URL(user ? "/" : "/login", request.url));
+  }
 
   return response;
 }
