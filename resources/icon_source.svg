@@ -1,0 +1,6 @@
+<svg width="1024" height="1024" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1024" height="1024" fill="#ea580c"/>
+  <circle cx="512" cy="512" r="330" fill="#ffffff" opacity="0.12"/>
+  <text x="512" y="470" font-family="Arial, Helvetica, sans-serif" font-size="300" font-weight="700" fill="#ffffff" text-anchor="middle">KS</text>
+  <text x="512" y="620" font-family="Arial, Helvetica, sans-serif" font-size="80" font-weight="600" fill="#ffffff" text-anchor="middle" opacity="0.9">KHAUSAFE</text>
+</svg>

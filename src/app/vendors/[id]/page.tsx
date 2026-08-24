@@ -7,6 +7,7 @@ import { getReviewsForVendor, summarizeReviews } from "@/lib/reviews";
 import { createClient } from "@/lib/supabase/server";
 import { CertificationBadge } from "@/components/CertificationBadge";
 import { ObservationForm } from "@/components/ObservationForm";
+import { ShareButton } from "@/components/ShareButton";
 import { ReviewForm } from "@/components/ReviewForm";
 import { ReviewsList } from "@/components/ReviewsList";
 import { ZomatoButton } from "@/components/ZomatoButton";
@@ -39,11 +40,14 @@ export default async function VendorDetailPage(props: PageProps<"/vendors/[id]">
             {vendor.area} &middot; {CATEGORY_LABELS[vendor.category]}
           </p>
         </div>
-        {vendor.is_sponsored && (
-          <span className="shrink-0 rounded-full bg-amber-100 px-2.5 py-1 text-xs font-semibold text-amber-800 border border-amber-300">
-            ★ Sponsored
-          </span>
-        )}
+        <div className="flex shrink-0 items-center gap-2">
+          {vendor.is_sponsored && (
+            <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-semibold text-amber-800 border border-amber-300">
+              ★ Sponsored
+            </span>
+          )}
+          <ShareButton title={vendor.name} path={`/vendors/${vendor.id}`} />
+        </div>
       </div>
 
       {reviewSummary.count > 0 && (

@@ -43,3 +43,12 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# android signing (see mobile/README.md section 2)
+android/keystore.properties
+*.keystore
+*.jks
+
+# ios signing artifacts
+ios/App/Pods
+ios/App/output

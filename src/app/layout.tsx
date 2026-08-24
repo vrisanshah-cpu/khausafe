@@ -4,6 +4,8 @@ import Link from "next/link";
 import "./globals.css";
 import { createClient } from "@/lib/supabase/server";
 import { isAdminEmail } from "@/lib/admin";
+import { NativeBootstrap } from "@/components/native/NativeBootstrap";
+import { OfflineOverlay } from "@/components/native/OfflineOverlay";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +34,8 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-white text-neutral-900">
+        <NativeBootstrap />
+        <OfflineOverlay />
         <header className="flex h-16 shrink-0 items-center justify-between border-b border-neutral-200 px-4">
           <Link href="/" className="flex items-center gap-2">
             <span className="text-lg font-bold text-orange-600">KhauSafe</span>
