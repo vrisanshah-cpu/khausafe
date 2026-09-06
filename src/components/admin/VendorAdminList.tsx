@@ -25,7 +25,7 @@ export function VendorAdminList({ vendors }: { vendors: Vendor[] }) {
   }
 
   return (
-    <ul className="divide-y divide-neutral-200 rounded-lg border border-neutral-200">
+    <ul className="card divide-y divide-neutral-100">
       {localVendors.map((vendor) => (
         <li key={vendor.id} className="flex flex-wrap items-center justify-between gap-2 p-3">
           <div>

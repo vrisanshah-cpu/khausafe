@@ -26,9 +26,14 @@ export function LoginForm() {
 
   if (status === "sent") {
     return (
-      <p className="text-sm text-emerald-700">
-        Check {email} for a sign-in link.
-      </p>
+      <div className="card flex flex-col items-center gap-2 p-6 text-center">
+        <span className="text-3xl" aria-hidden>
+          📬
+        </span>
+        <p className="text-sm text-neutral-700">
+          Check <span className="font-semibold">{email}</span> for a sign-in link.
+        </p>
+      </div>
     );
   }
 
@@ -40,13 +45,9 @@ export function LoginForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="you@example.com"
-        className="w-full rounded-md border border-neutral-300 px-3 py-2 text-sm"
+        className="field"
       />
-      <button
-        type="submit"
-        disabled={status === "sending"}
-        className="rounded-md bg-emerald-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-emerald-800 disabled:opacity-50"
-      >
+      <button type="submit" disabled={status === "sending"} className="btn-primary w-full">
         {status === "sending" ? "Sending…" : "Send sign-in link"}
       </button>
       {status === "error" && <p className="text-sm text-red-600">{errorMessage}</p>}

@@ -34,9 +34,9 @@ export function ReviewsList({ reviews, isSignedIn }: { reviews: Review[]; isSign
   }
 
   return (
-    <ul className="space-y-3">
+    <ul className="space-y-2.5">
       {reviews.map((review) => (
-        <li key={review.id} className="rounded-md border border-neutral-200 p-3">
+        <li key={review.id} className="rounded-xl bg-neutral-50 p-3">
           <div className="flex items-center justify-between gap-2">
             <StarRow rating={review.rating} />
             <span className="text-xs text-neutral-400">
@@ -52,7 +52,7 @@ export function ReviewsList({ reviews, isSignedIn }: { reviews: Review[]; isSign
                 type="button"
                 onClick={() => handleReport(review.id)}
                 disabled={busy === review.id}
-                className="text-xs text-neutral-400 hover:text-red-600 disabled:opacity-50"
+                className="text-xs font-medium text-neutral-400 hover:text-red-600 disabled:opacity-50"
               >
                 Report
               </button>

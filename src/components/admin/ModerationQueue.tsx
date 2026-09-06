@@ -27,7 +27,7 @@ export function ModerationQueue({ reviews, vendors }: { reviews: Review[]; vendo
   return (
     <ul className="space-y-2">
       {localReviews.map((review) => (
-        <li key={review.id} className="rounded-md border border-red-200 bg-red-50 p-3">
+        <li key={review.id} className="rounded-xl border border-red-200 bg-red-50 p-3">
           <p className="text-xs font-medium text-neutral-500">
             {vendorName(review.vendor_id)} &middot; reported {review.report_count}×
           </p>

@@ -12,14 +12,13 @@ export function ZomatoButton({ vendor }: { vendor: Vendor }) {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1.5 rounded-md bg-red-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-red-700"
+        className="flex w-full items-center justify-center gap-1.5 rounded-full bg-red-600 py-2.5 text-sm font-semibold text-white shadow-sm transition-transform active:scale-[0.98]"
       >
         {verified ? "Order on Zomato" : "Search on Zomato"} <span aria-hidden>↗</span>
       </a>
       {!verified && (
-        <p className="mt-1 text-xs text-neutral-400">
-          No confirmed Zomato listing for this stall yet — this opens a Zomato search instead.
-          Many informal street stalls aren&apos;t listed on delivery apps at all.
+        <p className="mt-1.5 truncate text-center text-[11px] text-neutral-400">
+          No confirmed listing — opens a Zomato search instead.
         </p>
       )}
     </div>

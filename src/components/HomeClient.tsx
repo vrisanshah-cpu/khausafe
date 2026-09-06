@@ -29,7 +29,7 @@ export function HomeClient({
   const [filters, setFilters] = useState<Filters>({
     area: "all",
     category: "all",
-    certification: "all",
+    certifiedOnly: false,
   });
   const [query, setQuery] = useState("");
   const [mobileView, setMobileView] = useState<"map" | "list">("map");
@@ -67,7 +67,9 @@ export function HomeClient({
       (v) =>
         (filters.area === "all" || v.area === filters.area) &&
         (filters.category === "all" || v.category === filters.category) &&
-        (filters.certification === "all" || v.certification_status === filters.certification) &&
+        (!filters.certifiedOnly ||
+          v.certification_status === "clean_street_food_hub" ||
+          v.certification_status === "fssai_hygiene_rated") &&
         (q === "" || v.name.toLowerCase().includes(q) || v.area.toLowerCase().includes(q))
     );
   }, [vendors, filters, query]);
@@ -84,51 +86,72 @@ export function HomeClient({
     return [...filtered].sort((a, b) => (distances.get(a.id) ?? 0) - (distances.get(b.id) ?? 0));
   }, [filtered, distances]);
 
+  const showTopPicks =
+    query === "" && filters.area === "all" && filters.category === "all" && !filters.certifiedOnly;
+
   return (
-    <div className="flex h-[calc(100vh-4rem)] flex-col md:flex-row">
-      <aside className="flex w-full flex-col border-r border-neutral-200 md:h-full md:w-96">
-        <FilterBar
-          areas={areas}
-          filters={filters}
-          onChange={setFilters}
-          query={query}
-          onQueryChange={setQuery}
-          onLocate={handleLocate}
-          locating={locating}
-          locationError={locationError}
-        />
-
-        {query === "" && filters.area === "all" && filters.category === "all" && filters.certification === "all" && (
-          <TopPicksStrip vendors={vendors} ratings={ratings} />
-        )}
-
-        <div className="flex border-b border-neutral-200 md:hidden">
-          <button
-            type="button"
-            onClick={() => setMobileView("map")}
-            className={`flex-1 py-2 text-sm font-medium ${
-              mobileView === "map" ? "border-b-2 border-orange-600 text-orange-700" : "text-neutral-500"
-            }`}
-          >
-            Map
-          </button>
-          <button
-            type="button"
-            onClick={() => setMobileView("list")}
-            className={`flex-1 py-2 text-sm font-medium ${
-              mobileView === "list" ? "border-b-2 border-orange-600 text-orange-700" : "text-neutral-500"
-            }`}
-          >
-            List
-          </button>
+    <div className="flex h-[calc(100vh-3.5rem-var(--safe-top))] flex-col md:flex-row">
+      {/* Desktop sidebar — always-visible list alongside the map */}
+      <aside className="hidden w-96 shrink-0 flex-col border-r border-neutral-200 md:flex">
+        <div className="border-b border-neutral-200 px-3 pt-3">
+          <FilterBar
+            areas={areas}
+            filters={filters}
+            onChange={setFilters}
+            query={query}
+            onQueryChange={setQuery}
+            onLocate={handleLocate}
+            locating={locating}
+            locationError={locationError}
+          />
         </div>
-
-        <div className={mobileView === "list" ? "flex-1 overflow-y-auto md:block" : "hidden flex-1 overflow-y-auto md:block"}>
+        {showTopPicks && <TopPicksStrip vendors={vendors} ratings={ratings} />}
+        <div className="flex-1 overflow-y-auto">
           <VendorList vendors={sorted} distances={distances} ratings={ratings} />
         </div>
       </aside>
-      <main className={mobileView === "map" ? "h-full flex-1" : "hidden flex-1 md:block"}>
+
+      {/* Mobile — full-bleed map with a floating search bar and a peeking bottom sheet */}
+      <main className="relative h-full flex-1 overflow-hidden">
         <MapView vendors={sorted} userLocation={userLocation} />
+
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-10 p-3 md:hidden">
+          <div className="pointer-events-auto rounded-2xl bg-white/95 shadow-[var(--shadow-float)] backdrop-blur-sm">
+            <FilterBar
+              areas={areas}
+              filters={filters}
+              onChange={setFilters}
+              query={query}
+              onQueryChange={setQuery}
+              onLocate={handleLocate}
+              locating={locating}
+              locationError={locationError}
+            />
+          </div>
+        </div>
+
+        <div
+          className={`absolute inset-x-0 bottom-0 z-20 flex flex-col rounded-t-2xl bg-white shadow-[var(--shadow-float)] transition-transform duration-300 ease-out md:hidden ${
+            mobileView === "list" ? "translate-y-0" : "translate-y-[calc(100%-4.5rem)]"
+          }`}
+          style={{ maxHeight: "70vh", paddingBottom: "var(--safe-bottom)" }}
+        >
+          <button
+            type="button"
+            onClick={() => setMobileView(mobileView === "list" ? "map" : "list")}
+            className="flex shrink-0 flex-col items-center gap-1.5 pt-2.5 pb-1 active:opacity-70"
+            aria-label={mobileView === "list" ? "Collapse stall list" : "Show stall list"}
+          >
+            <span className="h-1.5 w-10 rounded-full bg-neutral-300" />
+            <span className="text-xs font-medium text-neutral-500">
+              {mobileView === "list" ? "Hide list" : `${sorted.length} stall${sorted.length === 1 ? "" : "s"} nearby`}
+            </span>
+          </button>
+          <div className="flex-1 overflow-y-auto overscroll-contain">
+            {showTopPicks && <TopPicksStrip vendors={vendors} ratings={ratings} />}
+            <VendorList vendors={sorted} distances={distances} ratings={ratings} />
+          </div>
+        </div>
       </main>
     </div>
   );

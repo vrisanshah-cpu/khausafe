@@ -1,12 +1,21 @@
 "use client";
 
-import { CATEGORY_LABELS, CERTIFICATION_LABELS, type CertificationStatus, type VendorCategory } from "@/lib/types";
+import { CATEGORY_LABELS, type VendorCategory } from "@/lib/types";
 
 export interface Filters {
   area: string;
   category: VendorCategory | "all";
-  certification: CertificationStatus | "all";
+  certifiedOnly: boolean;
 }
+
+const CATEGORY_EMOJI: Record<VendorCategory, string> = {
+  chaat: "🌶️",
+  juice: "🥤",
+  snacks: "🍟",
+  sweets: "🍬",
+  beverages: "☕",
+  other: "🍴",
+};
 
 export function FilterBar({
   areas,
@@ -28,10 +37,10 @@ export function FilterBar({
   locationError: string | null;
 }) {
   return (
-    <div className="border-b border-neutral-200 bg-white">
-      <div className="flex items-center gap-2 p-3 pb-2">
+    <div className="py-3">
+      <div className="flex items-center gap-2 px-3">
         <div className="relative flex-1">
-          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400">
+          <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400">
             🔍
           </span>
           <input
@@ -39,7 +48,7 @@ export function FilterBar({
             value={query}
             onChange={(e) => onQueryChange(e.target.value)}
             placeholder="Search stalls or areas…"
-            className="w-full rounded-full border border-neutral-300 bg-neutral-50 py-2 pl-9 pr-3 text-sm focus:border-orange-400 focus:outline-none focus:ring-1 focus:ring-orange-400"
+            className="field !rounded-full !py-2 pl-9"
           />
         </div>
         <button
@@ -47,58 +56,68 @@ export function FilterBar({
           onClick={onLocate}
           disabled={locating}
           title="Use my location"
-          className="flex shrink-0 items-center gap-1 rounded-full border border-orange-300 bg-orange-50 px-3 py-2 text-sm font-medium text-orange-700 hover:bg-orange-100 disabled:opacity-50"
+          aria-label="Use my location"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-orange-200 bg-orange-50 text-base text-orange-700 transition-colors active:bg-orange-100 disabled:opacity-50"
         >
-          {locating ? "…" : "📍"}
+          {locating ? (
+            <span className="h-4 w-4 animate-spin rounded-full border-2 border-orange-300 border-t-orange-600" />
+          ) : (
+            "📍"
+          )}
         </button>
       </div>
 
-      {locationError && (
-        <p className="px-3 pb-1 text-xs text-red-600">{locationError}</p>
-      )}
+      {locationError && <p className="px-3 pt-1.5 text-xs text-red-600">{locationError}</p>}
 
-      <div className="flex flex-wrap gap-2 px-3 pb-3">
-        <select
-          value={filters.area}
-          onChange={(e) => onChange({ ...filters, area: e.target.value })}
-          className="rounded-full border border-neutral-300 bg-white px-3 py-1.5 text-xs font-medium text-neutral-700"
+      <div className="mt-2.5 flex gap-2 overflow-x-auto px-3 pb-0.5 scrollbar-none">
+        <button
+          type="button"
+          onClick={() => onChange({ ...filters, certifiedOnly: !filters.certifiedOnly })}
+          className={`chip ${filters.certifiedOnly ? "border-emerald-600 bg-emerald-600 text-white" : "chip-inactive"}`}
         >
-          <option value="all">All areas</option>
-          {areas.map((area) => (
-            <option key={area} value={area}>
-              {area}
-            </option>
-          ))}
-        </select>
-
-        <select
-          value={filters.category}
-          onChange={(e) => onChange({ ...filters, category: e.target.value as Filters["category"] })}
-          className="rounded-full border border-neutral-300 bg-white px-3 py-1.5 text-xs font-medium text-neutral-700"
+          ✓ Certified only
+        </button>
+        <span className="my-auto h-5 w-px shrink-0 bg-neutral-200" aria-hidden />
+        <button
+          type="button"
+          onClick={() => onChange({ ...filters, category: "all" })}
+          className={`chip ${filters.category === "all" ? "chip-active" : "chip-inactive"}`}
         >
-          <option value="all">All categories</option>
-          {Object.entries(CATEGORY_LABELS).map(([value, label]) => (
-            <option key={value} value={value}>
-              {label}
-            </option>
-          ))}
-        </select>
-
-        <select
-          value={filters.certification}
-          onChange={(e) =>
-            onChange({ ...filters, certification: e.target.value as Filters["certification"] })
-          }
-          className="rounded-full border border-neutral-300 bg-white px-3 py-1.5 text-xs font-medium text-neutral-700"
-        >
-          <option value="all">All certification statuses</option>
-          {Object.entries(CERTIFICATION_LABELS).map(([value, label]) => (
-            <option key={value} value={value}>
-              {label}
-            </option>
-          ))}
-        </select>
+          All food
+        </button>
+        {Object.entries(CATEGORY_LABELS).map(([value, label]) => (
+          <button
+            key={value}
+            type="button"
+            onClick={() => onChange({ ...filters, category: value as VendorCategory })}
+            className={`chip ${filters.category === value ? "chip-active" : "chip-inactive"}`}
+          >
+            <span aria-hidden>{CATEGORY_EMOJI[value as VendorCategory]}</span> {label}
+          </button>
+        ))}
       </div>
+
+      {areas.length > 1 && (
+        <div className="mt-2 flex gap-2 overflow-x-auto px-3 pb-0.5 scrollbar-none">
+          <button
+            type="button"
+            onClick={() => onChange({ ...filters, area: "all" })}
+            className={`chip ${filters.area === "all" ? "chip-active" : "chip-inactive"} !py-1.5 text-xs`}
+          >
+            All areas
+          </button>
+          {areas.map((area) => (
+            <button
+              key={area}
+              type="button"
+              onClick={() => onChange({ ...filters, area })}
+              className={`chip ${filters.area === area ? "chip-active" : "chip-inactive"} !py-1.5 text-xs`}
+            >
+              📍 {area}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

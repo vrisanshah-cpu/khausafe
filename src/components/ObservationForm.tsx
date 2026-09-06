@@ -86,14 +86,17 @@ export function ObservationForm({
   return (
     <form onSubmit={handleSubmit} className="space-y-3">
       {CHECKLIST_ITEMS.map((item) => (
-        <label key={item.key} className="flex items-center gap-2 text-sm text-neutral-800">
+        <label
+          key={item.key}
+          className="flex min-h-11 items-center gap-2.5 rounded-xl bg-neutral-50 px-3 py-2 text-sm text-neutral-800"
+        >
           <input
             type="checkbox"
             checked={checklist[item.key]}
             onChange={(e) =>
               setChecklist((prev) => ({ ...prev, [item.key]: e.target.checked }))
             }
-            className="h-4 w-4 rounded border-neutral-300 text-emerald-600"
+            className="h-[18px] w-[18px] shrink-0 rounded border-neutral-300 text-emerald-600 focus:ring-emerald-500"
           />
           {item.label}
         </label>
@@ -104,14 +107,10 @@ export function ObservationForm({
         onChange={(e) => setNotes(e.target.value)}
         placeholder="Anything else worth noting? (optional)"
         rows={2}
-        className="w-full rounded-md border border-neutral-300 px-2 py-1.5 text-sm"
+        className="field"
       />
 
-      <button
-        type="submit"
-        disabled={status === "submitting"}
-        className="rounded-md bg-emerald-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-emerald-800 disabled:opacity-50"
-      >
+      <button type="submit" disabled={status === "submitting"} className="btn-primary bg-emerald-600 hover:bg-emerald-700">
         {status === "submitting" ? "Submitting…" : "Submit observation"}
       </button>
 

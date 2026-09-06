@@ -37,18 +37,18 @@ export function TopPicksStrip({
   if (picks.length === 0) return null;
 
   return (
-    <div className="border-b border-neutral-200 bg-gradient-to-r from-orange-50 to-amber-50 px-3 py-3">
-      <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-orange-800">
-        Top picks
+    <div className="bg-gradient-to-b from-orange-50/70 to-transparent px-3 pt-3 pb-1">
+      <h2 className="mb-2 flex items-center gap-1 text-xs font-bold uppercase tracking-wide text-orange-700">
+        🔥 Top picks
       </h2>
-      <div className="flex gap-2 overflow-x-auto pb-1">
+      <div className="flex gap-2.5 overflow-x-auto pb-2 scrollbar-none">
         {picks.map((vendor) => {
           const rating = ratings.get(vendor.id);
           return (
             <Link
               key={vendor.id}
               href={`/vendors/${vendor.id}`}
-              className="flex w-32 shrink-0 flex-col rounded-lg border border-orange-200 bg-white p-2.5 shadow-sm hover:shadow"
+              className="card flex w-32 shrink-0 flex-col p-2.5 transition-transform duration-150 active:scale-[0.97] motion-safe:hover:-translate-y-0.5"
             >
               <span className="text-lg">{CATEGORY_EMOJI[vendor.category]}</span>
               <span className="mt-1 line-clamp-2 text-xs font-medium text-neutral-900">

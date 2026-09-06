@@ -108,5 +108,135 @@
     "category": "snacks",
     "certification_status": "unknown",
     "source": "Manually curated from public travel/food write-ups (Tripoto) on Borivali's Khau Galli, Aug 2026. No confirmed certification record found yet. Coordinates are an approximate manual placement on S V Road, pending on-site GPS verification."
+  },
+  {
+    "id": "kanhaiyalal-durgaprasad-dixit",
+    "name": "Pt Kanhaiyalal Durgaprasad Dixit",
+    "lat": 28.6568,
+    "lng": 77.2312,
+    "area": "Paranthe Wali Gali, Chandni Chowk, Delhi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify, Icytales) on Paranthe Wali Gali, Chandni Chowk — one of only three parantha shops (of ~20 in the 1960s) still operating, established 1875, known for rabri paranthas, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the lane, pending on-site GPS verification."
+  },
+  {
+    "id": "dayanand-shivcharan-paranthewale",
+    "name": "Pt Dayanand Shivcharan Paranthewale",
+    "lat": 28.6567,
+    "lng": 77.2314,
+    "area": "Paranthe Wali Gali, Chandni Chowk, Delhi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify, Icytales) on Paranthe Wali Gali, Chandni Chowk — established 1882, one of the three original parantha shops still running today, Sep 2026. No confirmed certification record found. Coordinates are an approximate manual placement in the lane, pending on-site GPS verification."
+  },
+  {
+    "id": "baburam-devidayal-paranthewale",
+    "name": "Babu Ram Devidayal Paranthewale",
+    "lat": 28.6566,
+    "lng": 77.2313,
+    "area": "Paranthe Wali Gali, Chandni Chowk, Delhi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify, Icytales) on Paranthe Wali Gali, Chandni Chowk — established 1886, known for papad/meva/karela parantha varieties, Sep 2026. No confirmed certification record found. Coordinates are an approximate manual placement in the lane, pending on-site GPS verification."
+  },
+  {
+    "id": "joshi-dahi-bada-house",
+    "name": "Joshi Dahi Bada House",
+    "lat": 22.717,
+    "lng": 75.858,
+    "area": "Sarafa Bazaar, Indore",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (National Geographic, Wanderlog) on Sarafa Bazaar's night food market — third-generation dahi vada stall run by Omprakash Joshi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the market, pending on-site GPS verification."
+  },
+  {
+    "id": "johny-hot-dog",
+    "name": "Johny Hot Dog",
+    "lat": 22.7168,
+    "lng": 75.8578,
+    "area": "Sarafa Bazaar, Indore",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Outlook Traveller, Wanderlog) on Sarafa Bazaar — known for Egg Benjo and Mutton Hot Dog, won UberEats APAC Restaurant Partners Award 2019 for most-ordered dish, Sep 2026. No confirmed certification record found. Coordinates are an approximate manual placement in the market, pending on-site GPS verification."
+  },
+  {
+    "id": "sri-sairams",
+    "name": "Sri Sairam's",
+    "lat": 12.9433,
+    "lng": 77.5722,
+    "area": "VV Puram Food Street, Bangalore",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, Bakingo) on VV Puram Food Street (Thindi Beedi), Basavanagudi — known for jalebi and Mysore pak, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement on the street, pending on-site GPS verification."
+  },
+  {
+    "id": "shree-vasavi-mane-thindi",
+    "name": "Shree Vasavi Mane Thindi",
+    "lat": 12.9431,
+    "lng": 77.572,
+    "area": "VV Puram Food Street, Bangalore",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, Bakingo) on VV Puram Food Street — known for paddu, Sep 2026. No confirmed certification record found. Coordinates are an approximate manual placement on the street, pending on-site GPS verification."
+  },
+  {
+    "id": "sri-swamy-bajji-centre",
+    "name": "Sri Swamy Bajji Centre",
+    "lat": 12.9434,
+    "lng": 77.5719,
+    "area": "VV Puram Food Street, Bangalore",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, Bakingo) on VV Puram Food Street — known for spicy capsicum bajjis, Sep 2026. No confirmed certification record found. Coordinates are an approximate manual placement on the street, pending on-site GPS verification."
+  },
+  {
+    "id": "sri-ganesh-rajasthan-kulfi",
+    "name": "Sri Ganesh Rajasthan Kulfi",
+    "lat": 12.943,
+    "lng": 77.5723,
+    "area": "VV Puram Food Street, Bangalore",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, Bakingo) on VV Puram Food Street — chilled kulfi and hot badam milk, Sep 2026. No confirmed certification record found. Coordinates are an approximate manual placement on the street, pending on-site GPS verification."
+  },
+  {
+    "id": "bastirams-kulfi",
+    "name": "Bastiram's Kulfi",
+    "lat": 23.0247,
+    "lng": 72.5874,
+    "area": "Manek Chowk, Ahmedabad",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Outlook Traveller) on Manek Chowk's night food market — running since 1947, stickless kulfi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the market, pending on-site GPS verification."
+  },
+  {
+    "id": "asharfi-kulfiwala",
+    "name": "Asharfi Kulfiwala",
+    "lat": 23.0245,
+    "lng": 72.5872,
+    "area": "Manek Chowk, Ahmedabad",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Outlook Traveller) on Manek Chowk — reputed to be the first food stall to start here, Sep 2026. No confirmed certification record found. Coordinates are an approximate manual placement in the market, pending on-site GPS verification."
+  },
+  {
+    "id": "kamlesh-patel-paan",
+    "name": "Kamlesh Patel's Paan",
+    "lat": 23.0246,
+    "lng": 72.5875,
+    "area": "Manek Chowk, Ahmedabad",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Outlook Traveller) on Manek Chowk — family paan recipe since 1967, Sep 2026. No confirmed certification record found. Coordinates are an approximate manual placement in the market, pending on-site GPS verification."
+  },
+  {
+    "id": "imtiaz-sheikh-pizza",
+    "name": "Imtiaz Sheikh's Pizza",
+    "lat": 23.0244,
+    "lng": 72.5871,
+    "area": "Manek Chowk, Ahmedabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Outlook Traveller) on Manek Chowk — known for chocolate-and-pineapple street pizza, Sep 2026. No confirmed certification record found. Coordinates are an approximate manual placement in the market, pending on-site GPS verification."
   }
 ]

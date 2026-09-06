@@ -36,21 +36,27 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex min-h-full flex-col bg-white text-neutral-900">
         <NativeBootstrap />
         <OfflineOverlay />
-        <header className="flex h-16 shrink-0 items-center justify-between border-b border-neutral-200 px-4">
+        <header
+          className="sticky top-0 z-40 flex h-14 shrink-0 items-center justify-between border-b border-neutral-200/80 bg-white/85 px-4 backdrop-blur-md"
+          style={{ paddingTop: "var(--safe-top)", height: "calc(3.5rem + var(--safe-top))" }}
+        >
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-lg font-bold text-orange-600">KhauSafe</span>
-            <span className="hidden text-xs text-neutral-500 sm:inline">
-              hygiene-rated street food, on a map
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-orange-600 text-sm shadow-sm">
+              🍢
+            </span>
+            <span className="text-base font-bold tracking-tight text-neutral-900">KhauSafe</span>
+            <span className="hidden text-xs text-neutral-400 sm:inline">
+              hygiene-rated street food
             </span>
           </Link>
-          <div className="flex items-center gap-3 text-sm">
+          <div className="flex items-center gap-4 text-sm">
             {admin && (
-              <Link href="/admin" className="font-medium text-neutral-600 hover:text-orange-700">
+              <Link href="/admin" className="font-medium text-neutral-500 hover:text-orange-700">
                 Admin
               </Link>
             )}
             {!user && (
-              <Link href="/login" className="font-medium text-orange-700 hover:underline">
+              <Link href="/login" className="btn-primary !px-3.5 !py-1.5 text-xs">
                 Sign in
               </Link>
             )}

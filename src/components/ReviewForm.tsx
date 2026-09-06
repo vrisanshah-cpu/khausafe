@@ -74,7 +74,7 @@ export function ReviewForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-3">
-      <div className="flex gap-1" onMouseLeave={() => setHoverRating(0)}>
+      <div className="flex gap-0.5" onMouseLeave={() => setHoverRating(0)}>
         {[1, 2, 3, 4, 5].map((n) => (
           <button
             key={n}
@@ -82,7 +82,7 @@ export function ReviewForm({
             onClick={() => setRating(n)}
             onMouseEnter={() => setHoverRating(n)}
             aria-label={`${n} star${n === 1 ? "" : "s"}`}
-            className="text-2xl leading-none"
+            className="flex h-10 w-10 items-center justify-center text-2xl leading-none transition-transform active:scale-90"
           >
             <span
               className={
@@ -102,14 +102,10 @@ export function ReviewForm({
         rows={2}
         maxLength={500}
         required
-        className="w-full rounded-md border border-neutral-300 px-2 py-1.5 text-sm"
+        className="field"
       />
 
-      <button
-        type="submit"
-        disabled={status === "submitting"}
-        className="rounded-md bg-orange-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-orange-700 disabled:opacity-50"
-      >
+      <button type="submit" disabled={status === "submitting"} className="btn-primary">
         {status === "submitting" ? "Posting…" : "Post review"}
       </button>
 

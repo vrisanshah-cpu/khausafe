@@ -70,14 +70,14 @@ export function AddVendorForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="grid gap-3 rounded-lg border border-neutral-200 p-4 sm:grid-cols-2">
+    <form onSubmit={handleSubmit} className="card grid gap-3 p-4 sm:grid-cols-2">
       <label className="text-sm sm:col-span-2">
         Name
         <input
           required
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="mt-1 w-full rounded-md border border-neutral-300 px-2 py-1.5 text-sm"
+          className="field mt-1"
         />
       </label>
 
@@ -89,7 +89,7 @@ export function AddVendorForm() {
           step="any"
           value={lat}
           onChange={(e) => setLat(e.target.value)}
-          className="mt-1 w-full rounded-md border border-neutral-300 px-2 py-1.5 text-sm"
+          className="field mt-1"
         />
       </label>
 
@@ -101,7 +101,7 @@ export function AddVendorForm() {
           step="any"
           value={lng}
           onChange={(e) => setLng(e.target.value)}
-          className="mt-1 w-full rounded-md border border-neutral-300 px-2 py-1.5 text-sm"
+          className="field mt-1"
         />
       </label>
 
@@ -111,7 +111,7 @@ export function AddVendorForm() {
           required
           value={area}
           onChange={(e) => setArea(e.target.value)}
-          className="mt-1 w-full rounded-md border border-neutral-300 px-2 py-1.5 text-sm"
+          className="field mt-1"
         />
       </label>
 
@@ -120,7 +120,7 @@ export function AddVendorForm() {
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value as VendorCategory)}
-          className="mt-1 w-full rounded-md border border-neutral-300 px-2 py-1.5 text-sm"
+          className="field mt-1"
         >
           {Object.entries(CATEGORY_LABELS).map(([value, label]) => (
             <option key={value} value={value}>
@@ -135,7 +135,7 @@ export function AddVendorForm() {
         <select
           value={certification}
           onChange={(e) => setCertification(e.target.value as CertificationStatus)}
-          className="mt-1 w-full rounded-md border border-neutral-300 px-2 py-1.5 text-sm"
+          className="field mt-1"
         >
           {Object.entries(CERTIFICATION_LABELS).map(([value, label]) => (
             <option key={value} value={value}>
@@ -152,7 +152,7 @@ export function AddVendorForm() {
           value={source}
           onChange={(e) => setSource(e.target.value)}
           placeholder="e.g. On-site visit, 20 Aug 2026"
-          className="mt-1 w-full rounded-md border border-neutral-300 px-2 py-1.5 text-sm"
+          className="field mt-1"
         />
       </label>
 
@@ -163,7 +163,7 @@ export function AddVendorForm() {
           value={zomatoUrl}
           onChange={(e) => setZomatoUrl(e.target.value)}
           placeholder="https://www.zomato.com/mumbai/..."
-          className="mt-1 w-full rounded-md border border-neutral-300 px-2 py-1.5 text-sm"
+          className="field mt-1"
         />
       </label>
 
@@ -181,7 +181,7 @@ export function AddVendorForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="rounded-md bg-orange-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-orange-700 disabled:opacity-50"
+          className="btn-primary"
         >
           {status === "submitting" ? "Adding…" : "Add stall"}
         </button>

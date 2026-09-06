@@ -135,18 +135,20 @@ export function MapView({
       {vendors.map((vendor) => (
         <Marker key={vendor.id} position={[vendor.lat, vendor.lng]} icon={markerIcon(vendor)}>
           <Popup>
-            <div className="min-w-[180px] space-y-1.5">
+            <div className="min-w-[190px] space-y-1.5">
               {vendor.is_sponsored && (
                 <p className="text-[10px] font-semibold uppercase tracking-wide text-amber-600">
                   ★ Sponsored
                 </p>
               )}
-              <p className="font-semibold text-neutral-900">{vendor.name}</p>
+              <p className="flex items-center gap-1.5 font-semibold text-neutral-900">
+                <span aria-hidden>{CATEGORY_STYLE[vendor.category].emoji}</span> {vendor.name}
+              </p>
               <p className="text-xs text-neutral-500">{vendor.area}</p>
               <CertificationBadge status={vendor.certification_status} />
               <Link
                 href={`/vendors/${vendor.id}`}
-                className="block pt-1 text-sm font-medium text-orange-700 hover:underline"
+                className="block pt-1 text-sm font-semibold text-orange-700 hover:underline"
               >
                 View details →
               </Link>
