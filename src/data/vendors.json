@@ -238,5 +238,2265 @@
     "category": "snacks",
     "certification_status": "unknown",
     "source": "Manually curated from public reporting (Outlook Traveller) on Manek Chowk — known for chocolate-and-pineapple street pizza, Sep 2026. No confirmed certification record found. Coordinates are an approximate manual placement in the market, pending on-site GPS verification."
+  },
+  {
+    "id": "nimrah-cafe-bakery",
+    "name": "Nimrah Cafe & Bakery",
+    "lat": 17.3621,
+    "lng": 78.4744,
+    "area": "Ghanzi Bazaar, Charminar, Hyderabad",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Curly Tales, Outlook Traveller, Tripadvisor) on Ghanzi Bazaar near Charminar — Nimrah Cafe & Bakery, open since 1993, is renowned for its Irani chai and Osmania biscuits, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "hotel-shadab",
+    "name": "Hotel Shadab",
+    "lat": 17.3612,
+    "lng": 78.4753,
+    "area": "Charminar, Hyderabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp, FabHotels) on Charminar Old City — Hotel Shadab, established 1990, is known for kebabs, biryani and its signature nihari, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shah-ghouse-cafe",
+    "name": "Shah Ghouse Cafe",
+    "lat": 17.3695,
+    "lng": 78.4735,
+    "area": "Shah Ali Banda, Hyderabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify, Slurrp) on Shah Ali Banda — Shah Ghouse Cafe is synonymous with Hyderabadi Haleem across the city, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "pista-house-charminar",
+    "name": "Pista House",
+    "lat": 17.3619,
+    "lng": 78.4751,
+    "area": "Charminar, Hyderabad",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (FabHotels, Slurrp) on Charminar — the Pista House outlet here is a crowd favorite for Haleem and Hyderabadi sweets, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "govind-ki-bandi",
+    "name": "Govind Ki Bandi",
+    "lat": 17.3609,
+    "lng": 78.4743,
+    "area": "Charminar, Hyderabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp, FabHotels) on Charminar — Govind Ki Bandi is a street stall famous for dosa and idli, drawing queues most days, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "cafe-555",
+    "name": "Cafe 555",
+    "lat": 17.4055,
+    "lng": 78.4494,
+    "area": "Masab Tank, Hyderabad",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Curly Tales) on Masab Tank — Cafe 555, a 50-year-old Irani cafe, is known for its Mutton Haleem and Irani chai, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "the-grand-hotel-irani-cafe",
+    "name": "The Grand Hotel",
+    "lat": 17.3838,
+    "lng": 78.4799,
+    "area": "Troop Bazaar, Koti, Hyderabad",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify) on Troop Bazaar, Koti — The Grand Hotel is the oldest running Irani cafe and restaurant in Hyderabad, operating since 1935, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "cafe-bahar",
+    "name": "Cafe Bahar",
+    "lat": 17.4006,
+    "lng": 78.4753,
+    "area": "Basheerbagh, Hyderabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Curly Tales, LBB, Wikipedia) on Basheerbagh — Cafe Bahar has served its cult-favorite Hyderabadi biryani since 1973, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "alpha-hotel-secunderabad",
+    "name": "Alpha Hotel",
+    "lat": 17.4405,
+    "lng": 78.4989,
+    "area": "Secunderabad, Hyderabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (forum4travel, TravelTriangle) on Secunderabad railway station area — Alpha Hotel is a popular, pocket-friendly all-day street food spot known for biryani, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "farasha-cafe",
+    "name": "Farasha Cafe",
+    "lat": 17.3599,
+    "lng": 78.4741,
+    "area": "Near Mecca Masjid, Charminar, Hyderabad",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify) on the Mecca Museum area near Charminar — Farasha Irani Cafe is listed among Hyderabad's popular Irani cafe destinations, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sonus-kebabs",
+    "name": "Sonu's Kebabs",
+    "lat": 17.3623,
+    "lng": 78.4739,
+    "area": "Charminar, Hyderabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp, FabHotels) on Charminar — Sonu's Kebabs is a street stall known for malai paya, pattar ghosht and chicken sevaye, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "rajasthani-jalebi-namkeen",
+    "name": "Rajasthani Jalebi and Namkeens",
+    "lat": 17.3614,
+    "lng": 78.4755,
+    "area": "Charminar, Hyderabad",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp) on Charminar — one of the oldest jalebi and namkeen shops in the historic Charminar area, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "matwale-doodh-ghar",
+    "name": "Matwale Doodh Ghar",
+    "lat": 17.3617,
+    "lng": 78.4738,
+    "area": "Charminar, Hyderabad",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp, FabHotels) on Charminar — Matwale Doodh Ghar is a small milk-based sweets and drinks shop especially known for its Falooda, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ratna-cafe-mylapore",
+    "name": "Ratna Cafe",
+    "lat": 13.0341,
+    "lng": 80.2623,
+    "area": "Mylapore, Chennai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripadvisor, District.in) on Mylapore near Kapaleeshwarar Temple — Ratna Cafe, Chennai's oldest vegetarian chain (est. 1948), is celebrated for its idli-sambar, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "vishnus-pani-puri",
+    "name": "Vishnu's Pani Puri",
+    "lat": 13.0925,
+    "lng": 80.2831,
+    "area": "Mint Street, Sowcarpet, Chennai",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Mint Street, Sowcarpet — Vishnu's Pani Puri has been serving the stretch's signature pani puri for more than 40 years, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "chotu-motu",
+    "name": "Chotu Motu",
+    "lat": 13.0933,
+    "lng": 80.2822,
+    "area": "Mint Street, Sowcarpet, Chennai",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Mint Street, Sowcarpet — Chotu Motu is a well-known chaat stall on this famous street food strip, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kakada-ramprasad",
+    "name": "Kakada Ramprasad",
+    "lat": 13.0928,
+    "lng": 80.2819,
+    "area": "Sowcarpet, Chennai",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, Chennaites) on Sowcarpet — Kakada Ramprasad, established 1958, is famous for its Aloo Tikki Chaat and Jalebis, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "mansukhs-sweets-snacks",
+    "name": "Mansukh's Sweets and Snacks",
+    "lat": 13.0935,
+    "lng": 80.283,
+    "area": "Sowcarpet, Chennai",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Sowcarpet — Mansukh's Sweets and Snacks, a Gujarati family shop started in 1947, is known for malpuvas, matka kulfi, ghee jalebi and Mysorepak, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ajab-mithai-ghar",
+    "name": "Ajab Mithai Ghar",
+    "lat": 13.0922,
+    "lng": 80.2825,
+    "area": "Sowcarpet, Chennai",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Sowcarpet — Ajab Mithai Ghar is known for its sohan halwa and kala jamuns made with pure ghee, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "novelty-tea-house",
+    "name": "Novelty Tea House",
+    "lat": 13.0937,
+    "lng": 80.2818,
+    "area": "Sowcarpet, Chennai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Sowcarpet — Novelty Tea House, open since 1958, is credited with popularizing Pav Bhaji in Chennai, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "anmol-lassi",
+    "name": "Anmol Lassi",
+    "lat": 13.0918,
+    "lng": 80.2833,
+    "area": "Sowcarpet, Chennai",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Sowcarpet — Anmol Lassi is known for its saffron-infused Kesar Lassi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "venkatramana-boli-stall",
+    "name": "Venkatramana Boli Stall",
+    "lat": 13.0361,
+    "lng": 80.2193,
+    "area": "West Mambalam, Chennai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB street food guide) on West Mambalam — Venkatramana Boli Stall is a well-known local vendor for boli, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "royal-sandwich",
+    "name": "Royal Sandwich",
+    "lat": 13.0339,
+    "lng": 80.2549,
+    "area": "Alwarpet, Chennai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB street food guide) on Alwarpet — Royal Sandwich is a popular budget street food vendor for sandwiches, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "seena-bhai",
+    "name": "Seena Bhai",
+    "lat": 13.0926,
+    "lng": 80.283,
+    "area": "Sowcarpet, Chennai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Sowcarpet — Seena Bhai is a long-running tiffin center serving the neighborhood's North Indian-influenced street food, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kovilpatti-murukku-kadai",
+    "name": "Kovilpatti Murukku Kadai",
+    "lat": 13.0573,
+    "lng": 80.2751,
+    "area": "Triplicane, Chennai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Stylesatlife, Only In Your State) on Triplicane — Kovilpatti Murukku Kadai is a popular sweets and murukku stall in the neighborhood, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "hanifa-jigarthanda",
+    "name": "Hanifa Jigarthanda",
+    "lat": 13.0565,
+    "lng": 80.2743,
+    "area": "Triplicane, Chennai",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Stylesatlife) on Triplicane — Hanifa Jigarthanda is a well-known stall for the iconic Madras cold drink jigarthanda, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "murugan-idli-shop-triplicane",
+    "name": "Murugan Idli Shop",
+    "lat": 13.0572,
+    "lng": 80.2752,
+    "area": "Triplicane, Chennai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Stylesatlife, Only In Your State) on Triplicane — Murugan Idli Shop is a famous chain known for exceptionally soft idlis, originating in Chennai, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "lmb-laxmi-misthan-bhandar",
+    "name": "LMB (Laxmi Misthan Bhandar)",
+    "lat": 26.9189,
+    "lng": 75.8271,
+    "area": "Johari Bazaar, Jaipur",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Rajasthan Tour Planner, Pink City Post) on Johari Bazaar — LMB, operating for nearly three centuries, is renowned for Rajasthani sweets and its pyaz kachori, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "rawat-mishthan-bhandar",
+    "name": "Rawat Mishthan Bhandar",
+    "lat": 26.9192,
+    "lng": 75.7881,
+    "area": "Near Jaipur Railway Station, Jaipur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Pink City Post, LBB) near Jaipur Railway Station — Rawat Mishthan Bhandar has served its famous pyaz kachori since 1955, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "masala-chowk",
+    "name": "Masala Chowk",
+    "lat": 26.9228,
+    "lng": 75.8203,
+    "area": "Chaura Rasta, Jaipur",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderlog, Jaipur Unveiled) on Chaura Rasta — Masala Chowk is a government-developed food court hosting several famous Jaipur food brands under one roof, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sanjay-omelette",
+    "name": "Sanjay Omelette",
+    "lat": 26.8894,
+    "lng": 75.8138,
+    "area": "Bapu Nagar, Jaipur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Yoyo Trips India, Jaipur Unveiled) on Bapu Nagar — Sanjay Omelette is an iconic stall run by bodybuilder-turned-chef Sanjay Bhardawaj, known for inventive omelette dishes, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gulab-ji-ki-chai",
+    "name": "Gulab Ji Ki Chai",
+    "lat": 26.9162,
+    "lng": 75.8073,
+    "area": "MI Road, Jaipur",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Jaipur Unveiled) near Ganpati Plaza, MI Road — Gulab Ji Ki Chai is a well-known chai stall in the area, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "lassiwala-mi-road",
+    "name": "Lassiwala (Kishanlal Govind Narayan Agarwal)",
+    "lat": 26.9169,
+    "lng": 75.8065,
+    "area": "MI Road, Jaipur",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (ilovejaipur.city, Wanderlog) on MI Road, Panch Batti — the original Lassiwala shop has served its legendary lassi since 1944, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "pandit-ki-kulfi",
+    "name": "Pandit Ki Kulfi",
+    "lat": 26.9243,
+    "lng": 75.8262,
+    "area": "Near Hawa Mahal, Jaipur",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Inditales) near Hawa Mahal — Pandit Ki Kulfi is a small shop selling traditional kulfi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sampat-kachori-bhandar",
+    "name": "Sampat Kachori Bhandar",
+    "lat": 26.9253,
+    "lng": 75.8193,
+    "area": "Chandpole Bazaar, Jaipur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp, Jaipur Unveiled) on Chandpole Bazaar — Sampat Kachori Bhandar, operating since 1936, is known for the best Aloo Kachori in the region, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sodhani-sweets",
+    "name": "Sodhani Sweets",
+    "lat": 26.9182,
+    "lng": 75.8271,
+    "area": "Johari Bazaar / Bapu Bazaar, Jaipur",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Jaipur Unveiled) on Bapu Bazaar — Sodhani Sweets is a renowned confectionery known for its traditional desserts, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gopal-ji-patashi-masala-chowk",
+    "name": "Gopal Ji Patashi",
+    "lat": 26.9233,
+    "lng": 75.821,
+    "area": "Masala Chowk, Jaipur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Jaipur Unveiled) on Masala Chowk — Gopal Ji Patashi is one of the named food brand stalls operating inside the food court, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "raman-dosa-masala-chowk",
+    "name": "Raman Dosa",
+    "lat": 26.9226,
+    "lng": 75.82,
+    "area": "Masala Chowk, Jaipur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Jaipur Unveiled) on Masala Chowk — Raman Dosa is one of the named food brand stalls operating inside the food court, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "mahaveer-rabri-bhandar-masala-chowk",
+    "name": "Mahaveer Rabri Bhandar",
+    "lat": 26.923,
+    "lng": 75.8207,
+    "area": "Masala Chowk, Jaipur",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Jaipur Unveiled) on Masala Chowk — Mahaveer Rabri Bhandar is one of the named food brand stalls operating inside the food court, known for rabri, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "swati-snacks-law-garden",
+    "name": "Swati Snacks",
+    "lat": 23.0231,
+    "lng": 72.5563,
+    "area": "Ahmedabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (FabHotels blog, Holidify) on Law Garden, Ahmedabad — a long-running local favorite near the night market known for Gujarati snacks like dabeli and khaman, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "talib-tikka-bhatiyar-gali",
+    "name": "Talib Tikka",
+    "lat": 23.0264,
+    "lng": 72.5871,
+    "area": "Ahmedabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp) on Bhatiyar Gali, Ahmedabad — a barbecue tikka stand run by Sarfarazbhai, known for its grilled kebabs, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bera-samosa-bhatiyar-gali",
+    "name": "Bera Samosa",
+    "lat": 23.0257,
+    "lng": 72.5879,
+    "area": "Ahmedabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp) on Bhatiyar Gali, Ahmedabad — an iconic snack shop known for its keema samosas, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kutub-chicken-dana",
+    "name": "Kutub Chicken Dana",
+    "lat": 23.0263,
+    "lng": 72.5868,
+    "area": "Ahmedabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp) on Bhatiyar Gali, Ahmedabad — a roadside stall known for its spiced chicken dana, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gandhi-cold-drinks-bhatiyar-gali",
+    "name": "Gandhi Cold Drinks",
+    "lat": 23.0255,
+    "lng": 72.5872,
+    "area": "Ahmedabad",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp) on Bhatiyar Gali, Ahmedabad — a long-standing cold drinks stand serving the street's late-night crowd, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "zk-tawa-bhatiyar-gali",
+    "name": "Z.K. Tawa",
+    "lat": 23.0266,
+    "lng": 72.5877,
+    "area": "Ahmedabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp, Myishasmehfil) on Bhatiyar Gali, Ahmedabad — a tawa-cooked snacks corner stall opposite the masjid, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "akbari-hotel-bhatiyar-gali",
+    "name": "Akbari Hotel",
+    "lat": 23.0258,
+    "lng": 72.5868,
+    "area": "Ahmedabad",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Myishasmehfil / Colors of Rainbow blog) on Bhatiyar Gali, Ahmedabad — a small food joint known for Mughlai-style snacks, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "paramount-bhatiyar-gali",
+    "name": "Paramount",
+    "lat": 23.0262,
+    "lng": 72.5882,
+    "area": "Ahmedabad",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp, Myishasmehfil) on Bhatiyar Gali, Ahmedabad — a long-established eatery famous for Mughlai food, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "jani-locho-house-parle-point",
+    "name": "Jani Locho House",
+    "lat": 21.1656,
+    "lng": 72.7845,
+    "area": "Surat",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Swiggy Diaries, official Jani Locho House site) on Parle Point, Surat — credited as a pioneer of Surat's signature locho street snack, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gangour-surat",
+    "name": "Gangour",
+    "lat": 21.1708,
+    "lng": 72.8305,
+    "area": "Surat",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Swiggy Diaries) on Surat — a locally famous eatery known for chole tikki, paneer tikka, dhokla and balushahi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gopal-locho-khaman-house",
+    "name": "Gopal Locho Khaman House",
+    "lat": 21.2094,
+    "lng": 72.7906,
+    "area": "Surat",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (DineCard, Tripadvisor) on the Gopi Talav / Rander area of Surat — a well-known shop for the city's signature locho and khaman, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "mahesh-dosa-khaudra-gali",
+    "name": "Mahesh Dosa",
+    "lat": 21.1871,
+    "lng": 72.8258,
+    "area": "Surat",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (top10place, restaurant-guru) on Khaudra Gali, Bhagal, Surat — serving dosas and pav bhaji for over 25 years, famed for its cheesy gotala dosa, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "chatkaaz-surat",
+    "name": "Chatkaaz",
+    "lat": 21.1695,
+    "lng": 72.8317,
+    "area": "Surat",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Swiggy Diaries) on Surat — listed among the city's must-try chaat and street food stalls, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kailash-sweets-and-snacks-surat",
+    "name": "Kailash Sweets and Snacks",
+    "lat": 21.1709,
+    "lng": 72.8318,
+    "area": "Surat",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Swiggy Diaries) on Surat — listed among the city's must-try sweets and snacks stalls, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "motiram-surat",
+    "name": "Motiram",
+    "lat": 21.1696,
+    "lng": 72.8304,
+    "area": "Surat",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Swiggy Diaries) on Surat — listed among the city's most-recommended street food stalls, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shriram-tamtamwala-vadodara",
+    "name": "Shriram Tamtamwala",
+    "lat": 22.3086,
+    "lng": 73.1925,
+    "area": "Vadodara",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Gujarat Orbit, Wanderlog) on Vadodara — a fan-favorite local street snack stall, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "swad-snacks-vadodara",
+    "name": "Swad Snacks",
+    "lat": 22.3074,
+    "lng": 73.1936,
+    "area": "Vadodara",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Gujarat Orbit, Wanderlog) on Vadodara — a well-regarded local snacks stall, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kalindi-masala-puff-vadodara",
+    "name": "Kalindi Masala Puff",
+    "lat": 22.3083,
+    "lng": 73.1938,
+    "area": "Vadodara",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Gujarat Orbit, Wanderlog) on Vadodara — known for its masala puff pastries, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "raju-patti-samosa-vadodara",
+    "name": "Raju Patti Samosa",
+    "lat": 22.3076,
+    "lng": 73.1922,
+    "area": "Vadodara",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Gujarat Orbit, Wanderlog) on Vadodara — known for its patti samosa, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "milans-live-dhokla-masala-chaas",
+    "name": "Milan's Live Dhokla and Masala Chaas",
+    "lat": 22.3088,
+    "lng": 73.1933,
+    "area": "Vadodara",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Gujarat Orbit, Wanderlog) on Vadodara — a stall known for freshly steamed live dhokla paired with masala chaas, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bhai-bhai-dabeli-panigate-wala",
+    "name": "Bhai Bhai Dabeli Panigate Wala",
+    "lat": 22.3086,
+    "lng": 73.1937,
+    "area": "Vadodara",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Gujarat Orbit, Wanderlog) on Panigate, Vadodara — a popular stall known for its dabeli, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "jay-mahakali-sev-usal-kirti-stambh",
+    "name": "Jay Mahakali Sev Usal",
+    "lat": 22.307,
+    "lng": 73.195,
+    "area": "Vadodara",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Gujarat Orbit, Wanderlog) on Kirti Stambh, Vadodara — one of the city's most popular spots for sev usal, drawing high daily footfall, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "vishals-chat-vadodara",
+    "name": "Vishal's Chat",
+    "lat": 22.3079,
+    "lng": 73.1928,
+    "area": "Vadodara",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify, Gujarat Orbit) on Vadodara — one of the city's most popular chaat spots, known for pani puri, bhel puri and dahi puri, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shiv-shakti-dabeli-vadodara",
+    "name": "Shiv Shakti Dabeli",
+    "lat": 22.3092,
+    "lng": 73.1924,
+    "area": "Vadodara",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify) on Vadodara — a vibrant eatery serving signature sweet-and-spicy dabeli, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "rainbow-vada-pav-vadodara",
+    "name": "Rainbow Vada Pav",
+    "lat": 22.3073,
+    "lng": 73.1932,
+    "area": "Vadodara",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Gujarat Orbit) on Vadodara — a popular local vada pav stall, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "radhe-pani-puri-sur-sagar-wala",
+    "name": "Radhe Pani Puri - Sur Sagar Wala",
+    "lat": 22.3101,
+    "lng": 73.1913,
+    "area": "Vadodara",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Justdial listing) on Dandia Bazaar, Vadodara — a well-known pani puri centre in the evening food-stall corridor, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "rawat-mishthan-bhandar-jodhpur",
+    "name": "Rawat Mishthan Bhandar",
+    "lat": 26.2876,
+    "lng": 73.0186,
+    "area": "Jodhpur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripadvisor, multiple Jodhpur street-food listicles) on Jodhpur, near the railway station — one of the city's oldest and most famous shops, renowned for pyaz kachori and mawa kachori, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shri-mishrilal-hotel-jodhpur",
+    "name": "Shri Mishrilal Hotel",
+    "lat": 26.2929,
+    "lng": 73.0284,
+    "area": "Jodhpur",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp, Wanderlog) on Jodhpur, near Ghanta Ghar — the city's most well-known spot for makhaniya lassi, prized for its thickness and cardamom flavor, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "narayan-mishthan-bhandar-jodhpur",
+    "name": "Narayan Mishthan Bhandar",
+    "lat": 26.294,
+    "lng": 73.0273,
+    "area": "Jodhpur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Quora, local Jodhpur food guides) on Jodhpur — a favorite among residents and tourists for its kachoris, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "arora-chat-bhandar-jodhpur",
+    "name": "Arora Chat Bhandar",
+    "lat": 26.2927,
+    "lng": 73.0272,
+    "area": "Jodhpur",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Quora, local Jodhpur food guides) on Jodhpur — a well-known chaat bhandar in the old city, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "janta-sweet-home-jodhpur",
+    "name": "Janta Sweet Home",
+    "lat": 26.2939,
+    "lng": 73.0286,
+    "area": "Jodhpur",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Quora, local Jodhpur food guides) on Jodhpur — a long-standing sweets shop, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "maa-bhawani-daal-baati-jodhpur",
+    "name": "Maa Bhawani Daal Baati",
+    "lat": 26.2942,
+    "lng": 73.0281,
+    "area": "Jodhpur",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Quora, local Jodhpur food guides) on Jodhpur — known for traditional daal baati churma, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "khatri-namkeen-mirchi-bada-jodhpur",
+    "name": "Khatri Namkeen ka Mirchi Bada",
+    "lat": 26.293,
+    "lng": 73.0287,
+    "area": "Jodhpur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Quora, local Jodhpur food guides) on Jodhpur — known for its namkeen and mirchi bada, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shri-lala-mishthan-udaipur",
+    "name": "Shri Lala Mishthan",
+    "lat": 24.5806,
+    "lng": 73.6836,
+    "area": "Udaipur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Udaipur Blog) on Udaipur — popular for 15 years for its spicy heeng kachori, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "jmb-nashta-center-udaipur",
+    "name": "JMB Nashta Center",
+    "lat": 24.5926,
+    "lng": 73.6864,
+    "area": "Udaipur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Udaipur Blog) on Udaipur, near Chetan Circle — offering mawa kachori, dal kachori and pyaaz kachori, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "pandit-ji-bread-pakode-wala-udaipur",
+    "name": "Pandit Ji Bread Pakode Wala",
+    "lat": 24.5934,
+    "lng": 73.6806,
+    "area": "Udaipur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Udaipur Blog) on Udaipur, at Moti Magri Gate — serving bread pakoda for over 25 years, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "omkar-ji-pakode-wale-udaipur",
+    "name": "Omkar Ji Pakode Wale",
+    "lat": 24.5777,
+    "lng": 73.6826,
+    "area": "Udaipur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Udaipur Blog) on Udaipur, in Bapu Bazaar — offering a variety of pakodas and sweets, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "jagdish-shree-udaipur",
+    "name": "Jagdish Shree",
+    "lat": 24.5801,
+    "lng": 73.6841,
+    "area": "Udaipur",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Udaipur Blog) on Udaipur, near Jagdish Temple — known for samosas, aloo bada, kachoris and lassi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "arora-namkeen-chaat-udaipur",
+    "name": "Arora Namkeen and Chaat",
+    "lat": 24.5794,
+    "lng": 73.6824,
+    "area": "Udaipur",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Udaipur Blog) on Udaipur — a gathering spot known for its variety of namkeen and chaat, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "noor-mohammadi",
+    "name": "Noor Mohammadi",
+    "lat": 19.0179,
+    "lng": 72.8565,
+    "area": "Mohammed Ali Road, Mumbai",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderon, Siasat) on Mohammed Ali Road — one of the oldest eateries on the strip (est. 1923), famous for its Mughlai 'Sanju Baba Chicken', Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shalimar",
+    "name": "Shalimar",
+    "lat": 19.0174,
+    "lng": 72.8559,
+    "area": "Mohammed Ali Road, Mumbai",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderon) on Mohammed Ali Road — Mughlai eatery serving since 1970, known for its Shalimar Seekh Kebab, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "suleiman-usman-mithaiwala",
+    "name": "Suleiman Usman Mithaiwala",
+    "lat": 19.0181,
+    "lng": 72.8558,
+    "area": "Mohammed Ali Road, Mumbai",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderon, Siasat) on Mohammed Ali Road — legendary sweet shop below Minara Masjid serving since 1936, known for phirni, rabdi and malpua, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "burhanpur-mawa-jalebi",
+    "name": "Burhanpur Mawa Jalebi",
+    "lat": 19.0176,
+    "lng": 72.8567,
+    "area": "Mohammed Ali Road, Mumbai",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderon) on Mohammed Ali Road — crowd-favourite mawa jalebi stall, offshoot of a Burhanpur (MP) shop running since 1984, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "noorani-milk-center",
+    "name": "Noorani Milk Center",
+    "lat": 19.0183,
+    "lng": 72.8564,
+    "area": "Mohammed Ali Road, Mumbai",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderon) on Mohammed Ali Road — popular milk and falooda stall frequented during Ramzan iftar, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "zam-zam-sweets-bakery",
+    "name": "Zam Zam Sweets & Bakery",
+    "lat": 19.0178,
+    "lng": 72.857,
+    "area": "Mohammed Ali Road, Mumbai",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wannabemaven, Travels for Taste) on Mohammed Ali Road — sweets and bakery stall at Fancy Mahal opposite Minara Masjid, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "hindustan-restaurant-mohammed-ali-road",
+    "name": "Hindustan Restaurant",
+    "lat": 19.0172,
+    "lng": 72.8556,
+    "area": "Mohammed Ali Road, Mumbai",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wannabemaven) on Mohammed Ali Road — iftar-time biryani and kebab spot near Minara Masjid, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "mashallah-cuisine",
+    "name": "Mashallah Cuisine",
+    "lat": 19.0185,
+    "lng": 72.856,
+    "area": "Mohammed Ali Road, Mumbai",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Dishoom Journal, LBB) on Mohammed Ali Road — stall known for kebabs and chicken tikka varieties, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bademiya",
+    "name": "Bademiya",
+    "lat": 18.9219,
+    "lng": 72.8318,
+    "area": "Colaba, Mumbai",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wikipedia, Slurrp) on Colaba Causeway — iconic seekh kebab stall on Tulloch Road founded in 1946 by Mohammad Yaseen, a Mumbai late-night food institution, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gupta-chaat-corner",
+    "name": "Gupta Chaat Corner",
+    "lat": 18.9231,
+    "lng": 72.8312,
+    "area": "Colaba Causeway, Mumbai",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (TripXL) on Colaba Causeway — chaat stall named among the area's best spots for chaat, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "jain-sabkuch",
+    "name": "Jain Sabkuch",
+    "lat": 18.9224,
+    "lng": 72.8321,
+    "area": "Colaba Causeway, Mumbai",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (TripXL) on Colaba Causeway — Jain-friendly chaat stall popular for pani puri and sev puri, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "vinod-gupta-sevpuri",
+    "name": "Vinod Gupta Sevpuri",
+    "lat": 18.9233,
+    "lng": 72.8309,
+    "area": "Colaba Causeway, Mumbai",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (TripXL) on Colaba Causeway — sevpuri specialist stall, cited among the area's top chaat spots, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "new-martin",
+    "name": "New Martin",
+    "lat": 18.9221,
+    "lng": 72.8323,
+    "area": "Colaba Causeway, Mumbai",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (TripXL) on Colaba Causeway — affordable outlet known for Goan-style non-vegetarian meals, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "elco-pani-puri-centre",
+    "name": "Elco Pani Puri Centre",
+    "lat": 19.0563,
+    "lng": 72.8335,
+    "area": "Bandra, Mumbai",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Knocksense) on Bandra's Elco Market — legendary pani puri stall that grew from a handcart in 1975 into a Bandra landmark, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "rajender-medu-vada",
+    "name": "Rajender Medu Vada",
+    "lat": 19.0558,
+    "lng": 72.833,
+    "area": "Bandra, Mumbai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Crazy Masala Food, Bandra Buzz) on Bandra — long-running cart near Pali Naka serving idli and medu vada for over 20 years, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shankar-vada-pav-bandra-king",
+    "name": "Shankar Vada Pav (Bandra King)",
+    "lat": 19.054,
+    "lng": 72.8283,
+    "area": "Bandra, Mumbai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Corner.inc, Homegrown) on Bandra — vada pav stall near Bandra Talao/Turner Road started in 1975, also known for moong dal and mirchi pakoda, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gupta-bhel-puri-centre",
+    "name": "Gupta Bhel Puri Centre",
+    "lat": 19.0565,
+    "lng": 72.8338,
+    "area": "Bandra, Mumbai",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (TripXL) on Bandra — chaat and frankie stall running since 1999 with a large menu of chaat items, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "hearsch-bakery",
+    "name": "Hearsch Bakery",
+    "lat": 19.0568,
+    "lng": 72.8329,
+    "area": "Hill Road, Bandra, Mumbai",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripoto) on Bandra's Hill Road — bakery institution established in 1920, known for puffs, patties and pastries, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "candies",
+    "name": "Candies",
+    "lat": 19.0625,
+    "lng": 72.8256,
+    "area": "Pali Hill, Bandra, Mumbai",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (OTE Stays) on Pali Village Road, Bandra — popular cafe-style street food spot blending street snacks with cafe seating, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kartik-pav-bhaji",
+    "name": "Kartik Pav Bhaji",
+    "lat": 19.0971,
+    "lng": 72.8261,
+    "area": "Juhu Chowpatty, Mumbai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderlog, Travenix) on Juhu Chowpatty — popular beachside pav bhaji stall, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "siddhivinayak-pav-bhaji",
+    "name": "Siddhivinayak Pav Bhaji",
+    "lat": 19.0965,
+    "lng": 72.8255,
+    "area": "Juhu Chowpatty, Mumbai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Curlytales) on Juhu Chowpatty — stall known for its generously topped Cheese Pav Bhaji, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "chandan-laxmi-pav-bhaji",
+    "name": "Chandan Laxmi Pav Bhaji and Fast Food",
+    "lat": 19.0974,
+    "lng": 72.8263,
+    "area": "Juhu Chowpatty, Mumbai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Travenix) on Juhu Chowpatty — one of the most cited pav bhaji stalls on the beach, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shree-balaji-pav-bhaji",
+    "name": "Shree Balaji Pav Bhaji",
+    "lat": 19.0962,
+    "lng": 72.8252,
+    "area": "Juhu Chowpatty, Mumbai",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderlog) on Juhu Chowpatty — beachside pav bhaji stall listed among Juhu's food kiosks, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "hotel-vaishali",
+    "name": "Hotel Vaishali",
+    "lat": 18.5238,
+    "lng": 73.8414,
+    "area": "FC Road, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Pune Pulse) on FC Road, Pune — iconic South Indian snack institution known for Mysore Masala Dosa and SPDP (sev puri dahi puri), Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "marz-o-rin",
+    "name": "Marz-O-Rin",
+    "lat": 18.5233,
+    "lng": 73.8408,
+    "area": "FC Road, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Pune Pulse) on FC Road, Pune — long-standing sandwich and coffee shop, a household name for students, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "cafe-good-luck",
+    "name": "Cafe Good Luck",
+    "lat": 18.5183,
+    "lng": 73.8404,
+    "area": "Deccan Gymkhana, Pune",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wikipedia, Pune Pulse) on Deccan Gymkhana, Pune — Irani cafe established in 1935 on FC Road, famed for bun maska, bun omelette and keema pav, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "garden-vada-pav",
+    "name": "Garden Vada Pav",
+    "lat": 18.5187,
+    "lng": 73.8409,
+    "area": "JM Road, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Pune Pulse) on JM Road, Pune — vada pav stall considered the local benchmark for its garlic chutney-to-potato ratio, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "santosh-bakery",
+    "name": "Santosh Bakery",
+    "lat": 18.518,
+    "lng": 73.8402,
+    "area": "JM Road, Pune",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Pune Pulse) on JM Road, Pune — wood-fired bakery known for potato patties and traditional pastries, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shrinathji-sabudana-vada",
+    "name": "Shrinathji Sabudana Vada",
+    "lat": 18.519,
+    "lng": 73.8399,
+    "area": "Rameshwar Chowk, JM Road, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Pune Pulse) on JM Road, Pune — small stall famed for ghee-fried sabudana vada served with curd-cucumber mix and thecha, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "priyadarshan-snacks",
+    "name": "Priyadarshan Snacks",
+    "lat": 18.5178,
+    "lng": 73.8411,
+    "area": "Deccan Gymkhana, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Zomato editorial listings) on Deccan Gymkhana, Pune — locally known snacks vendor in the Deccan Gymkhana street food cluster, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shrikrishna-bhuvan",
+    "name": "Shrikrishna Bhuvan",
+    "lat": 18.514,
+    "lng": 73.8553,
+    "area": "Tulsi Baug, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Goya, Slurrp) on Tulsi Baug, Pune — outlet established in 1944, serving its famous misal since 1966, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bedekar-misal",
+    "name": "Bedekar Misal",
+    "lat": 18.5135,
+    "lng": 73.8547,
+    "area": "Tulsi Baug, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderlog, Goya) on Tulsi Baug, Pune — misal and batata vada spot serving for over 40 years at the lane end of Tulsi Baug, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ramnath-misal",
+    "name": "Ramnath Misal",
+    "lat": 18.5142,
+    "lng": 73.8556,
+    "area": "Tulsi Baug, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Goya) on Tulsi Baug, Pune — one of the oldest misal outlets in the lanes near Tilak Road, run by the same family for around 60 years, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "jj-garden-vada-pav-centre",
+    "name": "J.J. Garden Vada Pav Centre",
+    "lat": 18.5127,
+    "lng": 73.8796,
+    "area": "Camp, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Camp, Pune — vada pav stall on Bootee Street, a well-known Pune Camp food stop, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "siddharth-pav-bhaji",
+    "name": "Siddharth Pav Bhaji",
+    "lat": 18.5406,
+    "lng": 73.8724,
+    "area": "Ambedkar Road, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Ambedkar Road, Pune — pav bhaji stall cited among Pune's best for the dish, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "mayur-pav-bhaji-juice-bar",
+    "name": "Mayur Pav Bhaji and Juice Bar",
+    "lat": 18.4869,
+    "lng": 73.8155,
+    "area": "Karve Nagar, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Karve Nagar, Pune — combined pav bhaji and juice stall popular in the locality, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "rajendra-pav-bhaji",
+    "name": "Rajendra Pav Bhaji",
+    "lat": 18.5178,
+    "lng": 73.8638,
+    "area": "Rasta Peth, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Rasta Peth, Pune — pav bhaji stall named among the area's local favourites, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "wadeshwar-bhuvan",
+    "name": "Wadeshwar Bhuvan",
+    "lat": 18.5147,
+    "lng": 73.8519,
+    "area": "Shukrawar Peth, Pune",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderlog) on Shukrawar Peth, Pune — the original outlet of the Wadeshwar name near Natubaug Chowk, known for its coconut chutney and misal-pav bhaji offerings, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "karims-jama-masjid",
+    "name": "Karim's",
+    "lat": 28.6511,
+    "lng": 77.2338,
+    "area": "Jama Masjid, Old Delhi",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Curly Tales, Wikipedia) on Jama Masjid, Old Delhi — historic Mughlai kebab and korma house founded 1913 by a descendant of a royal Mughal court cook, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "old-famous-jalebi-wala-dariba-kalan",
+    "name": "Old Famous Jalebi Wala",
+    "lat": 28.6522,
+    "lng": 77.2311,
+    "area": "Dariba Kalan, Chandni Chowk, Old Delhi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (So Delhi, Delhi Tourism) on Dariba Kalan, Chandni Chowk — running since 1884, known for hot, crisp jalebis fried in desi ghee with khandsari sugar syrup, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "natraj-dahi-bhalle-wala",
+    "name": "Natraj Dahi Bhalle Wala",
+    "lat": 28.6504,
+    "lng": 77.2291,
+    "area": "Chandni Chowk, Old Delhi",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Chandni Chowk, opposite Paranthe Wali Gali — serving soft dahi bhalla and stuffed aloo tikki since 1940, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kuremal-mohan-lal-kulfi-wale",
+    "name": "Kuremal Mohan Lal Kulfi Wale",
+    "lat": 28.6477,
+    "lng": 77.2249,
+    "area": "Chawri Bazar, Old Delhi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LocalSamosa, TheTastyTales) on Chawri Bazar — Delhi institution since 1906 famous for hollowed-out fruit stuffed with kulfi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bishan-swaroop-chaat-bhandar",
+    "name": "Bishan Swaroop Chaat Bhandar",
+    "lat": 28.6497,
+    "lng": 77.2276,
+    "area": "Chandni Chowk, Old Delhi",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Delhi Food Walks) on Chandni Chowk, near Mahavir Jain Library — three-item menu of aloo chaat, aloo kulle and fruit chaat since 1923, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "padam-chaat-bhandar-kinari-bazaar",
+    "name": "Padam Chaat Bhandar",
+    "lat": 28.6525,
+    "lng": 77.2317,
+    "area": "Kinari Bazaar, Chandni Chowk, Old Delhi",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Delhi Food Walks, Curly Tales) on Kinari Bazaar, Chandni Chowk — serving papdi chaat, raj kachori and bharwa golgappe since 1947, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "lotan-ke-chole-kulche",
+    "name": "Lotan Ke Chole Kulche",
+    "lat": 28.6482,
+    "lng": 77.2256,
+    "area": "Chatta Shahji, Chawri Bazar, Old Delhi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Curly Tales) on Chatta Shahji, Chawri Bazar — family-run chole kulche stall operating since 1920, now in its fourth generation, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sita-ram-diwan-chand",
+    "name": "Sita Ram Diwan Chand",
+    "lat": 28.6452,
+    "lng": 77.2172,
+    "area": "Paharganj, New Delhi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp, YourStory) on Paharganj — legendary chole bhature joint tracing back to a 1950s pushcart, now a Delhi institution, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ashok-chaat-corner-chawri-bazar",
+    "name": "Ashok Chaat Corner",
+    "lat": 28.6484,
+    "lng": 77.2264,
+    "area": "Chawri Bazar, Old Delhi",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, So Delhi) on Chawri Bazar — 70+ year-old chaat corner established 1948, known for golgappe, dahi vada and aloo tikki chaat, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "khemchand-adesh-kumar-daulat-ki-chaat",
+    "name": "Khemchand Adesh Kumar (Daulat Ki Chaat)",
+    "lat": 28.651,
+    "lng": 77.2299,
+    "area": "Chandni Chowk, Old Delhi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (The Better India, The National) on Chandni Chowk — one of the few remaining winter-only vendors of the frothy milk dessert daulat ki chaat, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "rakesh-kumar-baburam-daulat-ki-chaat",
+    "name": "Rakesh Kumar Baburam (Daulat Ki Chaat)",
+    "lat": 28.6502,
+    "lng": 77.229,
+    "area": "Chandni Chowk, Old Delhi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (The National) on Chandni Chowk — sells daulat ki chaat from a colourful ice-cooled cart, a rare seasonal Old Delhi dessert, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "prince-paan-gk1",
+    "name": "Prince Paan",
+    "lat": 28.5484,
+    "lng": 77.2414,
+    "area": "M Block Market, Greater Kailash 1, New Delhi",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripadvisor, GKPrincePaan) on M Block Market, Greater Kailash 1 — landmark paan shop running since 1965, known for chocolate, saada and meetha paan, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gianis-di-hatti-fatehpuri",
+    "name": "Giani's Di Hatti",
+    "lat": 28.6537,
+    "lng": 77.2249,
+    "area": "Fatehpuri, Chandni Chowk, Old Delhi",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, YummRaj) on Fatehpuri, Chandni Chowk — pioneer of rabri faluda in Old Delhi, operating since 1956, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "chaina-ram-sindhi-confectioners",
+    "name": "Chaina Ram Sindhi Confectioners",
+    "lat": 28.6531,
+    "lng": 77.2241,
+    "area": "Fatehpuri, Chandni Chowk, Old Delhi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, Tripadvisor) on Fatehpuri, Chandni Chowk — historic Sindhi sweet shop famed as the pioneer of Karachi halwa, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kanwarji-bhagirath-mal",
+    "name": "Kanwarji Bhagirath Mal",
+    "lat": 28.6507,
+    "lng": 77.2303,
+    "area": "Chandni Chowk, Old Delhi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (ThePrint) on Chandni Chowk — 19th-century snack-and-sweet institution credited as a pioneer of pista barfi, now also known for bhalla papdi chaat, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "hazari-lal-jain-khurchan-wale",
+    "name": "Hazari Lal Jain Khurchan Wale",
+    "lat": 28.6528,
+    "lng": 77.2313,
+    "area": "Kinari Bazaar, Chandni Chowk, Old Delhi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, Delhi Food Walks) on Kinari Bazaar, Chandni Chowk — third-generation shop known for keeping the rare milk-sweet khurchan alive, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "roshan-di-kulfi-karol-bagh",
+    "name": "Roshan Di Kulfi",
+    "lat": 28.6523,
+    "lng": 77.1913,
+    "area": "Ajmal Khan Road, Karol Bagh, New Delhi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, Tripadvisor) on Ajmal Khan Road, Karol Bagh — iconic kulfi faluda spot dating to a 1951 pushcart started by a Lahore migrant, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kake-da-hotel-connaught-place",
+    "name": "Kake Da Hotel (Kake Di Hatti)",
+    "lat": 28.6319,
+    "lng": 77.2171,
+    "area": "Outer Circle, Connaught Place, New Delhi",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripadvisor, CravingCaves) on Outer Circle, Connaught Place — legendary Punjabi eatery since 1931 famed for butter chicken and dal, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "nathus-sweets-bengali-market",
+    "name": "Nathu's Sweets",
+    "lat": 28.6301,
+    "lng": 77.225,
+    "area": "Bengali Market, New Delhi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripadvisor) on Bengali Market — sweet shop running since 1939, well known for its chole bhature alongside classic mithai, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "jung-bahadur-kachori-wala",
+    "name": "Jung Bahadur Kachori Wala",
+    "lat": 28.6498,
+    "lng": 77.2293,
+    "area": "Maliwara, near Paranthe Wali Gali, Chandni Chowk, Old Delhi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderlog, Zomato) on Maliwara, Chandni Chowk — small stall serving crisp moong-dal kachori with aloo sabzi since the early 1970s, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shyam-sweets-chawri-bazar",
+    "name": "Shyam Sweets",
+    "lat": 28.6489,
+    "lng": 77.2262,
+    "area": "Chawri Bazar, Old Delhi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Chawri Bazar — six-generation family sweet shop since 1910, known for bedami puri-sabzi and matar kachori, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kesar-da-dhaba-amritsar",
+    "name": "Kesar Da Dhaba",
+    "lat": 31.6209,
+    "lng": 74.8767,
+    "area": "Chowk Passian, Amritsar",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (The Better India, Slurrp) on Chowk Passian, Amritsar — vegetarian Punjabi dhaba founded 1916, famed for dal makhani slow-cooked overnight, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bharawan-da-dhaba-amritsar",
+    "name": "Bharawan Da Dhaba",
+    "lat": 31.6285,
+    "lng": 74.8715,
+    "area": "Hall Bazaar, Amritsar",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (YourStory, Slurrp) on Hall Bazaar, Amritsar — vegetarian dhaba tracing back to a 1912 tent stall, known for chole kulche and Amritsari kulche, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gianis-ice-cream-amritsar",
+    "name": "Giani's Ice Cream",
+    "lat": 31.6344,
+    "lng": 74.8734,
+    "area": "Lawrence Road / Mall Road, Amritsar",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripadvisor, City Amritsar) on Lawrence Road / Mall Road junction, Amritsar — outlet of the ice cream and kulfi-faluda chain founded 1956, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "surjit-food-plaza-amritsar",
+    "name": "Surjit Food Plaza",
+    "lat": 31.6338,
+    "lng": 74.8724,
+    "area": "Lawrence Road, Amritsar",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Yatra, India.com Travel) on Lawrence Road, Amritsar — Punjabi eatery since 1976 famed for batter-fried Amritsari fish, gilawati kebabs and mutton tikka, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ahuja-lassi-katra-ahluwalia",
+    "name": "Ahuja Lassi (Ahuja Milk Bhandar)",
+    "lat": 31.6229,
+    "lng": 74.8774,
+    "area": "Katra Ahluwalia, Hathi Gate, Amritsar",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (TasteOfCity, Wanderlog) on Katra Ahluwalia, Hathi Gate, Amritsar — one of the city's oldest lassi shops, known for thick malai-topped kesar lassi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kanha-sweets-amritsar",
+    "name": "Kanha Sweets",
+    "lat": 31.6342,
+    "lng": 74.8732,
+    "area": "Lawrence Road, Amritsar",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (City Amritsar) on Lawrence Road, Amritsar — sweet shop known for puri chole, gur ka halwa and patisa lachha, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bansal-sweets-amritsar",
+    "name": "Bansal Sweets",
+    "lat": 31.6335,
+    "lng": 74.8722,
+    "area": "Lawrence Road, Amritsar",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (MishtiCue) on Lawrence Road, Amritsar — desi-ghee mithai shop founded 1981, known for besan pinni and patisa, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "beera-chicken-house-amritsar",
+    "name": "Beera Chicken House",
+    "lat": 31.6424,
+    "lng": 74.8684,
+    "area": "Sehaj Avenue, Majitha Road, Amritsar",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (SOTC, TasteOfCity) on Majitha Road, Amritsar — over four-decade-old restaurant famous for its dry-spice-rubbed roast tandoori chicken, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "makhan-fish-and-chicken-corner",
+    "name": "Makhan Fish and Chicken Corner (Since 1962)",
+    "lat": 31.6429,
+    "lng": 74.8676,
+    "area": "Majitha Road, Amritsar",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (MakeMyTrip, Zomato) on Majitha Road, Amritsar — non-vegetarian institution since 1962, renowned for Amritsari fried fish and fish tikka, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kulcha-land-amritsar",
+    "name": "Kulcha Land",
+    "lat": 31.6333,
+    "lng": 74.8744,
+    "area": "Amritsar",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Kulchaland.com, NapTapGo) on Amritsar — dedicated kulcha restaurant known for bheega kulcha and stuffed naan served with white butter, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gurdas-ram-jalebi-wala",
+    "name": "Gurdas Ram Jalebi Wala",
+    "lat": 31.6198,
+    "lng": 74.8758,
+    "area": "Katra Ahluwalia, near Golden Temple, Amritsar",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (MakeMyTrip, TasteOfCity) on Katra Ahluwalia, Amritsar — sweet shop established 1955, favoured by pilgrims for warm golden jalebi and gulab jamun, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "goenka-sweets-amritsar",
+    "name": "Goenka Sweets",
+    "lat": 31.6201,
+    "lng": 74.8761,
+    "area": "Katra Ahluwalia, near Golden Temple, Amritsar",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripadvisor) on Katra Ahluwalia, Amritsar — sweet shop next to Gurdas Ram Jalebi Wala, well known for milk cake, sandesh and badam halwa, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "brothers-dhaba-amritsar",
+    "name": "Brothers Dhaba",
+    "lat": 31.6288,
+    "lng": 74.8727,
+    "area": "Town Hall / GT Road, Amritsar",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Rubal Saluja, YourStory) on Town Hall / GT Road, Amritsar — offshoot of Bharawan Da Dhaba's 1912 legacy, known for Amritsari kulcha and sarson da saag, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "all-india-famous-amritsari-kulcha",
+    "name": "All India Famous Amritsari Kulcha",
+    "lat": 31.6474,
+    "lng": 74.8565,
+    "area": "Basant Avenue, Purani Chungi, Maqbool Road, Amritsar",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Outlook Traveller, Curly Tales) on Basant Avenue, Maqbool Road, Amritsar — dedicated Amritsari kulcha specialist named among the city's best kulcha spots, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "nizams-new-market",
+    "name": "Nizam's",
+    "lat": 22.5629,
+    "lng": 88.3517,
+    "area": "New Market, Kolkata",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Homegrown India, The Better India) on New Market, Kolkata — Nizam's is the Hog Market-era eatery credited with inventing the Kolkata kathi roll in the 1930s, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kusum-rolls-park-street",
+    "name": "Kusum Rolls",
+    "lat": 22.5531,
+    "lng": 88.3524,
+    "area": "Park Street, Kolkata",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Migrationology, Finelychopped/Kalyan Karmakar) on Park Street, Kolkata — Kusum Rolls, founded 1971, is known for popularising cheese-filled kathi rolls, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "krishna-kant-sharma-phuchka-wala",
+    "name": "Krishna Kant Sharma's Phuchka Stall",
+    "lat": 22.5498,
+    "lng": 88.3545,
+    "area": "Vardaan Market, Park Street, Kolkata",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Homegrown India, LBB) on Vardaan Market, Kolkata — a widely cited puchka (pani puri) stall known for its distinct homemade spice blend, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "nahoum-and-sons",
+    "name": "Nahoum & Sons",
+    "lat": 22.5623,
+    "lng": 88.3508,
+    "area": "New Market, Kolkata",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wikipedia, The Better India, LBB) on New Market, Kolkata — Nahoum & Sons is a Jewish bakery est. 1902/1916, famed for plum cake and confections, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "basanta-cabin",
+    "name": "Basanta Cabin",
+    "lat": 22.563,
+    "lng": 88.352,
+    "area": "New Market, Kolkata",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Crazy Masala Food, Savaari travel blog) on New Market, Kolkata — Basanta Cabin is a legendary cabin-style eatery known for cutlets, chops and rolls, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "putiram-college-street",
+    "name": "Putiram",
+    "lat": 22.5754,
+    "lng": 88.3644,
+    "area": "College Street, Kolkata",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Curly Tales, LBB) on College Street, Kolkata — Putiram, established 1902, is a long-running Bengali sweet shop popular with students since the early hours, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "paramount-sherbats-syrups",
+    "name": "Paramount Sherbats & Syrups",
+    "lat": 22.5746,
+    "lng": 88.3633,
+    "area": "College Street, Kolkata",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Zomato editorial, EazyDiner, Curly Tales) on College Street, Kolkata — Paramount, founded 1918, is a heritage sherbet and faluda shop that has received a Culinary Heritage Award, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "dilkhusa-cabin",
+    "name": "Dilkhusa Cabin",
+    "lat": 22.5758,
+    "lng": 88.3636,
+    "area": "College Street, Kolkata",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Curly Tales, Slurrp) on College Street, Kolkata — Dilkhusa Cabin is a longtime cabin eatery known for its kabiraji cutlet and devilled eggs, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "chitto-babus-tea-stall",
+    "name": "Chitto Babu's Tea Stall (Chittoda'r Dokan)",
+    "lat": 22.5649,
+    "lng": 88.3499,
+    "area": "Dacre's Lane (Decker's Lane), Kolkata",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Curly Tales, Orange Wayfarer) on Dacre's Lane, Kolkata — a city-famous decades-old tea stall known for its ghugni and pauruti breakfast combo, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "suruchi-dacres-lane",
+    "name": "Suruchi",
+    "lat": 22.5641,
+    "lng": 88.3491,
+    "area": "Dacre's Lane (Decker's Lane), Kolkata",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Curly Tales) on Dacre's Lane, Kolkata — a longstanding lane vendor known for chicken chow mein and other Indo-Chinese snacks, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "dilipdas-phuchka",
+    "name": "Dilipda's Phuchka",
+    "lat": 22.5169,
+    "lng": 88.351,
+    "area": "Vivekananda Park, Kolkata",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Ishita Unblogged food blog) on Vivekananda Park, Kolkata — a locally famous phuchka stall known citywide among regulars, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ram-gupta-puchka",
+    "name": "Ram Gupta's Puchka Stall",
+    "lat": 22.5452,
+    "lng": 88.343,
+    "area": "Near Victoria Memorial, Kolkata",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Homegrown India) on the area opposite Victoria Memorial, Kolkata — known for its distinctive khatta-meetha tamarind-infused puchka filling, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "banchharam-sweets-gariahat",
+    "name": "Banchharam Sweets",
+    "lat": 22.5189,
+    "lng": 88.3643,
+    "area": "Gariahat, Kolkata",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Slurrp, Tripadvisor) on Gariahat, Kolkata — Banchharam's, founded 1974, is a well-known Bengali sweet shop celebrated for sandesh and baked rosogolla, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "pravesh-panipuri-wala",
+    "name": "Pravesh Panipuri Wala",
+    "lat": 22.5354,
+    "lng": 88.3354,
+    "area": "Alipore, Kolkata",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on Alipore, Kolkata — Pravesh Panipuri Wala is known for offering 17+ varieties of phuchka including schezwan and chocolate, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "adarsha-hindu-hotel",
+    "name": "Adarsha Hindu Hotel",
+    "lat": 22.5758,
+    "lng": 88.3638,
+    "area": "College Square, Kolkata",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Moha-Mushkil food blog, Yummraj) on College Square, Kolkata — a well-known traditional 'pice hotel' serving home-style Bengali fish thalis, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "tunday-kababi-chowk",
+    "name": "Tunday Kababi",
+    "lat": 26.8597,
+    "lng": 80.9131,
+    "area": "Chowk, Lucknow",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Now Lucknow, Sid-thewanderer, official Tunday Kababi site) on Chowk, Lucknow — founded 1905 by Haji Murad Ali, internationally recognised for its melt-in-mouth galouti kebabs, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "rahim-ki-nihari",
+    "name": "Rahim Ki Nihari (Rahim's Kulcha Nihari)",
+    "lat": 26.8589,
+    "lng": 80.9123,
+    "area": "Chowk, Lucknow",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Now Lucknow, Yummraj) on Chowk, Lucknow — a century-old nihari-kulcha shop started in 1890 by Haji Abdur Raheem, renowned for nalla nihari, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "idrees-biryani-chowk",
+    "name": "Idrees Biryani",
+    "lat": 26.86,
+    "lng": 80.9135,
+    "area": "Chowk, Lucknow",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Now Lucknow, Markhub24) on Chowk, Lucknow — a tin-roofed, signboard-less biryani stall running since 1968, now in its third generation, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "prakash-ki-mashoor-kulfi",
+    "name": "Prakash Ki Mashoor Kulfi",
+    "lat": 26.8498,
+    "lng": 80.9155,
+    "area": "Aminabad, Lucknow",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Now Lucknow, Lucknow Observer) on Aminabad, Lucknow — a landmark kulfi-falooda shop operating since the 1950s, known for saffron-cardamom kulfi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bajpai-kachori-bhandar",
+    "name": "Bajpai Kachori Bhandar",
+    "lat": 26.849,
+    "lng": 80.9147,
+    "area": "Aminabad, Lucknow",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (The Centrum, Tripadvisor) on Aminabad, Lucknow — a five-decade-old kachori stall famous for crowds queuing for its spicy aloo-sabji kachoris, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ram-narayan-tiwari-and-sons",
+    "name": "Ram Narayan Tiwari & Sons",
+    "lat": 26.8497,
+    "lng": 80.9159,
+    "area": "Aminabad, Lucknow",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Google Arts & Culture, Tripadvisor) on Aminabad, Lucknow — one of the oldest chaat stalls in the city, operating since 1929, known for aloo tikki and dahi bada, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "king-of-chaat-aminabad",
+    "name": "King of Chaat",
+    "lat": 26.8489,
+    "lng": 80.9155,
+    "area": "Aminabad, Lucknow",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripadvisor reviews, Lucknow Wants) on Aminabad, Lucknow — a long-running chaat corner known for golgappas, aloo tikki and matar chaat, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "royal-cafe-hazratganj",
+    "name": "Royal Cafe",
+    "lat": 26.8512,
+    "lng": 80.9463,
+    "area": "Hazratganj, Lucknow",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (SocialMaharaj, Lucknow Portal) on Hazratganj, Lucknow — a landmark eatery best known citywide for its Basket Chaat, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shukla-chaat-house",
+    "name": "Shukla Chaat House",
+    "lat": 26.8504,
+    "lng": 80.9455,
+    "area": "Hazratganj, Lucknow",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Knocksense, Lucknow Wants) on Hazratganj, Lucknow — established 1968, a household-name chaat corner famous for matar tikki chaat, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sharma-kachori-bhandar-hazratganj",
+    "name": "Sharma Kachori Bhandar",
+    "lat": 26.8511,
+    "lng": 80.9451,
+    "area": "Hazratganj, Lucknow",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Zomato editorial listings) on Hazratganj, Lucknow — a well-known kachori vendor in the Hazratganj street-food cluster, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kashi-chaat-bhandar",
+    "name": "Kashi Chaat Bhandar",
+    "lat": 25.3086,
+    "lng": 83.0094,
+    "area": "Godowlia, Varanasi",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Varanasi Guru, Tripadvisor) on Godowlia, Varanasi — a 70-year-old chaat shop celebrated for its signature tamatar (tomato) chaat, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "deena-chaat-bhandar",
+    "name": "Deena Chaat Bhandar",
+    "lat": 25.3074,
+    "lng": 83.0109,
+    "area": "Dashashwamedh Road, Varanasi",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (VisitKashi.in, Govaranasi.com) on Dashashwamedh Road, Varanasi — started in the late 1960s by Deena Nath Kesari, known for tamatar chaat and palak patta chaat, visited by chefs Sanjeev Kapoor and Ranveer Brar, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "blue-lassi-shop",
+    "name": "Blue Lassi Shop",
+    "lat": 25.3117,
+    "lng": 83.009,
+    "area": "Kachori Gali, Varanasi",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LocalSamosa, VisitKashi.in) on Kachori Gali, Varanasi — founded ~1950 by Pannalal Yadav, a tiny hole-in-the-wall shop serving around 100 lassi varieties, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ram-bhandar-thatheri-bazar",
+    "name": "Ram Bhandar",
+    "lat": 25.3149,
+    "lng": 83.0092,
+    "area": "Thatheri Bazar, Varanasi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Dreamtripguide, Justdial listings) on Thatheri Bazar, Varanasi — a century-and-a-half-old breakfast shop famous for kachori-sabzi-jalebi made in pure desi ghee, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "neelu-kachori-bhandar",
+    "name": "Neelu Kachori Bhandar",
+    "lat": 25.3109,
+    "lng": 83.0082,
+    "area": "Kachori Gali, Varanasi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Varanasi Guru, Zomato editorial) on Kachori Gali, Varanasi — a tiny, highly rated shop known for its morning choley kachori, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "gupta-ji-kachoriwale",
+    "name": "Gupta Ji Kachoriwale",
+    "lat": 25.3117,
+    "lng": 83.008,
+    "area": "Kachori Gali, Varanasi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Moha-Mushkil food blog) on Kachori Gali, Varanasi — known for rustic, hing-forward kachoris with urad dal dumpling sabzi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "chachi-ki-kachori-lanka",
+    "name": "Chachi Ki Kachori",
+    "lat": 25.2681,
+    "lng": 83.0111,
+    "area": "Lanka, Varanasi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (ETV Bharat, AajTak, GNTTV) on Lanka, Varanasi — a 100+ year old kachori-jalebi shop named after its founder 'Chachi', visited by Rajesh Khanna and Smriti Irani, recently reopened after demolition for road widening, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "pahalwan-lassi-lanka",
+    "name": "Pahalwan Lassi",
+    "lat": 25.2673,
+    "lng": 83.0103,
+    "area": "Lanka, Varanasi",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (ETV Bharat, Economic Times) on Lanka, Varanasi — a 75-year-old lassi shop known internationally, praised by Akshay Kumar and multiple political leaders, reopened after 2025 demolition, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shri-rajbandhu-sweets",
+    "name": "Shri Rajbandhu Sweets",
+    "lat": 25.3105,
+    "lng": 83.0095,
+    "area": "Kachori Gali, Godowlia, Varanasi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Cadbury Desserts Corner heritage sweet shops feature, shop's own history page) on Kachori Gali/Godowlia, Varanasi — founded 1887 by Mathura Prasad Gupta, renowned for launglata and winter malaiyo, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "madhur-jalpan",
+    "name": "Shri Madhur Jalpan",
+    "lat": 25.3113,
+    "lng": 83.01,
+    "area": "Near Kashi Vishwanath Temple, Varanasi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (VisitKashi.in, Restaurant Guru) on the area near Kashi Vishwanath Temple, Varanasi — operating since 1930, one of the city's oldest snack-sweet shops, known for dal-stuffed kachori in desi ghee, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "mahadev-lal-peda-bhandar",
+    "name": "Mahadev Lal Peda Bhandar",
+    "lat": 25.2685,
+    "lng": 83.0115,
+    "area": "Lanka, Varanasi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderlog listings, shop social media) on the Lanka/Udai Pratap College area, Varanasi — producing its signature Lal Peda since 1986, a well-known Banarasi sweet souvenir, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shivaji-military-hotel",
+    "name": "Shivaji Military Hotel",
+    "lat": 12.98594,
+    "lng": 77.60614,
+    "area": "Shivajinagar, Bangalore",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (SOTC travel blog 'Street Food in Bangalore' and the Wikipedia 'Shivajinagar, Bengaluru' article) on Shivajinagar food street — known for spicy mutton and chicken biryani, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "royal-restaurant-shivajinagar",
+    "name": "Royal Restaurant",
+    "lat": 12.98547,
+    "lng": 77.60533,
+    "area": "Shivajinagar, Bangalore",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB 'Street Food In Shivajinagar') on Shivajinagar food street — known for fresh meat and vegetable samosas fried in a kadai and old-style Suleimani chai, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "mks-kebab-centre-shivajinagar",
+    "name": "MK's Kebab Centre",
+    "lat": 12.98631,
+    "lng": 77.60498,
+    "area": "Shivajinagar, Bangalore",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB 'Why You Need To Visit Russell Market' and Curly Tales Ramadan food-street coverage) on Shivajinagar's Russell Market food street — known for skewered kebabs grilled over live coal, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "mohammed-waaris-beef-kebab-cart",
+    "name": "Mohammed Waaris' Beef Kebab Cart",
+    "lat": 12.99847,
+    "lng": 77.61258,
+    "area": "Frazer Town, Bangalore",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB 'Beef Kebabs Frazer Town') on Frazer Town's main street near Everest Theatre — a named roadside cart known for beef kebabs set up every evening, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "charminar-kabab-paradise",
+    "name": "Charminar Kabab Paradise",
+    "lat": 12.99765,
+    "lng": 77.61167,
+    "area": "Frazer Town, Bangalore",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB '10 Places To Eat Kebabs On Mosque Road In Frazer Town') — known for a wide variety of traditional and fusion kebabs, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "albert-bakery-frazer-town",
+    "name": "Albert Bakery",
+    "lat": 12.99872,
+    "lng": 77.61274,
+    "area": "Frazer Town, Bangalore",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB Mosque Road Iftar coverage) on Frazer Town — a well-known Ramzan bakery that people travel across Bangalore to visit for its seasonal specialties, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "chichabas-taj-frazer-town",
+    "name": "Chichaba's Taj",
+    "lat": 12.99738,
+    "lng": 77.61153,
+    "area": "Frazer Town, Bangalore",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB Mosque Road Iftar coverage) on Frazer Town — a sought-after stall for chicken and mutton kebabs and samosas, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "roz-shawarma-by-sharief-bhai",
+    "name": "Roz Shawarma by Sharief Bhai",
+    "lat": 12.99893,
+    "lng": 77.61186,
+    "area": "Frazer Town, Bangalore",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (magicpin listing and LBB Frazer Town hood guide) — a named shawarma and rolls stall serving Frazer Town/Shivajinagar, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "the-chaat-shop-church-street",
+    "name": "The Chaat Shop",
+    "lat": 12.97594,
+    "lng": 77.60534,
+    "area": "Church Street, Bangalore",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (magicpin Church Street listing, alongside Queen's Restaurant blog coverage noting Church Street's chaat stalls) — a named chaat stall on Church Street's food strip, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "uppum-mulakum-thattukada",
+    "name": "Uppum Mulakum Thattukada",
+    "lat": 9.97103,
+    "lng": 76.28258,
+    "area": "Panambilly Nagar, Kochi",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderlog 'The 15 best street food in Kochi (Cochin)') — a small named roadside eatery in Panambilly Nagar known for affordable traditional Kerala dishes, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "5-star-thattukada-ernakulam",
+    "name": "5 Star Thattukada",
+    "lat": 9.98204,
+    "lng": 76.30037,
+    "area": "Ernakulam City, Kochi",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Zomato editorial listing and Wanderlog Kochi street food coverage) on Ernakulam City — a named roadside thattukada, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bajji-thattukada-elamkulam",
+    "name": "Bajji Thattukada",
+    "lat": 9.95474,
+    "lng": 76.30142,
+    "area": "Elamkulam, Kochi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Justdial 'Bajji Thattukada in Elamkulam' listing referenced across Kochi street-food guides) — a named roadside stall known for fried bajjis, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "chicken-65-thattu-kada-vyttila",
+    "name": "Chicken 65 Thattu Kada",
+    "lat": 9.96865,
+    "lng": 76.32072,
+    "area": "Vyttila, Kochi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (business listings and Kochi street-food roundups) near Vyttila Flyover — a named roadside stall known for deep-fried Chicken 65, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sree-muruga-cafe-thrippunithura",
+    "name": "Sree Muruga Cafe",
+    "lat": 9.94523,
+    "lng": 76.34597,
+    "area": "Thrippunithura, Kochi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Kochi food-guide coverage, e.g. Vacaywork's Fort Kochi/Ernakulam eating guide) — a small local cafe running since the 1980s, known for its pazham pori (banana fritter) with beef curry breakfast combo, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "malabar-chips-ernakulam-south",
+    "name": "Malabar Chips",
+    "lat": 9.96742,
+    "lng": 76.28653,
+    "area": "Ernakulam South, Kochi",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Wanderlog and Quora recommendations for Kerala banana chips) near Ernakulam South Metro/Railway Station — a long-running named shop for banana, jackfruit and tapioca chips, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shajikkas-kulukki-sarbath",
+    "name": "Shajikka's Kulukki Sarbath",
+    "lat": 9.96538,
+    "lng": 76.24291,
+    "area": "Fort Kochi / Broadway, Kochi",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Metro Vaartha news feature 'Beat this summer with Kulukki Sarbath: Kochi's zesty, shaken delight') naming street vendor Shaji ('Shajikka') as the vendor credited with popularizing kulukki sarbath in Kochi, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "kulukkithakka-kaloor",
+    "name": "KulukkiThakka (Takruddin's)",
+    "lat": 9.99537,
+    "lng": 76.29463,
+    "area": "Kaloor, Kochi",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Metro Vaartha kulukki sarbath feature) naming Takruddin's KulukkiThakka stall in Kaloor as a well-known kulukki sarbath vendor, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "curlies-anjuna-beach",
+    "name": "Curlies",
+    "lat": 15.57346,
+    "lng": 73.74082,
+    "area": "Anjuna Beach, Goa",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify '23 Beach Shacks in Goa' and Zomato editorial) — a long-running named beach shack on Anjuna Beach known for its sea-facing seating and late-night crowd, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "brittos-baga-beach",
+    "name": "Britto's",
+    "lat": 15.55486,
+    "lng": 73.75217,
+    "area": "Baga Beach, Goa",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Agoda 'Discover Goa's Top 10 Shacks' and related beach-shack listicles) — a classic named beach shack on Baga Beach, popular with locals and tourists year-round, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "dsilva-fast-food-miramar",
+    "name": "D'Silva Fast Food Centre",
+    "lat": 15.47603,
+    "lng": 73.80839,
+    "area": "Miramar Beach, Panjim, Goa",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (The Goan feature 'D'Silva Fast Food serving up delights since the 90s') opposite Miramar children's park — known for choris pav and cutlet pao since the early 1990s, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "noronhas-corner-anjuna",
+    "name": "Noronha's Corner",
+    "lat": 15.58152,
+    "lng": 73.76547,
+    "area": "Anjuna Circle, Anjuna, Goa",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify Goa street food roundup) at the Anjuna-Mapusa/Calangute-Siolim roads junction — known for chicken cutlet bread, beef chilli fry and spicy chorizo burgers, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "saligao-deck",
+    "name": "Saligao Deck",
+    "lat": 15.54932,
+    "lng": 73.79036,
+    "area": "Saligao, Goa",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify Goa street food roundup) opposite Saligao Village Market — known for capsicum-onion bhajji and seafood xacuti, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ravis-stall-panjim",
+    "name": "Ravi's Stall",
+    "lat": 15.49943,
+    "lng": 73.82736,
+    "area": "Panjim, Goa",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify Goa street food roundup) opposite the Panjim Immaculate Conception Church — known for fluffy omelettes served with spicy chicken xacuti gravy and fresh Goan pao, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sandeeps-vada-pav-farmagudi",
+    "name": "Sandeep's Vada Pav",
+    "lat": 15.40268,
+    "lng": 74.00873,
+    "area": "Farmagudi, Ponda, Goa",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify Goa street food roundup) near the Ganesh Temple in Farmagudi — a widely cited stall for Goan-style vada pav, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sandeep-ros-omelette-panjim",
+    "name": "Sandeep Ros Omelette",
+    "lat": 15.49952,
+    "lng": 73.82732,
+    "area": "Panjim, Goa",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (itsgoa.com 'Exploring the Iconic Ros Omelet in Goa') — a named street-side ros omelette stall in Panjim, one of Goa's iconic late-night snacks, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ulhas-goan-ros-omelette-margao",
+    "name": "Ulhas Goan Ros Omelette",
+    "lat": 15.27381,
+    "lng": 73.95951,
+    "area": "Margao, Goa",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (itsgoa.com 'Exploring the Iconic Ros Omelet in Goa') — a named street-side ros omelette stall in Margao, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sirsat-no-1-assagao",
+    "name": "Sirsat No. 1",
+    "lat": 15.59247,
+    "lng": 73.78684,
+    "area": "Assagao, Goa",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (itsgoa.com 'Exploring the Iconic Ros Omelet in Goa') — a named ros omelette stall in Assagao, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "alankar-fast-food-centre-mapusa",
+    "name": "Alankar Fast Food Centre",
+    "lat": 15.59392,
+    "lng": 73.81454,
+    "area": "Mapusa, Goa",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (itsgoa.com and Wanderlog) in front of Alankar Theatre, Mapusa — a bustling street food hub opening at 6pm daily, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "chaat-factory-sector-22",
+    "name": "Chaat Factory",
+    "lat": 30.73533,
+    "lng": 76.77647,
+    "area": "Sector 22, Chandigarh",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Justdial 'Best Chaat Corners near me in Chandigarh' listing) in Sector 22 — a named chaat stall, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bhatura-junction-sector-17",
+    "name": "Bhatura Junction",
+    "lat": 30.74132,
+    "lng": 76.78247,
+    "area": "Sector 17, Chandigarh",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Zomato/magicpin listings and Chandigarh street-food blogs) in Sector 17 — a long-established eatery known for its chole bhature, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "sindhi-sweets-sector-17",
+    "name": "Sindhi Sweets",
+    "lat": 30.74067,
+    "lng": 76.78341,
+    "area": "Sector 17, Chandigarh",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (mytownblog and techedo Chandigarh street food coverage) in Sector 17 — a named sweets counter on the Sector 17 food strip, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "garg-chaat-sector-23",
+    "name": "Garg Chaat",
+    "lat": 30.73972,
+    "lng": 76.77398,
+    "area": "Sector 23, Chandigarh",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Homegrown 'A Homegrown Guide To Chandigarh's Most Iconic Street Food Spots') in Sector 23 — serving gol gappa and tikki chaat since the 1960s, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "amritsari-kulcha-hub-sector-9",
+    "name": "Amritsari Kulcha Hub",
+    "lat": 30.74678,
+    "lng": 76.78421,
+    "area": "Sector 9, Chandigarh",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Homegrown street food guide and Chandigarh.pro sector-by-sector guide) in Sector 9 — a named stall known for stuffed kulchas, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "krishna-chat-bhandar-sector-37",
+    "name": "Krishna Chat Bhandar",
+    "lat": 30.72483,
+    "lng": 76.76398,
+    "area": "Sector 37, Chandigarh",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Shoutlo 'Are Golgappas Your Weakness?' listicle) in Sector 37 — one of the city's popular golgappa and chaat joints, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "shiv-mishthan-bhandar-sector-18",
+    "name": "Shiv Mishthan Bhandar",
+    "lat": 30.73718,
+    "lng": 76.77341,
+    "area": "Sector 18, Chandigarh",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Shoutlo golgappa listicle and Zomato editorial) in Sector 18 — known for kachoris, mithai and golgappas, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "pal-dhaba-sector-28",
+    "name": "Pal Dhaba",
+    "lat": 30.71822,
+    "lng": 76.77556,
+    "area": "Sector 28, Chandigarh",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripadvisor, Foursquare and paldhabachandigarh.com 'About' page) — a dhaba running since 1960 that began in Sector 22 before growing into its Sector 28D location, known for North Indian meat curries, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "ram-chaat-bhandar-sector-34",
+    "name": "Ram Chaat Bhandar",
+    "lat": 30.72088,
+    "lng": 76.75657,
+    "area": "Sector 34, Chandigarh",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Holidify '17 Best Places For Street Food in Chandigarh') in Sector 34C — a named chaat stall, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "bholey-di-hatti-sector-44",
+    "name": "Bholey Di Hatti",
+    "lat": 30.69713,
+    "lng": 76.74847,
+    "area": "Sector 44, Chandigarh",
+    "category": "other",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (magicpin and Zomato listings) in Sector 44 — a North Indian street-food joint known for its rajma, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "classic-44-sector-37",
+    "name": "Classic 44",
+    "lat": 30.72398,
+    "lng": 76.76512,
+    "area": "Sector 37, Chandigarh",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Tripadvisor and Zomato listings) in Sector 37 — a grab-and-go stall known for its crispy chicken patties, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
   }
 ]
