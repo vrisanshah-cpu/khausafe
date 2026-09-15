@@ -9848,5 +9848,455 @@
     "category": "other",
     "certification_status": "unknown",
     "source": "Manually curated from public reporting (Chennai Orbit blog, 'Top 10 Foods to Try in Tirunelveli') on Tirunelveli — Hotel Ponnusamy is known for traditional home-style South Indian cooking, Sep 2026. No FSSAI or Clean Street Food Hub certification record found for this hub. Coordinates are an approximate manual placement in the area, pending on-site GPS verification."
+  },
+  {
+    "id": "cuttack-kuna-tuna-dahibara-1",
+    "name": "Kuna Tuna Dahibara",
+    "lat": 20.4735,
+    "lng": 85.879,
+    "area": "Barabati Stadium",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "OdishaTV (odishatv.in) article 'Dahibara Aloodum Dibasa: 7 famous joints in Cuttack to relish the soul food of Silver City', also listed on Justdial as Kuna Tuna Dahibara Stall, Biju Patnaik Colony. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-kanha-dahibara-2",
+    "name": "Kanha Dahibara",
+    "lat": 20.4732,
+    "lng": 85.8795,
+    "area": "Barabati Stadium",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "OdishaTV (odishatv.in) article 'Dahibara Aloodum Dibasa: 7 famous joints in Cuttack to relish the soul food of Silver City'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-raghu-dahibara-3",
+    "name": "Raghu Dahibara Aloodum",
+    "lat": 20.4665,
+    "lng": 85.8822,
+    "area": "Chandini Chowk",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "OdishaTV (odishatv.in) and Odisha Rajya (odisharajya.com) 'Best 10 Dahibara Aludum Places In Cuttack' both name Raghu Dahibara Aloodum as a well-known Dahivada stall drawing long queues. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-trinath-sahoo-dahibara-4",
+    "name": "Trinath Sahoo Dahibara Aloodum",
+    "lat": 20.495,
+    "lng": 85.87,
+    "area": "Masik Patna Colony",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "OdishaTV (odishatv.in) 'Dahibara Aloodum Dibasa' article and foodgraphy.gapu.in 'Top Dahibara Stalls of Cuttack Chosen by Manas Muduli', naming Trinath Sahoo's stall on Kanika Road, Masik Patna Colony. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-ishwar-dahibara-5",
+    "name": "Ishwar Dahibara Aloodum",
+    "lat": 20.468,
+    "lng": 85.8825,
+    "area": "Biju Patnaik Chowk",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "OdishaTV (odishatv.in) 'Dahibara Aloodum Dibasa: 7 famous joints in Cuttack' and Odisha Rajya (odisharajya.com), naming Iswar Dahibara near Biju Patnaik Chhak as one of the first to sell meetha bara in the city. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-babula-bhai-dahibara-6",
+    "name": "No. 1 Dahibara Aludum Babula Bhai",
+    "lat": 20.4555,
+    "lng": 85.8945,
+    "area": "Tulsipur",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com business listing 'No. 1 Dahibara Aludum Babula Bhai, Near Of State Bank, Tulsipur, Cuttack' (Best Street Food near me in Cuttack). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-binod-dahibara-7",
+    "name": "Binod Dahibara",
+    "lat": 20.466,
+    "lng": 85.884,
+    "area": "Deula Sahi",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "OdishaTV (odishatv.in) article 'Dahibara Aloodum Dibasa: 7 famous joints in Cuttack to relish the soul food of Silver City', naming Binod Dahibara in the Deula Sahi area. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-jaga-dahibara-8",
+    "name": "Jaga Dahibara Aludam",
+    "lat": 20.4672,
+    "lng": 85.8815,
+    "area": "Nayasadak",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com business listing 'Jaga Dahibara Aludam, Nayasadak, Cuttack' (Best Street Food near me in Cuttack). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-bapu-depu-dahibara-9",
+    "name": "Bapu Depu Dahibara Aludum",
+    "lat": 20.4738,
+    "lng": 85.8785,
+    "area": "Barabati Stadium",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com business listing 'Bapu Depu Dahibara Aludum, barabati stadium, Cuttack' (Best Street Food near me in Cuttack). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-babula-aaludam-godisahi-10",
+    "name": "Babula Aaludam Dahibara Stall",
+    "lat": 20.469,
+    "lng": 85.8805,
+    "area": "Godisahi",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com business listing 'Babula Aaludam Dahibara Stall, Godisahi, Cuttack' (Best Food Court near me in Cuttack). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-bikalananda-kar-rasagola-11",
+    "name": "Bikalananda Kar's Rasagola",
+    "lat": 20.4705,
+    "lng": 85.8835,
+    "area": "Buxi Bazaar",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Zomato.com listing 'Bikalananda Kar's Rasagola, Buxi Bazaar, Cuttack' and ebhubaneswar.com '7 Sweet Shops in Cuttack: A Taste of the Town' (main house at Maruti Complex, Bajrakabati Rd). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-dama-maharaj-12",
+    "name": "Dama Maharaj",
+    "lat": 20.47,
+    "lng": 85.883,
+    "area": "Buxi Bazar Road",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "ebhubaneswar.com article '7 Sweet Shops in Cuttack: A Taste of the Town', listing Dama Maharaj on Buxi Bazar Rd, Buxi Bazar. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-jyoti-sweets-13",
+    "name": "Jyoti Sweets",
+    "lat": 20.4695,
+    "lng": 85.8845,
+    "area": "Dolmundai Chowk",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "ebhubaneswar.com article '7 Sweet Shops in Cuttack: A Taste of the Town', listing Jyoti Sweets at Dolmundai chowk, near Jagannath Temple. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-dilbahar-lassi-14",
+    "name": "Dilbahar Lassi",
+    "lat": 20.4703,
+    "lng": 85.8832,
+    "area": "Buxi Bazar (GPO)",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Justdial.com listing 'Top Fruit Juice Centres in Cuttack' showing Dilbahar Lassi, Gpo, Buxibazar, Cuttack (Juice Center, takeaway available). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "cuttack-hina-bhai-lassi-15",
+    "name": "Hina Bhai's Handmade Lassi Shop",
+    "lat": 20.456,
+    "lng": 85.893,
+    "area": "Telanga Bazar, Badambadi",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Justdial.com listing 'Top Fruit Juice Centres in Cuttack' showing Hina Bhai'S Handmade Lassi Shop, Bhagatpur, Telanga Bazar, Badambadi, Cuttack. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-ganguram-sweets-1",
+    "name": "Ganguram Sweets",
+    "lat": 19.8058,
+    "lng": 85.8322,
+    "area": "Swargadwar",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Tripadvisor reviews of 'Ganguram Sweets, Puri' and Justdial 'Top Sweet Shops in Puri' listing Ganguram Sweets, Swargadwar Road, Swargadwar, Puri, widely cited as one of the most famous khaja shops in Puri. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-kakatua-mistanna-2",
+    "name": "Kakatua Mistanna Bhandar",
+    "lat": 19.806,
+    "lng": 85.8327,
+    "area": "Gourbadsahi, Swargadwar",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Sweet Shops in Puri' listing 'Kakatua Mistanna Bhandar, Gourbadsahi, Swargadwar, Puri' (17,496 ratings), a leading khaja seller near Swargadwar. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-kakatuyar-misthanna-3",
+    "name": "Kakatuyar Misthanna Bhandar",
+    "lat": 19.8062,
+    "lng": 85.832,
+    "area": "Swargadwar Road",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Wayfarer's Corner (wayfarerscorner.com) article 'The Khaja story of Puri' and Justdial 'Top Sweet Shops in Puri' listing Kakatuyar Misthanna Bhandar, Swargadwar Road, Swargadwar, Puri. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-original-nrusingha-sweets-4",
+    "name": "Original Nrusingha Sweets",
+    "lat": 19.8065,
+    "lng": 85.83,
+    "area": "Balisahi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "eBhubaneswar.com 'Top 5 Khaja & Sweet Shops in Puri' and Justdial 'Top Sweet Shops in Puri' listing 'Original Nrusingha Sweets, Swargadwar Road, Balisahi, Puri' (4,452 ratings). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-ganguram-khaja-factory-5",
+    "name": "Ganguram Khaja Factory",
+    "lat": 19.802,
+    "lng": 85.828,
+    "area": "Balagandi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Sweet Shops in Puri' listing 'Ganguram Khaja Factory, Balagandi, Puri' (1,834 ratings). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-shree-jagannath-sweets-6",
+    "name": "Shree Jagannath Sweets",
+    "lat": 19.8067,
+    "lng": 85.8298,
+    "area": "Samakali Lane, Balisahi",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Sweet Shops in Puri' listing 'Shree Jagannath Sweets, Samakali Lane, Balisahi, Puri'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-senapati-sweets-7",
+    "name": "Senapati Sweets",
+    "lat": 19.81,
+    "lng": 85.825,
+    "area": "Badasankha",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "eBhubaneswar.com article 'Top 5 Khaja & Sweet Shops in Puri', listing Senapati Sweets on Red Cross Road, Badasankha, Puri. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-behera-sweets-8",
+    "name": "Behera Sweets",
+    "lat": 19.815,
+    "lng": 85.82,
+    "area": "Gajapati Nagar",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "eBhubaneswar.com article 'Top 5 Khaja & Sweet Shops in Puri', listing Behera Sweets near Station Road, Ram Mandir Road, Gajapati Nagar, Puri. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-kalia-veg-chaat-chowmin-9",
+    "name": "Kalia Veg Chaat & Chowmin",
+    "lat": 19.798,
+    "lng": 85.833,
+    "area": "Penthakata",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Puri' listing 'Kalia Veg Chaat & Chowmin, Chakra Tirtha Road, Penthakata, Puri'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-kalia-chat-10",
+    "name": "Kalia Chat",
+    "lat": 19.807,
+    "lng": 85.829,
+    "area": "Balisahi",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Puri' listing 'Kalia Chat, Marchikot Choke, Balisahi, Puri'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-lingaraj-dahibara-center-11",
+    "name": "Lingaraj Dahibara Center",
+    "lat": 19.809,
+    "lng": 85.827,
+    "area": "Nayahat",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Puri' listing 'Lingaraj Dahibara Center, Charichhaka Starang Road, Nayahat, Puri' (open 24 hrs). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-chatpata-house-12",
+    "name": "Chatpata House",
+    "lat": 19.8022,
+    "lng": 85.8278,
+    "area": "Grand Road, Balagandi",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Puri' listing 'Chatpata House, Grand Road, Balagandi, Puri' (open 24 hrs). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-puri-pampdi-chat-13",
+    "name": "Puri Pampdi Chat",
+    "lat": 19.8,
+    "lng": 85.815,
+    "area": "Srivihar",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Puri' listing 'Puri Pampdi Chat, Ward 21 Municipality, Srivihar, Puri'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-behera-lasi-14",
+    "name": "Behera Lasi",
+    "lat": 19.8021,
+    "lng": 85.8282,
+    "area": "Grand Road, Balagandi",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Fruit Juice Centres in Puri' listing 'Behera Lasi, Grand Road, Balagandi, Puri'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "puri-trupti-juice-snacks-15",
+    "name": "Trupti Juice And Snacks Parlour",
+    "lat": 19.8023,
+    "lng": 85.8285,
+    "area": "Grand Road, Balagandi",
+    "category": "beverages",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Fruit Juice Centres in Puri' listing 'Trupti Juice And Snacks Parlour, Grand Road, Balagandi, Puri'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-new-bhartia-chaat-1",
+    "name": "New Bhartia Chaat Bhandar",
+    "lat": 22.24,
+    "lng": 84.85,
+    "area": "Chhend Colony",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Rourkela' listing 'New Bhartia Chaat Bhandar, Chhend Colony, Rourkela' (655 ratings); also featured in YouTube video 'Bhartia chat bhandar Rourkela || Ghugni chaat || Rourkela famous food'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-gobind-chat-center-2",
+    "name": "Gobind Chat Center",
+    "lat": 22.241,
+    "lng": 84.849,
+    "area": "Chhend Colony (Ward 14)",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Rourkela' listing 'Gobind Chat Center, Atchhend Colony, Bus Stand, Chhend 1, Ward 14, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-krishna-gupchup-chat-3",
+    "name": "Krishna Gupchup Chat Stall",
+    "lat": 22.265,
+    "lng": 84.858,
+    "area": "Sector 2, NAC Market",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Rourkela' listing 'Krishna Gupchup Chat Stall, Sector 2, N.A.C Market, Eastern Avenue, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-nandu-chat-bhandar-4",
+    "name": "Nandu Chat Bhandar",
+    "lat": 22.228,
+    "lng": 84.83,
+    "area": "Civil Township",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Rourkela' listing 'Nandu Chat Bhandar, Civil Town Ship, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-anil-chat-center-5",
+    "name": "Anil Chat Center",
+    "lat": 22.232,
+    "lng": 84.838,
+    "area": "Old Chhend Basti, Panposh",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Rourkela' listing 'Anil Chat Center, Old Chhend Basti, Panposh, Kishan Tola, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-mathurawasi-gujiya-chaat-6",
+    "name": "Mathurawasi Gujiya Chaat",
+    "lat": 22.27,
+    "lng": 84.89,
+    "area": "Chandrapur",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Rourkela' and 'Pani Puri Centres in Rourkela Sector 2' listings, both showing 'Mathurawasi Gujiya Chaat, Chandrapur, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-jitendar-chat-bhandar-7",
+    "name": "Jitendar Chat Bhandar",
+    "lat": 22.2833,
+    "lng": 84.7833,
+    "area": "Bondamunda",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Rourkela' listing 'Jitendar Chat Bhandar, Shop No 12, Bondamunda Sector A, Uco Bank Colony, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-santosh-chat-bhandar-8",
+    "name": "Santosh Chat Bhandar",
+    "lat": 22.2395,
+    "lng": 84.851,
+    "area": "Chhend Colony",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Chaat Corners in Rourkela' listing 'Santosh Chat Bhandar, GM-46/47, Chhend Colony, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-dilip-panipuri-9",
+    "name": "Dilip Panipuri",
+    "lat": 22.245,
+    "lng": 84.87,
+    "area": "Sector 20",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Pani Puri Centres in Rourkela Sector 2' listing 'Dilip Panipuri, Rourkela Sector 20, Rourkela' (194 ratings). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-nandlal-shaw-panipuri-10",
+    "name": "Nandlal Shaw Special Panipuri",
+    "lat": 22.2495,
+    "lng": 84.871,
+    "area": "Sector 19",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Pani Puri Centres in Rourkela Sector 2' listing 'Nandlal Shaw Special Panipuri, Rourkela Sector 19, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-roshan-chat-gupchup-11",
+    "name": "Roshan Chat Gupchup",
+    "lat": 22.25,
+    "lng": 84.865,
+    "area": "Nayabazar, Sector 21 (Uttam Basti)",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Pani Puri Centres in Rourkela Sector 2' listing 'Roshan Chat Gupchup, Nayabazar Sector 21, Uttam Basti, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-dilkhush-gupchup-panipuri-12",
+    "name": "Dilkhush Gupchup Panipuri",
+    "lat": 22.255,
+    "lng": 84.86,
+    "area": "Sector 14",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Pani Puri Centres in Rourkela Sector 2' listing 'Dilkhush Gupchup Panipuri, Sector 13/Sector 14, Rourkela' (40 ratings). Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-rinku-famous-panipuri-13",
+    "name": "Rinku Famous Panipuri",
+    "lat": 22.21,
+    "lng": 84.86,
+    "area": "Fertilizer Township",
+    "category": "chaat",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Pani Puri Centres in Rourkela Sector 2' listing 'Rinku Famous Panipuri, Fertilizer Township, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-dada-nasta-stall-14",
+    "name": "Dada Nasta Stall",
+    "lat": 22.26,
+    "lng": 84.865,
+    "area": "Sector 7",
+    "category": "snacks",
+    "certification_status": "unknown",
+    "source": "Justdial.com 'Top Snack Stall in Rourkela Sector 2' listing 'Dada Nasta Stall, Sector7 Rourkela Odisha, Rourkela Sector 7, Rourkela'. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
+  },
+  {
+    "id": "rourkela-shalimar-sweets-chats-15",
+    "name": "Shalimar Sweets and Chats",
+    "lat": 22.23,
+    "lng": 84.84,
+    "area": "Panposh Road",
+    "category": "sweets",
+    "certification_status": "unknown",
+    "source": "Web search results (justdial.com/local business listings) naming 'Shalimar Sweets and Chats' on Panposh Road, Rourkela, an area described as lined with local food stalls. Coordinates are approximate and manually placed pending on-site GPS verification. No FSSAI/Clean Street Food Hub certification record found for this vendor."
   }
 ]
