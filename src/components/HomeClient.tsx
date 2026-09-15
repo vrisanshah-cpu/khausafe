@@ -1,13 +1,14 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import type { ReviewSummary, Vendor } from "@/lib/types";
 import { getAreas } from "@/lib/areas";
 import { distanceKm } from "@/lib/geo";
 import { FilterBar, type Filters } from "./FilterBar";
 import { VendorList } from "./VendorList";
 import { TopPicksStrip } from "./TopPicksStrip";
+import { useBottomSheet } from "./useBottomSheet";
 
 const MapView = dynamic(() => import("./MapView").then((mod) => mod.MapView), {
   ssr: false,
@@ -32,7 +33,9 @@ export function HomeClient({
     certifiedOnly: false,
   });
   const [query, setQuery] = useState("");
-  const [mobileView, setMobileView] = useState<"map" | "list">("map");
+  const mainRef = useRef<HTMLElement>(null);
+  const sheetRef = useRef<HTMLDivElement>(null);
+  const sheet = useBottomSheet(mainRef, sheetRef);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [locating, setLocating] = useState(false);
   const [locationError, setLocationError] = useState<string | null>(null);
@@ -90,7 +93,7 @@ export function HomeClient({
     query === "" && filters.area === "all" && filters.category === "all" && !filters.certifiedOnly;
 
   return (
-    <div className="flex h-[calc(100vh-3.5rem-var(--safe-top))] flex-col md:flex-row">
+    <div className="flex h-[calc(100dvh-3.5rem-var(--safe-top))] flex-col md:flex-row">
       {/* Desktop sidebar — always-visible list alongside the map */}
       <aside className="hidden w-96 shrink-0 flex-col border-r border-neutral-200 md:flex">
         <div className="border-b border-neutral-200 px-3 pt-3">
@@ -111,9 +114,18 @@ export function HomeClient({
         </div>
       </aside>
 
-      {/* Mobile — full-bleed map with a floating search bar and a peeking bottom sheet */}
-      <main className="relative h-full flex-1 overflow-hidden">
-        <MapView vendors={sorted} userLocation={userLocation} />
+      {/* Mobile — full-bleed map with a floating search bar and a draggable bottom sheet */}
+      <main ref={mainRef} className="relative h-full flex-1 overflow-hidden">
+        {/* Leaflet's internal panes (markers/popups/tooltips) use z-indexes up
+            to 700+ with no stacking context of their own — `isolate` here
+            contains them so they can never paint over the search bar or
+            bottom sheet below, regardless of where a marker/popup lands. */}
+        <div
+          className="absolute inset-0 isolate"
+          onClick={() => sheet.snap !== "peek" && sheet.goTo("peek")}
+        >
+          <MapView vendors={sorted} userLocation={userLocation} />
+        </div>
 
         <div className="pointer-events-none absolute inset-x-0 top-0 z-10 p-3 md:hidden">
           <div className="pointer-events-auto rounded-2xl bg-white/95 shadow-[var(--shadow-float)] backdrop-blur-sm">
@@ -130,21 +142,36 @@ export function HomeClient({
           </div>
         </div>
 
+        {/* Google Maps-style bottom sheet: drag the handle freely, or tap it
+            to cycle peek → half → full. Height is driven imperatively via
+            the ref during drag (see useBottomSheet) so touch-move never
+            waits on a React re-render of the map/list underneath. */}
         <div
-          className={`absolute inset-x-0 bottom-0 z-20 flex flex-col rounded-t-2xl bg-white shadow-[var(--shadow-float)] transition-transform duration-300 ease-out md:hidden ${
-            mobileView === "list" ? "translate-y-0" : "translate-y-[calc(100%-4.5rem)]"
+          ref={sheetRef}
+          className={`absolute inset-x-0 bottom-0 z-20 flex flex-col overflow-hidden rounded-t-2xl bg-white shadow-[var(--shadow-float)] md:hidden ${
+            sheet.dragging ? "" : "transition-[height] duration-300 ease-out"
           }`}
-          style={{ maxHeight: "70vh", paddingBottom: "var(--safe-bottom)" }}
+          style={{ height: sheet.heightPx, paddingBottom: "var(--safe-bottom)" }}
         >
           <button
             type="button"
-            onClick={() => setMobileView(mobileView === "list" ? "map" : "list")}
+            onPointerDown={sheet.onHandlePointerDown}
+            onPointerMove={sheet.onHandlePointerMove}
+            onPointerUp={sheet.onHandlePointerUp}
+            onPointerCancel={sheet.onHandlePointerUp}
+            onClick={(e) => {
+              e.stopPropagation();
+              sheet.cycle();
+            }}
+            style={{ touchAction: "none" }}
             className="flex shrink-0 flex-col items-center gap-1.5 pt-2.5 pb-1 active:opacity-70"
-            aria-label={mobileView === "list" ? "Collapse stall list" : "Show stall list"}
+            aria-label={sheet.snap === "peek" ? "Expand stall list" : "Collapse stall list"}
           >
             <span className="h-1.5 w-10 rounded-full bg-neutral-300" />
             <span className="text-xs font-medium text-neutral-500">
-              {mobileView === "list" ? "Hide list" : `${sorted.length} stall${sorted.length === 1 ? "" : "s"} nearby`}
+              {sheet.snap === "peek"
+                ? `${sorted.length} stall${sorted.length === 1 ? "" : "s"} nearby`
+                : "Drag to resize"}
             </span>
           </button>
           <div className="flex-1 overflow-y-auto overscroll-contain">

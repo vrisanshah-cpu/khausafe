@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import { isAdminEmail } from "@/lib/admin";
 import { NativeBootstrap } from "@/components/native/NativeBootstrap";
 import { OfflineOverlay } from "@/components/native/OfflineOverlay";
+import { signOutAction } from "@/lib/supabase/actions";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,7 +56,16 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
                 Admin
               </Link>
             )}
-            {!user && (
+            {user ? (
+              <form action={signOutAction} className="flex items-center gap-2">
+                <span className="hidden max-w-[9rem] truncate text-xs text-neutral-400 sm:inline">
+                  {user.email}
+                </span>
+                <button type="submit" className="btn-secondary !px-3 !py-1.5 text-xs">
+                  Sign out
+                </button>
+              </form>
+            ) : (
               <Link href="/login" className="btn-primary !px-3.5 !py-1.5 text-xs">
                 Sign in
               </Link>

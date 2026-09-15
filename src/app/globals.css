@@ -45,10 +45,19 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  /* Stops the whole page from rubber-banding/bouncing on iOS/Android when a
+     touch drag (e.g. the bottom sheet) overscrolls past its own bounds —
+     without this, scroll "leaks" from the sheet into the page behind it. */
+  overscroll-behavior-y: none;
 }
 
 /* Hide scrollbar on horizontally-scrolling chip/strip rows, keep it functional */
@@ -58,6 +67,14 @@ body {
 }
 .scrollbar-none::-webkit-scrollbar {
   display: none;
+}
+
+/* Fade hint on the trailing edge of horizontally-scrolling chip rows so it
+   reads as "more to scroll" rather than "that's the whole menu" — the chip
+   row itself stays scrollable, this only masks the visual edge. */
+.scroll-fade-x {
+  -webkit-mask-image: linear-gradient(to right, black calc(100% - 28px), transparent 100%);
+  mask-image: linear-gradient(to right, black calc(100% - 28px), transparent 100%);
 }
 
 @layer components {

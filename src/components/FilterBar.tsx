@@ -69,7 +69,7 @@ export function FilterBar({
 
       {locationError && <p className="px-3 pt-1.5 text-xs text-red-600">{locationError}</p>}
 
-      <div className="mt-2.5 flex gap-2 overflow-x-auto px-3 pb-0.5 scrollbar-none">
+      <div className="mt-2.5 flex gap-2 overflow-x-auto px-3 pb-0.5 scrollbar-none scroll-fade-x">
         <button
           type="button"
           onClick={() => onChange({ ...filters, certifiedOnly: !filters.certifiedOnly })}
@@ -98,7 +98,7 @@ export function FilterBar({
       </div>
 
       {areas.length > 1 && (
-        <div className="mt-2 flex gap-2 overflow-x-auto px-3 pb-0.5 scrollbar-none">
+        <div className="mt-2 flex gap-2 overflow-x-auto px-3 pb-0.5 scrollbar-none scroll-fade-x">
           <button
             type="button"
             onClick={() => onChange({ ...filters, area: "all" })}

@@ -14,7 +14,10 @@ export function LoginForm() {
     if (!supabase) return;
 
     setStatus("sending");
-    const { error } = await supabase.auth.signInWithOtp({ email });
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: { emailRedirectTo: `${window.location.origin}/auth/confirm` },
+    });
 
     if (error) {
       setStatus("error");
