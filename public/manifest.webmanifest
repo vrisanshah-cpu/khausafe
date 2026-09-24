@@ -1,44 +1,56 @@
 {
+  "name": "KhauSafe — India's Street Food Map",
+  "short_name": "KhauSafe",
+  "description": "Discover sourced street-food vendors across India, led by Mumbai and Delhi NCR, with official certification kept separate from community observations.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#ea580c",
+  "lang": "en-IN",
+  "categories": ["food", "travel", "navigation"],
   "icons": [
     {
-      "src": "../icons/icon-48.webp",
-      "type": "image/png",
+      "src": "/icons/icon-48.webp",
+      "type": "image/webp",
       "sizes": "48x48",
       "purpose": "any maskable"
     },
     {
-      "src": "../icons/icon-72.webp",
-      "type": "image/png",
+      "src": "/icons/icon-72.webp",
+      "type": "image/webp",
       "sizes": "72x72",
       "purpose": "any maskable"
     },
     {
-      "src": "../icons/icon-96.webp",
-      "type": "image/png",
+      "src": "/icons/icon-96.webp",
+      "type": "image/webp",
       "sizes": "96x96",
       "purpose": "any maskable"
     },
     {
-      "src": "../icons/icon-128.webp",
-      "type": "image/png",
+      "src": "/icons/icon-128.webp",
+      "type": "image/webp",
       "sizes": "128x128",
       "purpose": "any maskable"
     },
     {
-      "src": "../icons/icon-192.webp",
-      "type": "image/png",
+      "src": "/icons/icon-192.webp",
+      "type": "image/webp",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "../icons/icon-256.webp",
-      "type": "image/png",
+      "src": "/icons/icon-256.webp",
+      "type": "image/webp",
       "sizes": "256x256",
       "purpose": "any maskable"
     },
     {
-      "src": "../icons/icon-512.webp",
-      "type": "image/png",
+      "src": "/icons/icon-512.webp",
+      "type": "image/webp",
       "sizes": "512x512",
       "purpose": "any maskable"
     }

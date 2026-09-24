@@ -7,12 +7,16 @@ none of it can be scripted from here.
 ## 0. What's already true about this setup
 
 - The apps load `https://khausafe.vercel.app` live (`capacitor.config.ts` → `server.url`).
-  There's no offline/bundled copy of the site — a device with zero connectivity will hit
-  the platform's own network-error page on cold start, before any of our JS (including the
-  offline overlay) can run. The in-app `OfflineOverlay` component only covers losing
-  connectivity *after* the app has already loaded — that's the common case, but not the
-  cold-start-with-no-signal case. If that matters to you later, the fix is a bundled local
-  shell page + native WebView delegate override; flag it if you want it built.
+  A service worker now caches the visited app shell/static assets and OpenStreetMap tiles,
+  while IndexedDB stores the vendor dataset and discovery preferences. Previously visited
+  screens remain useful when connectivity drops; a device's very first cold launch still
+  needs a connection to obtain the shell.
+- Discovery is India-only. Mumbai opens by default, Delhi NCR is the second featured market,
+  and Bengaluru, Hyderabad, Chennai, Kolkata, Pune, and the remaining covered Indian cities
+  are available from the city selector. Location discovery automatically switches to the
+  nearest covered Indian city when it is within 150 km.
+- Native custom-scheme deep links use `khausafe://open` on iOS and Android. The platform
+  manifests are already configured for that scheme.
 - Bundle ID is `com.khausafe.app` on both platforms. **This cannot be changed after your
   first App Store / Play Store submission** without publishing as a new app — double check
   you're happy with it before you submit anywhere.

@@ -1,10 +1,16 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReviewSummary, Vendor } from "@/lib/types";
 import { getAreas } from "@/lib/areas";
+import { getCityOptions, getVendorCity } from "@/lib/cities";
 import { distanceKm } from "@/lib/geo";
+import {
+  cacheDiscoveryPreferences,
+  cacheVendors,
+  getCachedDiscoveryPreferences,
+} from "@/lib/offline/vendorCache";
 import { FilterBar, type Filters } from "./FilterBar";
 import { VendorList } from "./VendorList";
 import { TopPicksStrip } from "./TopPicksStrip";
@@ -26,8 +32,9 @@ export function HomeClient({
   vendors: Vendor[];
   ratings: Map<string, ReviewSummary>;
 }) {
-  const areas = useMemo(() => getAreas(vendors), [vendors]);
+  const cities = useMemo(() => getCityOptions(vendors), [vendors]);
   const [filters, setFilters] = useState<Filters>({
+    city: "Mumbai",
     area: "all",
     category: "all",
     certifiedOnly: false,
@@ -40,6 +47,32 @@ export function HomeClient({
   const [locating, setLocating] = useState(false);
   const [locationError, setLocationError] = useState<string | null>(null);
 
+  const cityVendors = useMemo(
+    () => vendors.filter((vendor) => getVendorCity(vendor) === filters.city),
+    [vendors, filters.city]
+  );
+  const areas = useMemo(() => getAreas(cityVendors), [cityVendors]);
+
+  useEffect(() => {
+    cacheVendors(vendors).catch(() => {});
+    getCachedDiscoveryPreferences()
+      .then((saved) => {
+        if (!saved || !cities.includes(saved.city)) return;
+        setFilters({
+          city: saved.city,
+          area: saved.area,
+          category: saved.category,
+          certifiedOnly: saved.certifiedOnly,
+        });
+        setQuery(saved.query);
+      })
+      .catch(() => {});
+  }, [cities, vendors]);
+
+  useEffect(() => {
+    cacheDiscoveryPreferences({ ...filters, query }).catch(() => {});
+  }, [filters, query]);
+
   function handleLocate() {
     if (!navigator.geolocation) {
       setLocationError("Location isn't available in this browser.");
@@ -49,7 +82,22 @@ export function HomeClient({
     setLocationError(null);
     navigator.geolocation.getCurrentPosition(
       (pos) => {
-        setUserLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+        const location = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+        setUserLocation(location);
+        const nearest = vendors.reduce<{ vendor: Vendor; distance: number } | null>(
+          (best, vendor) => {
+            const distance = distanceKm(location, vendor);
+            return !best || distance < best.distance ? { vendor, distance } : best;
+          },
+          null
+        );
+        if (nearest && nearest.distance <= 150) {
+          setFilters((current) => ({
+            ...current,
+            city: getVendorCity(nearest.vendor),
+            area: "all",
+          }));
+        }
         setLocating(false);
       },
       (err) => {
@@ -66,7 +114,7 @@ export function HomeClient({
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return vendors.filter(
+    return cityVendors.filter(
       (v) =>
         (filters.area === "all" || v.area === filters.area) &&
         (filters.category === "all" || v.category === filters.category) &&
@@ -75,14 +123,14 @@ export function HomeClient({
           v.certification_status === "fssai_hygiene_rated") &&
         (q === "" || v.name.toLowerCase().includes(q) || v.area.toLowerCase().includes(q))
     );
-  }, [vendors, filters, query]);
+  }, [cityVendors, filters, query]);
 
   const distances = useMemo(() => {
     if (!userLocation) return undefined;
     const map = new Map<string, number>();
-    for (const v of vendors) map.set(v.id, distanceKm(userLocation, v));
+    for (const v of cityVendors) map.set(v.id, distanceKm(userLocation, v));
     return map;
-  }, [vendors, userLocation]);
+  }, [cityVendors, userLocation]);
 
   const sorted = useMemo(() => {
     if (!distances) return filtered;
@@ -98,6 +146,7 @@ export function HomeClient({
       <aside className="hidden w-96 shrink-0 flex-col border-r border-neutral-200 md:flex">
         <div className="border-b border-neutral-200 px-3 pt-3">
           <FilterBar
+            cities={cities}
             areas={areas}
             filters={filters}
             onChange={setFilters}
@@ -108,7 +157,7 @@ export function HomeClient({
             locationError={locationError}
           />
         </div>
-        {showTopPicks && <TopPicksStrip vendors={vendors} ratings={ratings} />}
+        {showTopPicks && <TopPicksStrip vendors={cityVendors} ratings={ratings} />}
         <div className="flex-1 overflow-y-auto">
           <VendorList vendors={sorted} distances={distances} ratings={ratings} />
         </div>
@@ -130,6 +179,7 @@ export function HomeClient({
         <div className="pointer-events-none absolute inset-x-0 top-0 z-10 p-3 md:hidden">
           <div className="pointer-events-auto rounded-2xl bg-white/95 shadow-[var(--shadow-float)] backdrop-blur-sm">
             <FilterBar
+              cities={cities}
               areas={areas}
               filters={filters}
               onChange={setFilters}
@@ -175,7 +225,7 @@ export function HomeClient({
             </span>
           </button>
           <div className="flex-1 overflow-y-auto overscroll-contain">
-            {showTopPicks && <TopPicksStrip vendors={vendors} ratings={ratings} />}
+            {showTopPicks && <TopPicksStrip vendors={cityVendors} ratings={ratings} />}
             <VendorList vendors={sorted} distances={distances} ratings={ratings} />
           </div>
         </div>

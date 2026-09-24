@@ -12,6 +12,10 @@ import { StatusBar, Style } from "@capacitor/status-bar";
  */
 export function NativeBootstrap() {
   useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js").catch(() => {});
+    }
+
     if (!Capacitor.isNativePlatform()) return;
 
     StatusBar.setStyle({ style: Style.Light }).catch(() => {});

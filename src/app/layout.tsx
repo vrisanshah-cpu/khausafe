@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { createClient } from "@/lib/supabase/server";
@@ -8,20 +7,17 @@ import { NativeBootstrap } from "@/components/native/NativeBootstrap";
 import { OfflineOverlay } from "@/components/native/OfflineOverlay";
 import { signOutAction } from "@/lib/supabase/actions";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "KhauSafe — Hygiene-rated street food near you",
+  title: "KhauSafe — India's street food safety map",
   description:
-    "Find street food vendors with official FSSAI Clean Street Food Hub certification and community-observed hygiene signals, on a map.",
+    "Discover sourced street-food vendors across India, led by Mumbai and Delhi NCR. Official FSSAI certification and community observations are always shown separately.",
+  manifest: "/manifest.webmanifest",
+  applicationName: "KhauSafe",
+  appleWebApp: {
+    capable: true,
+    title: "KhauSafe",
+    statusBarStyle: "default",
+  },
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {
@@ -30,10 +26,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   const admin = isAdminEmail(user?.email);
 
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="en-IN" className="h-full antialiased">
       <body className="flex min-h-full flex-col bg-white text-neutral-900">
         <NativeBootstrap />
         <OfflineOverlay />

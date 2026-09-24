@@ -1,8 +1,10 @@
 "use client";
 
 import { CATEGORY_LABELS, type VendorCategory } from "@/lib/types";
+import { PRIMARY_CITIES } from "@/lib/cities";
 
 export interface Filters {
+  city: string;
   area: string;
   category: VendorCategory | "all";
   certifiedOnly: boolean;
@@ -18,6 +20,7 @@ const CATEGORY_EMOJI: Record<VendorCategory, string> = {
 };
 
 export function FilterBar({
+  cities,
   areas,
   filters,
   onChange,
@@ -27,6 +30,7 @@ export function FilterBar({
   locating,
   locationError,
 }: {
+  cities: string[];
   areas: string[];
   filters: Filters;
   onChange: (filters: Filters) => void;
@@ -69,7 +73,45 @@ export function FilterBar({
 
       {locationError && <p className="px-3 pt-1.5 text-xs text-red-600">{locationError}</p>}
 
-      <div className="mt-2.5 flex gap-2 overflow-x-auto px-3 pb-0.5 scrollbar-none scroll-fade-x">
+      <div className="mt-2.5 flex items-center gap-2 overflow-x-auto px-3 pb-0.5 scrollbar-none scroll-fade-x">
+        {PRIMARY_CITIES.slice(0, 2).map((city) => (
+          <button
+            key={city}
+            type="button"
+            onClick={() => onChange({ ...filters, city, area: "all" })}
+            className={`chip ${filters.city === city ? "chip-active" : "chip-inactive"}`}
+          >
+            {city === "Mumbai" ? "🌊" : "🏛️"} {city}
+          </button>
+        ))}
+        <label className="relative shrink-0">
+          <span className="sr-only">Choose another Indian city</span>
+          <select
+            value={filters.city === "Mumbai" || filters.city === "Delhi NCR" ? "" : filters.city}
+            onChange={(event) => {
+              if (event.target.value) {
+                onChange({ ...filters, city: event.target.value, area: "all" });
+              }
+            }}
+            className="chip chip-inactive appearance-none pr-8 focus:border-orange-500 focus:outline-none"
+            aria-label="Choose an Indian city"
+          >
+            <option value="" disabled>
+              More cities
+            </option>
+            {cities.map((city) => (
+              <option key={city} value={city}>
+                {city}
+              </option>
+            ))}
+          </select>
+          <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-neutral-400">
+            ▾
+          </span>
+        </label>
+      </div>
+
+      <div className="mt-2 flex gap-2 overflow-x-auto px-3 pb-0.5 scrollbar-none scroll-fade-x">
         <button
           type="button"
           onClick={() => onChange({ ...filters, certifiedOnly: !filters.certifiedOnly })}
