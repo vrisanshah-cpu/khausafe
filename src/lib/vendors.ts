@@ -1,6 +1,21 @@
-import vendorsSeed from "@/data/vendors.json";
+import "server-only";
+
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import type { Vendor } from "@/lib/types";
 import { createClient } from "@/lib/supabase/server";
+
+let seedPromise: Promise<Vendor[]> | null = null;
+
+function loadSeedVendors() {
+  seedPromise ??= Promise.all(
+    ["vendors.json", "vendors-osm.json"].map(async (filename) => {
+      const filePath = path.join(process.cwd(), "src", "data", filename);
+      return JSON.parse(await readFile(filePath, "utf8")) as Vendor[];
+    })
+  ).then((catalogs) => catalogs.flat());
+  return seedPromise;
+}
 
 /**
  * Data access layer for vendors. The manually curated local JSON seed is
@@ -10,7 +25,7 @@ import { createClient } from "@/lib/supabase/server";
  * FSSAI data source to pull from.
  */
 export async function getVendors(): Promise<Vendor[]> {
-  const seed = vendorsSeed as Vendor[];
+  const seed = await loadSeedVendors();
 
   const supabase = await createClient();
   if (!supabase) return seed;

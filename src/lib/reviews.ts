@@ -45,18 +45,23 @@ export async function getReviewSummariesByVendor(
   const supabase = await createClient();
   if (!supabase) return summaries;
 
-  const { data, error } = await supabase
-    .from("reviews")
-    .select("vendor_id, rating")
-    .in("vendor_id", vendorIds);
+  // Thousands of OSM-backed vendors can belong to one metro. Sending every
+  // id through a PostgREST `in(...)` URL can exceed proxy/query-string limits,
+  // so large city loads fetch the (RLS-filtered) compact review projection and
+  // filter it locally. Smaller sets still use the targeted database query.
+  const request = supabase.from("reviews").select("vendor_id, rating");
+  const { data, error } =
+    vendorIds.length <= 200 ? await request.in("vendor_id", vendorIds) : await request;
 
   if (error || !data) {
     if (error) console.error("Failed to load review summaries:", error.message);
     return summaries;
   }
 
+  const requestedIds = new Set(vendorIds);
   const grouped = new Map<string, number[]>();
   for (const row of data as { vendor_id: string; rating: number }[]) {
+    if (!requestedIds.has(row.vendor_id)) continue;
     const list = grouped.get(row.vendor_id) ?? [];
     list.push(row.rating);
     grouped.set(row.vendor_id, list);

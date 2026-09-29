@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReviewSummary, Vendor } from "@/lib/types";
 import { getAreas } from "@/lib/areas";
-import { getCityOptions, getVendorCity } from "@/lib/cities";
+import { getNearestPrimaryCity } from "@/lib/cities";
 import { distanceKm } from "@/lib/geo";
 import {
   cacheDiscoveryPreferences,
@@ -26,13 +26,19 @@ const MapView = dynamic(() => import("./MapView").then((mod) => mod.MapView), {
 });
 
 export function HomeClient({
-  vendors,
-  ratings,
+  initialVendors,
+  initialRatings,
+  cities,
 }: {
-  vendors: Vendor[];
-  ratings: Map<string, ReviewSummary>;
+  initialVendors: Vendor[];
+  initialRatings: Map<string, ReviewSummary>;
+  cities: string[];
 }) {
-  const cities = useMemo(() => getCityOptions(vendors), [vendors]);
+  const [vendors, setVendors] = useState(initialVendors);
+  const [ratings, setRatings] = useState(initialRatings);
+  const [loadedCity, setLoadedCity] = useState("Mumbai");
+  const [cityLoadError, setCityLoadError] = useState<{ city: string; message: string } | null>(null);
+  const [visibleCount, setVisibleCount] = useState(150);
   const [filters, setFilters] = useState<Filters>({
     city: "Mumbai",
     area: "all",
@@ -47,14 +53,44 @@ export function HomeClient({
   const [locating, setLocating] = useState(false);
   const [locationError, setLocationError] = useState<string | null>(null);
 
+  const cityError = cityLoadError?.city === filters.city ? cityLoadError.message : null;
+  const cityLoading = filters.city !== loadedCity && cityError === null;
   const cityVendors = useMemo(
-    () => vendors.filter((vendor) => getVendorCity(vendor) === filters.city),
-    [vendors, filters.city]
+    () => (filters.city === loadedCity ? vendors : []),
+    [filters.city, loadedCity, vendors]
   );
   const areas = useMemo(() => getAreas(cityVendors), [cityVendors]);
 
   useEffect(() => {
-    cacheVendors(vendors).catch(() => {});
+    if (filters.city === loadedCity) return;
+    const controller = new AbortController();
+
+    fetch(`/api/vendors?city=${encodeURIComponent(filters.city)}`, { signal: controller.signal })
+      .then(async (response) => {
+        if (!response.ok) throw new Error("Unable to load this city.");
+        return (await response.json()) as {
+          vendors: Vendor[];
+          ratings: Record<string, ReviewSummary>;
+        };
+      })
+      .then((payload) => {
+        setVendors(payload.vendors);
+        setRatings(new Map(Object.entries(payload.ratings)));
+        setLoadedCity(filters.city);
+        setCityLoadError(null);
+      })
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === "AbortError") return;
+        setCityLoadError({
+          city: filters.city,
+          message: "Couldn’t load this city. Check your connection and try again.",
+        });
+      });
+
+    return () => controller.abort();
+  }, [filters.city, loadedCity]);
+
+  useEffect(() => {
     getCachedDiscoveryPreferences()
       .then((saved) => {
         if (!saved || !cities.includes(saved.city)) return;
@@ -67,7 +103,11 @@ export function HomeClient({
         setQuery(saved.query);
       })
       .catch(() => {});
-  }, [cities, vendors]);
+  }, [cities]);
+
+  useEffect(() => {
+    cacheVendors(vendors).catch(() => {});
+  }, [vendors]);
 
   useEffect(() => {
     cacheDiscoveryPreferences({ ...filters, query }).catch(() => {});
@@ -84,19 +124,14 @@ export function HomeClient({
       (pos) => {
         const location = { lat: pos.coords.latitude, lng: pos.coords.longitude };
         setUserLocation(location);
-        const nearest = vendors.reduce<{ vendor: Vendor; distance: number } | null>(
-          (best, vendor) => {
-            const distance = distanceKm(location, vendor);
-            return !best || distance < best.distance ? { vendor, distance } : best;
-          },
-          null
-        );
-        if (nearest && nearest.distance <= 150) {
+        const nearestCity = getNearestPrimaryCity(location);
+        if (nearestCity) {
           setFilters((current) => ({
             ...current,
-            city: getVendorCity(nearest.vendor),
+            city: nearestCity,
             area: "all",
           }));
+          setVisibleCount(150);
         }
         setLocating(false);
       },
@@ -136,6 +171,18 @@ export function HomeClient({
     if (!distances) return filtered;
     return [...filtered].sort((a, b) => (distances.get(a.id) ?? 0) - (distances.get(b.id) ?? 0));
   }, [filtered, distances]);
+  const visibleVendors = useMemo(() => sorted.slice(0, visibleCount), [sorted, visibleCount]);
+  const mapVendors = useMemo(() => sorted.slice(0, 750), [sorted]);
+
+  function handleFilterChange(nextFilters: Filters) {
+    setFilters(nextFilters);
+    setVisibleCount(150);
+  }
+
+  function handleQueryChange(nextQuery: string) {
+    setQuery(nextQuery);
+    setVisibleCount(150);
+  }
 
   const showTopPicks =
     query === "" && filters.area === "all" && filters.category === "all" && !filters.certifiedOnly;
@@ -149,9 +196,9 @@ export function HomeClient({
             cities={cities}
             areas={areas}
             filters={filters}
-            onChange={setFilters}
+            onChange={handleFilterChange}
             query={query}
-            onQueryChange={setQuery}
+            onQueryChange={handleQueryChange}
             onLocate={handleLocate}
             locating={locating}
             locationError={locationError}
@@ -159,7 +206,20 @@ export function HomeClient({
         </div>
         {showTopPicks && <TopPicksStrip vendors={cityVendors} ratings={ratings} />}
         <div className="flex-1 overflow-y-auto">
-          <VendorList vendors={sorted} distances={distances} ratings={ratings} />
+          {cityLoading && (
+            <p className="px-4 py-3 text-sm text-neutral-500">Loading {filters.city}…</p>
+          )}
+          {cityError && <p className="px-4 py-3 text-sm text-red-600">{cityError}</p>}
+          <VendorList vendors={visibleVendors} distances={distances} ratings={ratings} />
+          {visibleCount < sorted.length && (
+            <button
+              type="button"
+              onClick={() => setVisibleCount((count) => count + 150)}
+              className="btn-secondary mx-3 mb-4 w-[calc(100%-1.5rem)]"
+            >
+              Show more ({sorted.length - visibleCount} remaining)
+            </button>
+          )}
         </div>
       </aside>
 
@@ -173,7 +233,7 @@ export function HomeClient({
           className="absolute inset-0 isolate"
           onClick={() => sheet.snap !== "peek" && sheet.goTo("peek")}
         >
-          <MapView vendors={sorted} userLocation={userLocation} />
+          <MapView vendors={mapVendors} userLocation={userLocation} />
         </div>
 
         <div className="pointer-events-none absolute inset-x-0 top-0 z-10 p-3 md:hidden">
@@ -182,9 +242,9 @@ export function HomeClient({
               cities={cities}
               areas={areas}
               filters={filters}
-              onChange={setFilters}
+              onChange={handleFilterChange}
               query={query}
-              onQueryChange={setQuery}
+              onQueryChange={handleQueryChange}
               onLocate={handleLocate}
               locating={locating}
               locationError={locationError}
@@ -225,8 +285,21 @@ export function HomeClient({
             </span>
           </button>
           <div className="flex-1 overflow-y-auto overscroll-contain">
+            {cityLoading && (
+              <p className="px-4 py-3 text-sm text-neutral-500">Loading {filters.city}…</p>
+            )}
+            {cityError && <p className="px-4 py-3 text-sm text-red-600">{cityError}</p>}
             {showTopPicks && <TopPicksStrip vendors={cityVendors} ratings={ratings} />}
-            <VendorList vendors={sorted} distances={distances} ratings={ratings} />
+            <VendorList vendors={visibleVendors} distances={distances} ratings={ratings} />
+            {visibleCount < sorted.length && (
+              <button
+                type="button"
+                onClick={() => setVisibleCount((count) => count + 150)}
+                className="btn-secondary mx-3 mb-4 w-[calc(100%-1.5rem)]"
+              >
+                Show more ({sorted.length - visibleCount} remaining)
+              </button>
+            )}
           </div>
         </div>
       </main>
