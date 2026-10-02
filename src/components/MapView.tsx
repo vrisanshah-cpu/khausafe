@@ -3,9 +3,9 @@
 import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import L from "leaflet";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
-import type { Vendor } from "@/lib/types";
+import type { DiscoveryVendor, Vendor } from "@/lib/types";
 import { CertificationBadge } from "./CertificationBadge";
 
 const CATEGORY_STYLE: Record<Vendor["category"], { color: string; emoji: string }> = {
@@ -24,10 +24,15 @@ const RING_COLOR: Record<Vendor["certification_status"], string> = {
   unknown: "#a3a3a3",
 };
 
-function markerIcon(vendor: Vendor) {
+const MARKER_ICON_CACHE = new Map<string, L.DivIcon>();
+
+function markerIcon(vendor: DiscoveryVendor) {
+  const cacheKey = `${vendor.category}:${vendor.certification_status}:${Boolean(vendor.is_sponsored)}`;
+  const cached = MARKER_ICON_CACHE.get(cacheKey);
+  if (cached) return cached;
   const { color, emoji } = CATEGORY_STYLE[vendor.category];
   const ring = RING_COLOR[vendor.certification_status];
-  return L.divIcon({
+  const icon = L.divIcon({
     className: "",
     html: `<div style="position: relative; width: 34px; height: 34px;">
       <div style="
@@ -56,6 +61,8 @@ function markerIcon(vendor: Vendor) {
     iconAnchor: [17, 32],
     popupAnchor: [0, -30],
   });
+  MARKER_ICON_CACHE.set(cacheKey, icon);
+  return icon;
 }
 
 const USER_ICON = L.divIcon({
@@ -85,19 +92,17 @@ function FitBounds({
   vendors,
   userLocation,
 }: {
-  vendors: Vendor[];
+  vendors: DiscoveryVendor[];
   userLocation: { lat: number; lng: number } | null;
 }) {
   const map = useMap();
-  const hasFitOnce = useRef(false);
 
   useEffect(() => {
     if (vendors.length === 0) return;
     const points: [number, number][] = vendors.map((v) => [v.lat, v.lng]);
     if (userLocation) points.push([userLocation.lat, userLocation.lng]);
     const bounds = L.latLngBounds(points);
-    map.fitBounds(bounds, { padding: [40, 40], maxZoom: 17 });
-    hasFitOnce.current = true;
+    map.fitBounds(bounds, { padding: [36, 36], maxZoom: 16, animate: false });
   }, [vendors, userLocation, map]);
 
   return null;
@@ -105,9 +110,11 @@ function FitBounds({
 
 export function MapView({
   vendors,
+  fitVendors,
   userLocation,
 }: {
-  vendors: Vendor[];
+  vendors: DiscoveryVendor[];
+  fitVendors: DiscoveryVendor[];
   userLocation?: { lat: number; lng: number } | null;
 }) {
   const center: [number, number] =
@@ -118,13 +125,17 @@ export function MapView({
       center={center}
       zoom={16}
       scrollWheelZoom
+      preferCanvas
+      zoomAnimation={false}
+      fadeAnimation={false}
+      markerZoomAnimation={false}
       style={{ height: "100%", width: "100%" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <FitBounds vendors={vendors} userLocation={userLocation ?? null} />
+      <FitBounds vendors={fitVendors} userLocation={userLocation ?? null} />
 
       {userLocation && (
         <Marker position={[userLocation.lat, userLocation.lng]} icon={USER_ICON}>

@@ -1,4 +1,4 @@
-import type { Vendor } from "@/lib/types";
+import type { DiscoveryVendor, Vendor } from "@/lib/types";
 
 const DATABASE_NAME = "khausafe-offline";
 const DATABASE_VERSION = 1;
@@ -50,7 +50,7 @@ export type DiscoveryPreferences = {
   query: string;
 };
 
-export function cacheVendors(vendors: Vendor[]) {
+export function cacheVendors(vendors: DiscoveryVendor[]) {
   return writeCache("vendors", { updatedAt: new Date().toISOString(), vendors });
 }
 

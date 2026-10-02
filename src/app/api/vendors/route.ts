@@ -2,6 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { getVendorCity } from "@/lib/cities";
 import { getReviewSummariesByVendor } from "@/lib/reviews";
 import { getVendors } from "@/lib/vendors";
+import { toDiscoveryVendor } from "@/lib/discovery";
 
 export async function GET(request: NextRequest) {
   const city = request.nextUrl.searchParams.get("city")?.trim();
@@ -10,8 +11,9 @@ export async function GET(request: NextRequest) {
   }
 
   const allVendors = await getVendors();
-  const vendors = allVendors.filter((vendor) => getVendorCity(vendor) === city);
-  const ratings = await getReviewSummariesByVendor(vendors.map((vendor) => vendor.id));
+  const fullVendors = allVendors.filter((vendor) => getVendorCity(vendor) === city);
+  const ratings = await getReviewSummariesByVendor(fullVendors.map((vendor) => vendor.id));
+  const vendors = fullVendors.map(toDiscoveryVendor);
 
   return NextResponse.json(
     { vendors, ratings: Object.fromEntries(ratings) },

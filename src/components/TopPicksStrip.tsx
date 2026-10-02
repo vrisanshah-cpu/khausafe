@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
-import type { ReviewSummary, Vendor } from "@/lib/types";
+import { useMemo } from "react";
+import type { DiscoveryVendor, ReviewSummary, Vendor } from "@/lib/types";
 
 const CERT_WEIGHT: Record<Vendor["certification_status"], number> = {
   clean_street_food_hub: 2,
@@ -21,18 +24,22 @@ export function TopPicksStrip({
   vendors,
   ratings,
 }: {
-  vendors: Vendor[];
+  vendors: DiscoveryVendor[];
   ratings: Map<string, ReviewSummary>;
 }) {
-  const picks = [...vendors]
-    .sort((a, b) => {
-      if (a.is_sponsored !== b.is_sponsored) return a.is_sponsored ? -1 : 1;
-      const ratingA = ratings.get(a.id)?.average ?? -1;
-      const ratingB = ratings.get(b.id)?.average ?? -1;
-      if (ratingA !== ratingB) return ratingB - ratingA;
-      return CERT_WEIGHT[b.certification_status] - CERT_WEIGHT[a.certification_status];
-    })
-    .slice(0, 8);
+  const picks = useMemo(
+    () =>
+      [...vendors]
+        .sort((a, b) => {
+          if (a.is_sponsored !== b.is_sponsored) return a.is_sponsored ? -1 : 1;
+          const ratingA = ratings.get(a.id)?.average ?? -1;
+          const ratingB = ratings.get(b.id)?.average ?? -1;
+          if (ratingA !== ratingB) return ratingB - ratingA;
+          return CERT_WEIGHT[b.certification_status] - CERT_WEIGHT[a.certification_status];
+        })
+        .slice(0, 8),
+    [vendors, ratings]
+  );
 
   if (picks.length === 0) return null;
 

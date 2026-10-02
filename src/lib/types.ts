@@ -28,6 +28,9 @@ export interface Vendor {
   zomato_url?: string | null;
 }
 
+/** Lightweight vendor shape used by discovery screens; provenance stays server-side. */
+export type DiscoveryVendor = Omit<Vendor, "source">;
+
 export interface Review {
   id: string;
   vendor_id: string;

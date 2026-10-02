@@ -1,9 +1,9 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useMemo, useRef, useState } from "react";
-import type { ReviewSummary, Vendor } from "@/lib/types";
-import { getAreas } from "@/lib/areas";
+import { useEffect, useMemo, useState } from "react";
+import type { DiscoveryVendor, ReviewSummary } from "@/lib/types";
+import { getPopularAreas } from "@/lib/areas";
 import { getNearestPrimaryCity } from "@/lib/cities";
 import { distanceKm } from "@/lib/geo";
 import {
@@ -14,7 +14,6 @@ import {
 import { FilterBar, type Filters } from "./FilterBar";
 import { VendorList } from "./VendorList";
 import { TopPicksStrip } from "./TopPicksStrip";
-import { useBottomSheet } from "./useBottomSheet";
 
 const MapView = dynamic(() => import("./MapView").then((mod) => mod.MapView), {
   ssr: false,
@@ -30,15 +29,17 @@ export function HomeClient({
   initialRatings,
   cities,
 }: {
-  initialVendors: Vendor[];
+  initialVendors: DiscoveryVendor[];
   initialRatings: Map<string, ReviewSummary>;
   cities: string[];
 }) {
   const [vendors, setVendors] = useState(initialVendors);
   const [ratings, setRatings] = useState(initialRatings);
   const [loadedCity, setLoadedCity] = useState("Mumbai");
+  const [catalogComplete, setCatalogComplete] = useState(false);
   const [cityLoadError, setCityLoadError] = useState<{ city: string; message: string } | null>(null);
-  const [visibleCount, setVisibleCount] = useState(150);
+  const [visibleCount, setVisibleCount] = useState(50);
+  const [mobileListOpen, setMobileListOpen] = useState(false);
   const [filters, setFilters] = useState<Filters>({
     city: "Mumbai",
     area: "all",
@@ -46,30 +47,27 @@ export function HomeClient({
     certifiedOnly: false,
   });
   const [query, setQuery] = useState("");
-  const mainRef = useRef<HTMLElement>(null);
-  const sheetRef = useRef<HTMLDivElement>(null);
-  const sheet = useBottomSheet(mainRef, sheetRef);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [locating, setLocating] = useState(false);
   const [locationError, setLocationError] = useState<string | null>(null);
 
   const cityError = cityLoadError?.city === filters.city ? cityLoadError.message : null;
-  const cityLoading = filters.city !== loadedCity && cityError === null;
+  const cityLoading = (filters.city !== loadedCity || !catalogComplete) && cityError === null;
   const cityVendors = useMemo(
     () => (filters.city === loadedCity ? vendors : []),
     [filters.city, loadedCity, vendors]
   );
-  const areas = useMemo(() => getAreas(cityVendors), [cityVendors]);
+  const areas = useMemo(() => getPopularAreas(cityVendors), [cityVendors]);
 
   useEffect(() => {
-    if (filters.city === loadedCity) return;
+    if (filters.city === loadedCity && catalogComplete) return;
     const controller = new AbortController();
 
     fetch(`/api/vendors?city=${encodeURIComponent(filters.city)}`, { signal: controller.signal })
       .then(async (response) => {
         if (!response.ok) throw new Error("Unable to load this city.");
         return (await response.json()) as {
-          vendors: Vendor[];
+          vendors: DiscoveryVendor[];
           ratings: Record<string, ReviewSummary>;
         };
       })
@@ -77,6 +75,7 @@ export function HomeClient({
         setVendors(payload.vendors);
         setRatings(new Map(Object.entries(payload.ratings)));
         setLoadedCity(filters.city);
+        setCatalogComplete(true);
         setCityLoadError(null);
       })
       .catch((error: unknown) => {
@@ -88,7 +87,7 @@ export function HomeClient({
       });
 
     return () => controller.abort();
-  }, [filters.city, loadedCity]);
+  }, [filters.city, loadedCity, catalogComplete]);
 
   useEffect(() => {
     getCachedDiscoveryPreferences()
@@ -131,7 +130,7 @@ export function HomeClient({
             city: nearestCity,
             area: "all",
           }));
-          setVisibleCount(150);
+          setVisibleCount(50);
         }
         setLocating(false);
       },
@@ -172,16 +171,18 @@ export function HomeClient({
     return [...filtered].sort((a, b) => (distances.get(a.id) ?? 0) - (distances.get(b.id) ?? 0));
   }, [filtered, distances]);
   const visibleVendors = useMemo(() => sorted.slice(0, visibleCount), [sorted, visibleCount]);
-  const mapVendors = useMemo(() => sorted.slice(0, 750), [sorted]);
+  const mapVendors = useMemo(() => sorted.slice(0, 80), [sorted]);
 
   function handleFilterChange(nextFilters: Filters) {
     setFilters(nextFilters);
-    setVisibleCount(150);
+    setVisibleCount(50);
+    setMobileListOpen(true);
   }
 
   function handleQueryChange(nextQuery: string) {
     setQuery(nextQuery);
-    setVisibleCount(150);
+    setVisibleCount(50);
+    if (nextQuery.trim()) setMobileListOpen(true);
   }
 
   const showTopPicks =
@@ -214,7 +215,7 @@ export function HomeClient({
           {visibleCount < sorted.length && (
             <button
               type="button"
-              onClick={() => setVisibleCount((count) => count + 150)}
+              onClick={() => setVisibleCount((count) => count + 50)}
               className="btn-secondary mx-3 mb-4 w-[calc(100%-1.5rem)]"
             >
               Show more ({sorted.length - visibleCount} remaining)
@@ -223,20 +224,20 @@ export function HomeClient({
         </div>
       </aside>
 
-      {/* Mobile — full-bleed map with a floating search bar and a draggable bottom sheet */}
-      <main ref={mainRef} className="relative h-full flex-1 overflow-hidden">
+      {/* Mobile — full-bleed map with compact search and a stable results sheet */}
+      <main className="relative h-full flex-1 overflow-hidden">
         {/* Leaflet's internal panes (markers/popups/tooltips) use z-indexes up
             to 700+ with no stacking context of their own — `isolate` here
             contains them so they can never paint over the search bar or
             bottom sheet below, regardless of where a marker/popup lands. */}
         <div
           className="absolute inset-0 isolate"
-          onClick={() => sheet.snap !== "peek" && sheet.goTo("peek")}
+          onClick={() => mobileListOpen && setMobileListOpen(false)}
         >
-          <MapView vendors={mapVendors} userLocation={userLocation} />
+          <MapView vendors={mapVendors} fitVendors={cityVendors} userLocation={userLocation} />
         </div>
 
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-10 p-3 md:hidden">
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-30 p-3 md:hidden">
           <div className="pointer-events-auto rounded-2xl bg-white/95 shadow-[var(--shadow-float)] backdrop-blur-sm">
             <FilterBar
               cities={cities}
@@ -252,39 +253,34 @@ export function HomeClient({
           </div>
         </div>
 
-        {/* Google Maps-style bottom sheet: drag the handle freely, or tap it
-            to cycle peek → half → full. Height is driven imperatively via
-            the ref during drag (see useBottomSheet) so touch-move never
-            waits on a React re-render of the map/list underneath. */}
+        {/* A two-state results sheet is intentionally used on mobile. It is
+            predictable under iOS/Android browser chrome and avoids running
+            pointer-move state beside a live map. */}
         <div
-          ref={sheetRef}
-          className={`absolute inset-x-0 bottom-0 z-20 flex flex-col overflow-hidden rounded-t-2xl bg-white shadow-[var(--shadow-float)] md:hidden ${
-            sheet.dragging ? "" : "transition-[height] duration-300 ease-out"
+          className={`absolute inset-x-0 bottom-0 z-20 flex flex-col overflow-hidden rounded-t-3xl border-t border-neutral-200 bg-white shadow-[var(--shadow-float)] transition-[height] duration-200 ease-out md:hidden ${
+            mobileListOpen ? "h-[min(68dvh,620px)]" : "h-[104px]"
           }`}
-          style={{ height: sheet.heightPx, paddingBottom: "var(--safe-bottom)" }}
+          style={{ paddingBottom: "var(--safe-bottom)" }}
         >
           <button
             type="button"
-            onPointerDown={sheet.onHandlePointerDown}
-            onPointerMove={sheet.onHandlePointerMove}
-            onPointerUp={sheet.onHandlePointerUp}
-            onPointerCancel={sheet.onHandlePointerUp}
             onClick={(e) => {
               e.stopPropagation();
-              sheet.cycle();
+              setMobileListOpen((open) => !open);
             }}
-            style={{ touchAction: "none" }}
-            className="flex shrink-0 flex-col items-center gap-1.5 pt-2.5 pb-1 active:opacity-70"
-            aria-label={sheet.snap === "peek" ? "Expand stall list" : "Collapse stall list"}
+            className="flex h-[74px] shrink-0 flex-col items-center justify-center gap-1.5 active:bg-neutral-50"
+            aria-expanded={mobileListOpen}
+            aria-label={mobileListOpen ? "Collapse stall list" : "Expand stall list"}
           >
             <span className="h-1.5 w-10 rounded-full bg-neutral-300" />
-            <span className="text-xs font-medium text-neutral-500">
-              {sheet.snap === "peek"
-                ? `${sorted.length} stall${sorted.length === 1 ? "" : "s"} nearby`
-                : "Drag to resize"}
+            <span className="text-sm font-semibold text-neutral-800">
+              {sorted.length.toLocaleString()} place{sorted.length === 1 ? "" : "s"}
+            </span>
+            <span className="text-[11px] text-neutral-400">
+              {mobileListOpen ? "Tap to return to map" : "Tap to browse results"}
             </span>
           </button>
-          <div className="flex-1 overflow-y-auto overscroll-contain">
+          <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
             {cityLoading && (
               <p className="px-4 py-3 text-sm text-neutral-500">Loading {filters.city}…</p>
             )}
@@ -294,7 +290,7 @@ export function HomeClient({
             {visibleCount < sorted.length && (
               <button
                 type="button"
-                onClick={() => setVisibleCount((count) => count + 150)}
+                onClick={() => setVisibleCount((count) => count + 50)}
                 className="btn-secondary mx-3 mb-4 w-[calc(100%-1.5rem)]"
               >
                 Show more ({sorted.length - visibleCount} remaining)

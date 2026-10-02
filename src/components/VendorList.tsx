@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { CATEGORY_LABELS, type ReviewSummary, type Vendor } from "@/lib/types";
+import {
+  CATEGORY_LABELS,
+  type DiscoveryVendor,
+  type ReviewSummary,
+  type Vendor,
+} from "@/lib/types";
 import { CertificationBadge } from "./CertificationBadge";
 import { formatDistance } from "@/lib/geo";
 
@@ -17,7 +22,7 @@ export function VendorList({
   distances,
   ratings,
 }: {
-  vendors: Vendor[];
+  vendors: DiscoveryVendor[];
   distances?: Map<string, number>;
   ratings?: Map<string, ReviewSummary>;
 }) {
