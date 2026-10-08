@@ -64,7 +64,7 @@ export function VendorCommunity({ vendorId, isSignedIn }: { vendorId: string; is
 
   return (
     <>
-      <section className="card p-4">
+      <section className="card rounded-[24px] p-5">
         <h2 className="text-xs font-bold uppercase tracking-wide text-neutral-400">Community observed</h2>
         <p className="mt-1 text-xs text-neutral-400">User reports are separate from official certification.</p>
         {loading ? (
@@ -85,7 +85,7 @@ export function VendorCommunity({ vendorId, isSignedIn }: { vendorId: string; is
         </div>
       </section>
 
-      <section className="card p-4">
+      <section className="card rounded-[24px] p-5">
         <h2 className="text-xs font-bold uppercase tracking-wide text-neutral-400">Reviews</h2>
         <div className="mt-3">{loading ? <p className="text-sm text-neutral-500">Loading reviews…</p> : <ReviewsList reviews={reviews} isSignedIn={isSignedIn} />}</div>
         <div className="mt-4 border-t border-neutral-100 pt-4">

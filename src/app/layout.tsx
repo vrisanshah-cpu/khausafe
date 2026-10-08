@@ -38,7 +38,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         <NativeBootstrap />
         <OfflineOverlay />
         <header
-          className="sticky top-0 z-40 flex h-14 shrink-0 items-center justify-between border-b border-neutral-200/80 bg-white/85 px-4 backdrop-blur-md"
+          className="sticky top-0 z-40 hidden h-14 shrink-0 items-center justify-between border-b border-neutral-200/80 bg-white/85 px-4 backdrop-blur-md md:flex"
           style={{ paddingTop: "var(--safe-top)", height: "calc(3.5rem + var(--safe-top))" }}
         >
           <Link href="/" className="flex items-center gap-2">

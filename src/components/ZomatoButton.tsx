@@ -12,7 +12,7 @@ export function ZomatoButton({ vendor }: { vendor: Vendor }) {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex w-full items-center justify-center gap-1.5 rounded-full bg-red-600 py-2.5 text-sm font-semibold text-white shadow-sm transition-transform active:scale-[0.98]"
+        className="flex h-12 w-full items-center justify-center gap-1.5 rounded-full bg-[#171714] text-sm font-black text-white shadow-sm transition-transform active:scale-[0.98]"
       >
         {verified ? "Order on Zomato" : "Search on Zomato"} <span aria-hidden>↗</span>
       </a>
