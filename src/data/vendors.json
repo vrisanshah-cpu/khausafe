@@ -6,8 +6,8 @@
     "lng": 72.8107,
     "area": "Girgaon Chowpatty",
     "category": "chaat",
-    "certification_status": "clean_street_food_hub",
-    "source": "Manually curated from public reporting (LBB, Travenix) on well-known Girgaon Chowpatty stalls, Aug 2026. Certification reflects the area-level FSSAI Clean Street Food Hub designation (~30 stalls certified at Girgaon Chowpatty, Mar 2019) per FSSAI news release — not independently verified per-vendor. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB, Travenix) on well-known Girgaon Chowpatty stalls, Aug 2026. Girgaon Chowpatty has an area-level FSSAI Clean Street Food Hub designation, but this stall has no individually verified certification record. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
   },
   {
     "id": "guptas-pav-bhaji",
@@ -16,8 +16,8 @@
     "lng": 72.811,
     "area": "Girgaon Chowpatty",
     "category": "snacks",
-    "certification_status": "clean_street_food_hub",
-    "source": "Manually curated from public reporting (LBB) on well-known Girgaon Chowpatty stalls, Aug 2026. Certification reflects the area-level FSSAI Clean Street Food Hub designation (~30 stalls certified at Girgaon Chowpatty, Mar 2019) per FSSAI news release — not independently verified per-vendor. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (LBB) on well-known Girgaon Chowpatty stalls, Aug 2026. Girgaon Chowpatty has an area-level FSSAI Clean Street Food Hub designation, but this stall has no individually verified certification record. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
   },
   {
     "id": "sagar-pav-bhaji-stall",
@@ -26,8 +26,8 @@
     "lng": 72.8112,
     "area": "Girgaon Chowpatty",
     "category": "snacks",
-    "certification_status": "clean_street_food_hub",
-    "source": "Manually curated from public reporting (Crazy Masala Food) on well-known Girgaon Chowpatty stalls, Aug 2026. Certification reflects the area-level FSSAI Clean Street Food Hub designation (~30 stalls certified at Girgaon Chowpatty, Mar 2019) per FSSAI news release — not independently verified per-vendor. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
+    "certification_status": "unknown",
+    "source": "Manually curated from public reporting (Crazy Masala Food) on well-known Girgaon Chowpatty stalls, Aug 2026. Girgaon Chowpatty has an area-level FSSAI Clean Street Food Hub designation, but this stall has no individually verified certification record. Coordinates are approximate manual placement along the promenade, pending on-site GPS verification."
   },
   {
     "id": "jai-jwaan-stall",

@@ -15,9 +15,11 @@ const CHECKLIST_ITEMS: { key: keyof Omit<ChecklistResponses, "notes">; label: st
 export function ObservationForm({
   vendorId,
   isSignedIn,
+  onSubmitted,
 }: {
   vendorId: string;
   isSignedIn: boolean;
+  onSubmitted?: () => void;
 }) {
   const [checklist, setChecklist] = useState<Omit<ChecklistResponses, "notes">>({
     clean_prep_surface: false,
@@ -77,6 +79,7 @@ export function ObservationForm({
         clean_water_access: false,
       });
       setNotes("");
+      onSubmitted?.();
     } catch (err) {
       setStatus("error");
       setErrorMessage(err instanceof Error ? err.message : "Something went wrong.");

@@ -43,8 +43,7 @@ export function FilterBar({
   const [showFilters, setShowFilters] = useState(false);
   const activeFilterCount =
     Number(filters.category !== "all") +
-    Number(filters.area !== "all") +
-    Number(filters.certifiedOnly);
+    Number(filters.area !== "all");
   const areaOptions =
     filters.area !== "all" && !areas.includes(filters.area) ? [filters.area, ...areas] : areas;
 
@@ -160,16 +159,6 @@ export function FilterBar({
                 <option key={area} value={area}>{area}</option>
               ))}
             </select>
-          </label>
-
-          <label className="mt-3 flex items-center justify-between rounded-xl bg-emerald-50 px-3 py-2.5 text-sm font-medium text-emerald-900">
-            Verified certification only
-            <input
-              type="checkbox"
-              checked={filters.certifiedOnly}
-              onChange={(event) => onChange({ ...filters, certifiedOnly: event.target.checked })}
-              className="h-5 w-5 accent-emerald-600"
-            />
           </label>
 
           <div className="mt-3 flex gap-2">

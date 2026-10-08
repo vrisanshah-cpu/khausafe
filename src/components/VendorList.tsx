@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   CATEGORY_LABELS,
   type DiscoveryVendor,
@@ -45,7 +44,7 @@ export function VendorList({
         const rating = ratings?.get(vendor.id);
         return (
           <li key={vendor.id}>
-            <Link
+            <a
               href={`/vendors/${vendor.id}`}
               className="flex min-h-24 items-start gap-3 rounded-[20px] border border-stone-200/80 bg-white p-3.5 shadow-[0_2px_12px_rgba(45,31,15,0.04)] active:bg-orange-50 md:rounded-2xl"
             >
@@ -68,7 +67,7 @@ export function VendorList({
                   )}
                 </p>
                 <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
-                  <CertificationBadge status={vendor.certification_status} />
+                  {vendor.certification_status !== "unknown" && <CertificationBadge status={vendor.certification_status} />}
                   {vendor.is_sponsored && (
                     <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-semibold text-amber-700">
                       ★ Sponsored
@@ -76,7 +75,8 @@ export function VendorList({
                   )}
                 </div>
               </div>
-            </Link>
+              <span className="ml-auto self-end text-xs font-bold text-orange-700">View place →</span>
+            </a>
           </li>
         );
       })}

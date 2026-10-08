@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { cookies } from "next/headers";
 import "./globals.css";
 import { createClient } from "@/lib/supabase/server";
 import { isAdminEmail } from "@/lib/admin";
 import { NativeBootstrap } from "@/components/native/NativeBootstrap";
 import { OfflineOverlay } from "@/components/native/OfflineOverlay";
 import { signOutAction } from "@/lib/supabase/actions";
+import { BrandMark } from "@/components/BrandMark";
 
 export const metadata: Metadata = {
-  title: "KhauSafe — India's street food safety map",
+  title: "KhauSafe — find street food across India",
   description:
-    "Discover sourced street-food vendors across India, led by Mumbai and Delhi NCR. Official FSSAI certification and community observations are always shown separately.",
+    "Explore sourced street-food vendors across India. Vendor-level certification is shown only when individually verified.",
   manifest: "/manifest.webmanifest",
+  icons: { icon: "/icon.svg" },
   applicationName: "KhauSafe",
   appleWebApp: {
     capable: true,
@@ -21,7 +24,11 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {
-  const supabase = await createClient();
+  const cookieStore = await cookies();
+  const hasSessionCookie = cookieStore.getAll().some(({ name }) =>
+    /^sb-.*-auth-token(?:\.\d+)?$/.test(name)
+  );
+  const supabase = hasSessionCookie ? await createClient() : null;
   const user = supabase ? (await supabase.auth.getUser()).data.user : null;
   const admin = isAdminEmail(user?.email);
 
@@ -35,12 +42,10 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
           style={{ paddingTop: "var(--safe-top)", height: "calc(3.5rem + var(--safe-top))" }}
         >
           <Link href="/" className="flex items-center gap-2">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-orange-600 text-sm shadow-sm">
-              🍢
-            </span>
+            <BrandMark size={30} />
             <span className="text-base font-bold tracking-tight text-neutral-900">KhauSafe</span>
             <span className="hidden text-xs text-neutral-400 sm:inline">
-              hygiene-rated street food
+              street food, clearly sourced
             </span>
           </Link>
           <div className="flex items-center gap-4 text-sm">

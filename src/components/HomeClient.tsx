@@ -48,6 +48,7 @@ export function HomeClient({
   const [catalogComplete, setCatalogComplete] = useState(false);
   const [cityLoadError, setCityLoadError] = useState<{ city: string; message: string } | null>(null);
   const [visibleCount, setVisibleCount] = useState(24);
+  const [isDesktop, setIsDesktop] = useState(false);
   const [mobileView, setMobileView] = useState<"discover" | "map">("discover");
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [filters, setFilters] = useState<Filters>({
@@ -68,6 +69,14 @@ export function HomeClient({
     [filters.city, loadedCity, vendors]
   );
   const areas = useMemo(() => getPopularAreas(cityVendors), [cityVendors]);
+
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 768px)");
+    const update = () => setIsDesktop(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
 
   useEffect(() => {
     if (filters.city === loadedCity && catalogComplete) return;
@@ -107,7 +116,7 @@ export function HomeClient({
           city: saved.city,
           area: saved.area,
           category: saved.category,
-          certifiedOnly: saved.certifiedOnly,
+          certifiedOnly: false,
         });
         setQuery(saved.query);
       })
@@ -162,9 +171,6 @@ export function HomeClient({
       (v) =>
         (filters.area === "all" || v.area === filters.area) &&
         (filters.category === "all" || v.category === filters.category) &&
-        (!filters.certifiedOnly ||
-          v.certification_status === "clean_street_food_hub" ||
-          v.certification_status === "fssai_hygiene_rated") &&
         (q === "" || v.name.toLowerCase().includes(q) || v.area.toLowerCase().includes(q))
     );
   }, [cityVendors, filters, query]);
@@ -181,7 +187,18 @@ export function HomeClient({
     return [...filtered].sort((a, b) => (distances.get(a.id) ?? 0) - (distances.get(b.id) ?? 0));
   }, [filtered, distances]);
   const visibleVendors = useMemo(() => sorted.slice(0, visibleCount), [sorted, visibleCount]);
-  const mapVendors = useMemo(() => sorted.slice(0, 60), [sorted]);
+  const mapVendors = useMemo(() => {
+    const cells = new Set<string>();
+    const pins: DiscoveryVendor[] = [];
+    for (const vendor of sorted) {
+      const cell = `${Math.round(vendor.lat / 0.006)}:${Math.round(vendor.lng / 0.006)}`;
+      if (cells.has(cell)) continue;
+      cells.add(cell);
+      pins.push(vendor);
+      if (pins.length === 40) break;
+    }
+    return pins;
+  }, [sorted]);
 
   function handleFilterChange(nextFilters: Filters) {
     setFilters(nextFilters);
@@ -195,7 +212,7 @@ export function HomeClient({
   }
 
   const showTopPicks =
-    query === "" && filters.area === "all" && filters.category === "all" && !filters.certifiedOnly;
+    query === "" && filters.area === "all" && filters.category === "all";
 
   return (
     <div className="flex h-[calc(100dvh-3.5rem-var(--safe-top))] min-h-0 flex-col md:flex-row">
@@ -232,6 +249,8 @@ export function HomeClient({
           )}
         </div>
       </aside>
+
+      {isDesktop && <div className="hidden min-h-0 flex-1 isolate md:block"><MapView vendors={mapVendors} fitVendors={mapVendors} userLocation={userLocation} /></div>}
 
       <main className="relative flex min-h-0 flex-1 flex-col overflow-hidden bg-[#faf8f4] md:hidden">
         <div className="z-20 shrink-0 border-b border-stone-200/80 bg-[#faf8f4] px-4 pb-3 pt-4">
@@ -280,7 +299,7 @@ export function HomeClient({
               </div>
               {userLocation && <span className="text-xs font-medium text-stone-500">Sorted by distance</span>}
             </div>
-            <p className="mb-4 text-xs leading-relaxed text-stone-500">Browse sourced places. Certification is shown only when verified.</p>
+            <p className="mb-4 text-xs leading-relaxed text-stone-500">Browse sourced places. Individual hygiene certification has not yet been verified for these stalls.</p>
             {cityLoading && <p role="status" className="mb-3 rounded-xl bg-white p-3 text-sm text-stone-600">Loading more places in {filters.city}…</p>}
             {cityError && <p role="alert" className="mb-3 rounded-xl bg-red-50 p-3 text-sm text-red-700">{cityError}</p>}
             <VendorList vendors={visibleVendors} distances={distances} ratings={ratings} />
@@ -288,8 +307,8 @@ export function HomeClient({
           </div>
         ) : (
           <div className="relative min-h-0 flex-1 isolate">
-            <MapView vendors={mapVendors} fitVendors={cityVendors} userLocation={userLocation} />
-            <div className="pointer-events-none absolute inset-x-4 bottom-4 z-[1000] rounded-2xl bg-white/95 p-3 text-center text-xs font-semibold text-stone-800 shadow-lg">Showing {mapVendors.length} pins · Browse the full list for more</div>
+            <MapView vendors={mapVendors} fitVendors={mapVendors} userLocation={userLocation} />
+            <div className="pointer-events-none absolute inset-x-4 bottom-4 z-[1000] rounded-2xl bg-white/95 p-3 text-center text-xs font-semibold text-stone-800 shadow-lg">Tap a dot to open a place · {mapVendors.length} areas shown</div>
           </div>
         )}
 
@@ -308,7 +327,6 @@ export function HomeClient({
                 {areas.map((area) => <option key={area} value={area}>{area}</option>)}
               </select>
             </label>
-            <label className="mt-5 flex items-center justify-between gap-4 rounded-2xl bg-emerald-50 p-4 text-sm font-semibold text-emerald-950"><span>Verified certification only</span><input type="checkbox" checked={filters.certifiedOnly} onChange={(event) => handleFilterChange({ ...filters, certifiedOnly: event.target.checked })} className="h-5 w-5 accent-emerald-700" /></label>
             <div className="mt-6 flex gap-2"><button type="button" onClick={() => handleFilterChange({ ...filters, area: "all", category: "all", certifiedOnly: false })} className="h-12 flex-1 rounded-xl border border-stone-200 text-sm font-bold text-stone-800">Reset</button><button type="button" onClick={() => setMobileFiltersOpen(false)} className="h-12 flex-[2] rounded-xl bg-orange-600 text-sm font-bold text-white">Show {sorted.length.toLocaleString()} places</button></div>
           </section>
         </div>}

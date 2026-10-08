@@ -24,8 +24,9 @@ function loadSeedVendors() {
  * how the catalog grows beyond the hand-curated starting set without a live
  * FSSAI data source to pull from.
  */
-export async function getVendors(): Promise<Vendor[]> {
+export async function getVendors(options: { includeDatabase?: boolean } = {}): Promise<Vendor[]> {
   const seed = await loadSeedVendors();
+  if (options.includeDatabase === false) return seed;
 
   const supabase = await createClient();
   if (!supabase) return seed;
@@ -47,6 +48,13 @@ export async function getVendors(): Promise<Vendor[]> {
 }
 
 export async function getVendorById(id: string): Promise<Vendor | undefined> {
-  const vendors = await getVendors();
-  return vendors.find((v) => v.id === id);
+  const seedVendor = (await loadSeedVendors()).find((vendor) => vendor.id === id);
+  if (seedVendor) return seedVendor;
+
+  const supabase = await createClient();
+  if (!supabase) return seedVendor;
+
+  const { data, error } = await supabase.from("vendors").select("*").eq("id", id).maybeSingle();
+  if (error) return seedVendor;
+  return (data as Vendor | null) ?? seedVendor;
 }

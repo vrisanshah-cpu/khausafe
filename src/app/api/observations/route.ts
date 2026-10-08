@@ -1,6 +1,20 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 
+export async function GET(request: Request) {
+  const vendorId = new URL(request.url).searchParams.get("vendor_id");
+  if (!vendorId) return NextResponse.json({ error: "Missing vendor_id." }, { status: 400 });
+  const supabase = await createClient();
+  if (!supabase) return NextResponse.json([]);
+  const { data, error } = await supabase
+    .from("observations")
+    .select("*")
+    .eq("vendor_id", vendorId)
+    .order("submitted_at", { ascending: false });
+  if (error) return NextResponse.json([]);
+  return NextResponse.json(data);
+}
+
 export async function POST(request: Request) {
   const supabase = await createClient();
   if (!supabase) {

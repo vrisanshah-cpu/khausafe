@@ -8,6 +8,16 @@ export async function proxy(request: NextRequest) {
 
   if (!isSupabaseConfigured) return response;
 
+  const isAdminRoute = request.nextUrl.pathname.startsWith("/admin");
+  const hasSessionCookie = request.cookies.getAll().some(({ name }) =>
+    /^sb-.*-auth-token(?:\.\d+)?$/.test(name)
+  );
+  if (!hasSessionCookie) {
+    return isAdminRoute
+      ? NextResponse.redirect(new URL("/login", request.url))
+      : response;
+  }
+
   const supabase = createServerClient(supabaseUrl!, supabaseAnonKey!, {
     cookies: {
       getAll() {
@@ -29,7 +39,7 @@ export async function proxy(request: NextRequest) {
 
   // Belt-and-suspenders: the admin API routes re-check this themselves, but
   // bouncing early here avoids ever rendering the admin page for non-admins.
-  if (request.nextUrl.pathname.startsWith("/admin") && !isAdminEmail(user?.email)) {
+  if (isAdminRoute && !isAdminEmail(user?.email)) {
     return NextResponse.redirect(new URL(user ? "/" : "/login", request.url));
   }
 
