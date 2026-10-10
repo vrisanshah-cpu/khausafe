@@ -35,7 +35,12 @@ export function MapView({ vendors, fitVendors, userLocation }: {
 
   return (
     <MapContainer center={center} zoom={12} zoomControl={false} scrollWheelZoom={false} preferCanvas zoomAnimation={false} fadeAnimation={false} style={{ height: "100%", width: "100%" }}>
-      <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>' url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png" />
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        maxZoom={19}
+        crossOrigin
+      />
       <FitBounds vendors={fitVendors} userLocation={userLocation ?? null} />
       {userLocation && <CircleMarker center={[userLocation.lat, userLocation.lng]} radius={9} pathOptions={{ color: "#ffffff", weight: 3, fillColor: "#2563eb", fillOpacity: 1 }}><Popup>You are here</Popup></CircleMarker>}
       {vendors.map((vendor) => (
