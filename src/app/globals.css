@@ -5,13 +5,13 @@
   --background: #ffffff;
   --foreground: #1c1917;
 
-  /* Brand: KhauSafe orange, tuned as a small scale rather than one flat value */
-  --brand-50: #fff7ed;
-  --brand-100: #ffedd5;
-  --brand-400: #fb923c;
-  --brand-500: #f97316;
-  --brand-600: #ea580c;
-  --brand-700: #c2410c;
+  /* KhauSafe red: food-forward, high contrast, and distinct from certification greens. */
+  --brand-50: #fff1f2;
+  --brand-100: #ffe4e6;
+  --brand-400: #fb7185;
+  --brand-500: #ef4f5f;
+  --brand-600: #e23744;
+  --brand-700: #c92334;
 
   --radius-card: 1rem;
   --radius-pill: 999px;
@@ -95,18 +95,18 @@ body {
     @apply border-neutral-200 bg-white text-neutral-600 hover:bg-neutral-50;
   }
   .chip-active {
-    @apply border-orange-600 bg-orange-600 text-white;
+    @apply border-red-600 bg-red-600 text-white;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-1.5 rounded-full bg-orange-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-orange-700 active:scale-[0.97] disabled:opacity-50 disabled:active:scale-100;
+    @apply inline-flex items-center justify-center gap-1.5 rounded-full bg-[#e23744] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-[#c92334] active:scale-[0.97] disabled:opacity-50 disabled:active:scale-100;
   }
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-1.5 rounded-full border border-neutral-300 bg-white px-4 py-2.5 text-sm font-semibold text-neutral-700 transition-all duration-150 hover:bg-neutral-50 active:scale-[0.97] disabled:opacity-50;
   }
 
   .field {
-    @apply w-full rounded-2xl border border-neutral-300 bg-white px-3.5 py-2.5 text-[15px] text-neutral-900 transition-colors duration-150 placeholder:text-neutral-400 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-100;
+    @apply w-full rounded-2xl border border-neutral-300 bg-white px-3.5 py-2.5 text-[15px] text-neutral-900 transition-colors duration-150 placeholder:text-neutral-400 focus:border-[#e23744] focus:outline-none focus:ring-2 focus:ring-[#ffe4e6];
   }
 }
 

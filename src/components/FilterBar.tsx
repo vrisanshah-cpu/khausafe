@@ -10,15 +10,6 @@ export interface Filters {
   certifiedOnly: boolean;
 }
 
-const CATEGORY_EMOJI: Record<VendorCategory, string> = {
-  chaat: "🌶️",
-  juice: "🥤",
-  snacks: "🍟",
-  sweets: "🍬",
-  beverages: "☕",
-  other: "🍴",
-};
-
 export function FilterBar({
   cities,
   areas,
@@ -69,10 +60,10 @@ export function FilterBar({
           disabled={locating}
           title="Use my location"
           aria-label="Use my location"
-          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-orange-600 text-base text-white shadow-sm active:scale-95 disabled:opacity-50"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#e23744] text-base text-white shadow-sm active:scale-95 disabled:opacity-50"
         >
           {locating ? (
-            <span className="h-4 w-4 animate-spin rounded-full border-2 border-orange-200 border-t-white" />
+            <span className="h-4 w-4 animate-spin rounded-full border-2 border-red-200 border-t-white" />
           ) : (
             "◎"
           )}
@@ -85,7 +76,7 @@ export function FilterBar({
           <select
             value={filters.city}
             onChange={(event) => onChange({ ...filters, city: event.target.value, area: "all" })}
-            className="h-9 w-full appearance-none rounded-xl border border-neutral-200 bg-white pl-3 pr-8 text-sm font-semibold text-neutral-800 focus:border-orange-500 focus:outline-none"
+            className="h-9 w-full appearance-none rounded-xl border border-neutral-200 bg-white pl-3 pr-8 text-sm font-semibold text-neutral-800 focus:border-[#e23744] focus:outline-none"
             aria-label="Choose an Indian city"
           >
             {cities.map((city) => (
@@ -102,13 +93,13 @@ export function FilterBar({
           aria-expanded={showFilters}
           className={`relative flex h-9 shrink-0 items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold transition-colors ${
             showFilters || activeFilterCount > 0
-              ? "border-orange-600 bg-orange-50 text-orange-700"
+              ? "border-[#e23744] bg-[#fff1f2] text-[#c92334]"
               : "border-neutral-200 bg-white text-neutral-700"
           }`}
         >
           <span aria-hidden>☷</span> Filters
           {activeFilterCount > 0 && (
-            <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-orange-600 px-1 text-[11px] text-white">
+            <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-[#e23744] px-1 text-[11px] text-white">
               {activeFilterCount}
             </span>
           )}
@@ -131,18 +122,18 @@ export function FilterBar({
             <button
               type="button"
               onClick={() => onChange({ ...filters, category: "all" })}
-              className={`rounded-xl border px-3 py-2 text-left text-sm font-medium ${filters.category === "all" ? "border-orange-600 bg-orange-50 text-orange-700" : "border-neutral-200 text-neutral-700"}`}
+              className={`rounded-xl border px-3 py-2 text-left text-sm font-medium ${filters.category === "all" ? "border-[#e23744] bg-[#fff1f2] text-[#c92334]" : "border-neutral-200 text-neutral-700"}`}
             >
-              🍽️ All food
+              All food
             </button>
             {Object.entries(CATEGORY_LABELS).map(([value, label]) => (
               <button
                 key={value}
                 type="button"
                 onClick={() => onChange({ ...filters, category: value as VendorCategory })}
-                className={`rounded-xl border px-3 py-2 text-left text-sm font-medium ${filters.category === value ? "border-orange-600 bg-orange-50 text-orange-700" : "border-neutral-200 text-neutral-700"}`}
+                className={`rounded-xl border px-3 py-2 text-left text-sm font-medium ${filters.category === value ? "border-[#e23744] bg-[#fff1f2] text-[#c92334]" : "border-neutral-200 text-neutral-700"}`}
               >
-                {CATEGORY_EMOJI[value as VendorCategory]} {label}
+                {label}
               </button>
             ))}
           </div>

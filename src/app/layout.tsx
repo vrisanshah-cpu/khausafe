@@ -50,7 +50,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
           </Link>
           <div className="flex items-center gap-4 text-sm">
             {admin && (
-              <Link href="/admin" className="font-medium text-neutral-500 hover:text-orange-700">
+              <Link href="/admin" className="font-medium text-neutral-500 hover:text-[#c92334]">
                 Admin
               </Link>
             )}

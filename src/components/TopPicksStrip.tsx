@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useMemo } from "react";
+import { CATEGORY_IMAGES } from "@/lib/categoryAssets";
 import type { DiscoveryVendor, ReviewSummary, Vendor } from "@/lib/types";
 
 const CERT_WEIGHT: Record<Vendor["certification_status"], number> = {
@@ -9,15 +11,6 @@ const CERT_WEIGHT: Record<Vendor["certification_status"], number> = {
   fssai_hygiene_rated: 2,
   uncertified: 1,
   unknown: 0,
-};
-
-const CATEGORY_EMOJI: Record<Vendor["category"], string> = {
-  chaat: "🌶️",
-  juice: "🥤",
-  snacks: "🍟",
-  sweets: "🍬",
-  beverages: "☕",
-  other: "🍴",
 };
 
 export function TopPicksStrip({
@@ -29,7 +22,15 @@ export function TopPicksStrip({
 }) {
   const picks = useMemo(
     () =>
-      [...vendors]
+      vendors
+        .filter((vendor) => {
+          const rating = ratings.get(vendor.id);
+          return Boolean(
+            vendor.is_sponsored ||
+              (rating && rating.count > 0 && rating.average !== null) ||
+              CERT_WEIGHT[vendor.certification_status] > 0
+          );
+        })
         .sort((a, b) => {
           if (a.is_sponsored !== b.is_sponsored) return a.is_sponsored ? -1 : 1;
           const ratingA = ratings.get(a.id)?.average ?? -1;
@@ -44,9 +45,9 @@ export function TopPicksStrip({
   if (picks.length === 0) return null;
 
   return (
-    <div className="bg-gradient-to-b from-orange-50/70 to-transparent px-3 pt-3 pb-1">
-      <h2 className="mb-2 flex items-center gap-1 text-xs font-bold uppercase tracking-wide text-orange-700">
-        🔥 Top picks
+    <div className="bg-gradient-to-b from-[#fff1f2] to-transparent px-3 pt-3 pb-1">
+      <h2 className="mb-2 flex items-center gap-1 text-xs font-bold uppercase tracking-wide text-[#c92334]">
+        Top picks
       </h2>
       <div className="flex gap-2.5 overflow-x-auto pb-2 scrollbar-none">
         {picks.map((vendor) => {
@@ -57,7 +58,7 @@ export function TopPicksStrip({
               href={`/vendors/${vendor.id}`}
               className="card flex w-32 shrink-0 flex-col p-2.5 transition-transform duration-150 active:scale-[0.97] motion-safe:hover:-translate-y-0.5"
             >
-              <span className="text-lg">{CATEGORY_EMOJI[vendor.category]}</span>
+              <Image src={CATEGORY_IMAGES[vendor.category]} alt="" width={112} height={64} className="h-16 w-full rounded-xl object-cover" />
               <span className="mt-1 line-clamp-2 text-xs font-medium text-neutral-900">
                 {vendor.name}
               </span>
@@ -67,7 +68,7 @@ export function TopPicksStrip({
                 ) : rating && rating.count > 0 ? (
                   <span className="text-amber-600">★ {rating.average!.toFixed(1)}</span>
                 ) : (
-                  <span className="text-neutral-400">New</span>
+                  <span className="text-emerald-700">Verified source</span>
                 )}
               </span>
             </Link>

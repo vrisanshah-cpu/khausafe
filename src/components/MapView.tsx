@@ -37,13 +37,13 @@ export function MapView({ vendors, fitVendors, userLocation }: {
     <MapContainer center={center} zoom={12} zoomControl={false} scrollWheelZoom={false} preferCanvas zoomAnimation={false} fadeAnimation={false} style={{ height: "100%", width: "100%" }}>
       <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>' url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png" />
       <FitBounds vendors={fitVendors} userLocation={userLocation ?? null} />
-      {userLocation && <CircleMarker center={[userLocation.lat, userLocation.lng]} radius={9} pathOptions={{ color: "#171714", weight: 3, fillColor: "#dfff55", fillOpacity: 1 }}><Popup>You are here</Popup></CircleMarker>}
+      {userLocation && <CircleMarker center={[userLocation.lat, userLocation.lng]} radius={9} pathOptions={{ color: "#ffffff", weight: 3, fillColor: "#2563eb", fillOpacity: 1 }}><Popup>You are here</Popup></CircleMarker>}
       {vendors.map((vendor) => (
         <CircleMarker
           key={vendor.id}
           center={[vendor.lat, vendor.lng]}
           radius={9}
-          pathOptions={{ color: "#ffffff", weight: 3, fillColor: "#171714", fillOpacity: 1 }}
+          pathOptions={{ color: "#ffffff", weight: 3, fillColor: "#e23744", fillOpacity: 1 }}
           eventHandlers={{ click: () => router.push(`/vendors/${vendor.id}`) }}
         />
       ))}

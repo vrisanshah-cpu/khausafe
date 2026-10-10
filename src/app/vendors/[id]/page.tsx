@@ -1,74 +1,97 @@
-import { notFound } from "next/navigation";
-import Link from "next/link";
 import { cookies } from "next/headers";
-import { CATEGORY_LABELS, type VendorCategory } from "@/lib/types";
-import { getVendorById } from "@/lib/vendors";
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
 import { CertificationBadge } from "@/components/CertificationBadge";
 import { ShareButton } from "@/components/ShareButton";
 import { VendorCommunity } from "@/components/VendorCommunity";
 import { ZomatoButton } from "@/components/ZomatoButton";
-
-const CATEGORY_EMOJI: Record<VendorCategory, string> = {
-  chaat: "🌶️",
-  juice: "🥤",
-  snacks: "🍟",
-  sweets: "🍬",
-  beverages: "☕",
-  other: "🍴",
-};
+import { CATEGORY_IMAGES } from "@/lib/categoryAssets";
+import { CATEGORY_LABELS } from "@/lib/types";
+import { getVendorById } from "@/lib/vendors";
 
 export default async function VendorDetailPage(props: PageProps<"/vendors/[id]">) {
   const { id } = await props.params;
-  const [vendor, cookieStore] = await Promise.all([
-    getVendorById(id),
-    cookies(),
-  ]);
+  const [vendor, cookieStore] = await Promise.all([getVendorById(id), cookies()]);
   if (!vendor) notFound();
   const isSignedIn = cookieStore.getAll().some(({ name }) =>
     /^sb-.*-auth-token(?:\.\d+)?$/.test(name)
   );
+  const mapUrl = `https://www.google.com/maps/search/?api=1&query=${vendor.lat},${vendor.lng}`;
 
   return (
     <>
-      <main className="mx-auto min-h-screen max-w-2xl bg-[#f4f4ef] pb-32">
-        <div className="rounded-b-[34px] bg-[#171714] px-5 pb-6 text-white" style={{ paddingTop: "calc(0.75rem + var(--safe-top))" }}>
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex h-10 items-center gap-2 rounded-full bg-white/10 px-3 text-xs font-extrabold text-white backdrop-blur">
-              ← Explore
-            </Link>
+      <main className="mx-auto min-h-screen max-w-2xl bg-[#f7f7f7] pb-36">
+        <div className="relative h-[270px] overflow-hidden bg-neutral-200 sm:h-[330px]">
+          <Image
+            src={CATEGORY_IMAGES[vendor.category]}
+            alt=""
+            width={720}
+            height={720}
+            priority
+            sizes="(max-width: 672px) 100vw, 672px"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/20" />
+          <div className="absolute inset-x-0 top-0 flex items-center justify-between px-4" style={{ paddingTop: "calc(0.75rem + var(--safe-top))" }}>
+            <Link href="/" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-xl font-medium text-neutral-900 shadow-md backdrop-blur" aria-label="Back to explore">←</Link>
             <ShareButton title={vendor.name} path={`/vendors/${vendor.id}`} />
           </div>
-
-          <div className="relative mt-4 flex h-48 items-center justify-center overflow-hidden rounded-[26px] bg-[radial-gradient(circle_at_20%_20%,#dfff55_0,transparent_28%),radial-gradient(circle_at_85%_85%,#ffb48f_0,transparent_28%),linear-gradient(135deg,#ff5d2d,#ff8e45)]">
-            <span className="rotate-[-8deg] text-[108px] drop-shadow-2xl" aria-hidden>{CATEGORY_EMOJI[vendor.category]}</span>
-            <span className="absolute left-4 top-4 rounded-full bg-black/75 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.13em]">{CATEGORY_LABELS[vendor.category]}</span>
-          </div>
-
-          <div className="mt-5">
-            <p className="text-xs font-bold text-white/55">{vendor.area}</p>
-            <h1 className="mt-1 text-[30px] font-black leading-[1.02] tracking-[-0.04em]">{vendor.name}</h1>
-            <div className="mt-3 flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-[#dfff55] px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.1em] text-[#171714]">Source checked</span>
-              {vendor.certification_status !== "unknown" && <CertificationBadge status={vendor.certification_status} />}
-              {vendor.is_sponsored && <span className="rounded-full bg-white/10 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.1em]">Sponsored</span>}
-            </div>
-          </div>
+          <span className="absolute bottom-4 left-4 rounded-lg bg-black/65 px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-[0.08em] text-white backdrop-blur">Category photo</span>
         </div>
 
-        <div className="space-y-4 px-5 pt-5">
-          <section className="rounded-[24px] bg-white p-5 shadow-[0_12px_30px_-28px_rgba(20,20,15,.7)]">
-            <div className="flex items-center justify-between">
-              <h2 className="text-[11px] font-black uppercase tracking-[0.16em] text-neutral-400">What we know</h2>
-              <span className="h-2.5 w-2.5 rounded-full bg-[#dfff55] ring-2 ring-[#171714]" />
+        <div className="rounded-t-[28px] bg-white px-5 pb-6 pt-5 -mt-5 relative z-10">
+          <div className="flex items-start justify-between gap-4">
+            <div className="min-w-0">
+              <p className="text-xs font-semibold text-[#e23744]">{CATEGORY_LABELS[vendor.category]}</p>
+              <h1 className="mt-1 text-[27px] font-extrabold leading-[1.08] tracking-[-0.035em] text-neutral-950">{vendor.name}</h1>
+              <p className="mt-2 text-sm font-medium text-neutral-500">{vendor.area}</p>
             </div>
-            <p className="mt-3 text-sm font-bold leading-relaxed text-neutral-800">
-              {vendor.certification_status === "unknown"
-                ? "This place is publicly listed, but its hygiene and licence status have not been independently verified."
-                : <CertificationBadge status={vendor.certification_status} />}
-            </p>
-            <details className="mt-3 rounded-2xl bg-[#f4f4ef] p-3">
-              <summary className="cursor-pointer text-xs font-extrabold text-stone-600">View source and location note</summary>
-              <p className="mt-2 text-xs leading-relaxed text-neutral-500">{vendor.source}</p>
+            <a href={mapUrl} target="_blank" rel="noopener noreferrer" className="flex h-11 shrink-0 items-center gap-1.5 rounded-xl border border-neutral-200 px-3 text-xs font-bold text-neutral-800">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4 text-[#e23744]" aria-hidden><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" strokeLinejoin="round" /><circle cx="12" cy="10" r="2.5" /></svg>
+              Map
+            </a>
+          </div>
+
+          <div className="mt-5 grid grid-cols-2 gap-3 border-y border-neutral-100 py-4">
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-neutral-400">Listing source</p>
+              <p className="mt-1 flex items-center gap-1.5 text-sm font-bold text-neutral-800"><span className="text-[#e23744]">✓</span> Publicly checked</p>
+            </div>
+            <div className="border-l border-neutral-100 pl-4">
+              <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-neutral-400">Hygiene status</p>
+              <p className="mt-1 text-sm font-bold text-neutral-800">{vendor.certification_status === "unknown" ? "Not yet verified" : "Verified record"}</p>
+            </div>
+          </div>
+
+          {vendor.certification_status !== "unknown" && (
+            <div className="mt-4"><CertificationBadge status={vendor.certification_status} /></div>
+          )}
+        </div>
+
+        <div className="space-y-4 px-4 pt-4 sm:px-5">
+          <section className="rounded-2xl border border-neutral-100 bg-white p-5 shadow-[0_4px_16px_rgba(28,28,28,.04)]">
+            <div className="flex items-start gap-3">
+              <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${vendor.certification_status === "unknown" ? "bg-amber-50 text-amber-700" : "bg-emerald-50 text-emerald-700"}`}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5" aria-hidden><path d="M12 3 20 6v5.5c0 4.6-3.2 7.8-8 9.5-4.8-1.7-8-4.9-8-9.5V6l8-3Z" strokeLinejoin="round" /><path d="M12 8v5M12 16.5h.01" strokeLinecap="round" /></svg>
+              </span>
+              <div>
+                <h2 className="text-base font-extrabold text-neutral-950">Hygiene information</h2>
+                <p className="mt-1 text-sm leading-relaxed text-neutral-600">
+                  {vendor.certification_status === "unknown"
+                    ? "We found this place in a public source, but have not found a vendor-level FSSAI hygiene certification for it. Community observations below are shown separately."
+                    : "A vendor-level hygiene certification record is available for this place."}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="rounded-2xl border border-neutral-100 bg-white p-5 shadow-[0_4px_16px_rgba(28,28,28,.04)]">
+            <h2 className="text-base font-extrabold text-neutral-950">About this listing</h2>
+            <p className="mt-1 text-xs leading-relaxed text-neutral-500">Coordinates are manually placed from the named area and may not mark the exact cart or shop entrance.</p>
+            <details className="mt-4 rounded-xl bg-[#f7f7f7] p-3.5">
+              <summary className="cursor-pointer text-sm font-bold text-neutral-800">Read the source note</summary>
+              <p className="mt-2 text-xs leading-relaxed text-neutral-600">{vendor.source}</p>
             </details>
           </section>
 
@@ -76,13 +99,8 @@ export default async function VendorDetailPage(props: PageProps<"/vendors/[id]">
         </div>
       </main>
 
-      <div
-        className="fixed inset-x-0 bottom-0 z-30 border-t border-black/5 bg-[#fbfbf8]/95 px-5 pt-3 backdrop-blur-xl"
-        style={{ paddingBottom: "calc(0.75rem + var(--safe-bottom))" }}
-      >
-        <div className="mx-auto max-w-2xl">
-          <ZomatoButton vendor={vendor} />
-        </div>
+      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-neutral-200 bg-white/95 px-4 pt-3 shadow-[0_-8px_24px_rgba(28,28,28,.06)] backdrop-blur-xl" style={{ paddingBottom: "calc(0.75rem + var(--safe-bottom))" }}>
+        <div className="mx-auto max-w-2xl"><ZomatoButton vendor={vendor} /></div>
       </div>
     </>
   );

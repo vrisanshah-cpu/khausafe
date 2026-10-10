@@ -36,7 +36,7 @@ export function ShareButton({ title, path }: { title: string; path: string }) {
   return (
     <button
       onClick={handleShare}
-      className="inline-flex h-10 items-center gap-1.5 rounded-full border border-white/15 bg-white/10 px-3 text-xs font-extrabold text-white backdrop-blur hover:bg-white/15"
+      className="inline-flex h-10 items-center gap-1.5 rounded-full border border-white/70 bg-white/95 px-3 text-xs font-bold text-neutral-900 shadow-md backdrop-blur hover:bg-white"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
